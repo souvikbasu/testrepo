@@ -1,0 +1,52 @@
+<div class="zone-content">
+    <div class="title header-0">
+        <div class="section-heading">{{ $ctrl.title | html }}</div>
+        <div class="info">{{ $ctrl.desc | html }} </div>
+                <div class="item-counter" ng-if="$ctrl.totalRenderedAssignment >= $ctrl.totalCount" ng-show="$ctrl.isSummary()">({{ $ctrl.totalCount }}/{{ $ctrl.totalCount }})</div>
+                <div class="item-counter" ng-if="$ctrl.totalRenderedAssignment < $ctrl.totalCount" ng-show="$ctrl.isSummary()">({{ $ctrl.totalRenderedAssignment }}/{{ $ctrl.totalCount }})</div>
+        <div class="item-counter" ng-show="!$ctrl.isSummary()">({{ $ctrl.totalCount }})</div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="div-sort" ng-show="!$ctrl.isSummary()">
+                    <label>{{'SORT_BY' | translate }}:</label> <select ng-model="sortVal" ng-change="$ctrl.sortOrderChange(sortVal)"
+                                     ng-options="sort.val as sort.key for sort in $ctrl.sortValues"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside ng-attr-style="width: {{ $ctrl.cardContainerWidth }}px;">
+        <button type="button" class="btn-shout" ng-show="$ctrl.isSummary()" ng-click="$ctrl.seeAll();">{{'SEE_ALL' | translate }}</button>
+    </aside>
+    <table class="card-container" infinite-scroll="{{ !$ctrl.isSummary() }}" on-scroll-end="$ctrl.getMoreAssignments()" infinite-scroll-skip="$ctrl.isFetchingAssignments" infinite-scroll-offset="100">
+        <tr ng-repeat="row in $ctrl.latestAssignmentRows">
+            <td ng-repeat="assignment in row">
+                <span ng-if="(($index) / $ctrl.cols) / $ctrl.rows < 1">
+                    <program-card startd="{{ assignment.sDt }}"
+                                  endd="{{ assignment.eDt }}"
+                                  title="{{ assignment.pNm | html }}"
+                                  id="{{ assignment.pId }}"
+                                  total="{{ assignment.tCnt }}"
+                                  completed="{{ assignment.cCnt }}"
+                                  parent="assignments"
+                                  cmplsts="{{ assignment.cmplSts }}">
+                    </program-card>
+                </span>
+            </td>
+        </tr>
+    </table>
+    <div class="loader" ng-show="$ctrl.isFetchingAssignments">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="center" ng-if="$ctrl.isNoResultFound">
+        <div class="no-result-found-message">{{ 'NO_RESULTS_ASSIGNMENT' | translate }}</div>
+        <div class="no-result-found-tip">{{ 'TIP' | translate }} - {{ 'NO_RESULTS_ASSIGNMENT_TIP' | translate }}</div>
+    </div>
+    <div class="end-of-result" ng-show="!$ctrl.summary && $ctrl.isEndOfResult && !$ctrl.isNoResultFound">
+        <span>{{ 'END_OF_RESULT' | translate }}</span>
+    </div>
+</div>

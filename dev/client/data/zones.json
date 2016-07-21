@@ -1,0 +1,114 @@
+{
+  "uId": 63998,
+  "uRoleId": 78339,
+  "fNm": "Divyesh",
+  "lNm": "Chauhan",
+  "defLogIn": "Student",
+  "cLang": "en",
+  "uiLang": "en",
+  "email": "dcn6@3ds.com",
+  "roles": [
+    {
+      "roleName": "Student",
+      "roleId": 75956
+    },
+    {
+      "roleName": "Admin",
+      "roleId": 75995
+    },
+    {
+      "roleName": "Student on Root",
+      "roleId": 78339
+    },
+    {
+      "roleName": "Teacher",
+      "roleId": 78567
+    }
+  ],
+  "layPref": [
+    {
+      "id": 1,
+      "zn": "My Assignments",
+      "ordr": 1,
+      "desc": "Find the assignments you are assigned",
+      "vis": true,
+      "nRow": 2,
+      "sortBy": 1
+    },
+    {
+      "id": 2,
+      "zn": "My Library",
+      "ordr": 2,
+      "desc": "Find all the available courses",
+      "vis": true,
+      "nRow": 2,
+      "sortBy": 1
+    },
+    {
+      "id": 5,
+      "zn": "My Recent Courses",
+      "ordr": 3,
+      "desc": "Find the last compulsory trainings you are involved in. ",
+      "vis": false,
+      "nRow": 2,
+      "sortBy": 1
+    },
+    {
+      "id": 3,
+      "zn": "My Training Catalogs",
+      "ordr": 4,
+      "desc": "Find the training catalogs available to enroll.",
+      "vis": true,
+      "nRow": 2,
+      "sortBy": 1
+    },
+    {
+      "id": 4,
+      "zn": "My Favorites",
+      "ordr": 5,
+      "desc": "Find the recently added courses to your favorites",
+      "vis": true,
+      "nRow": 2,
+      "sortBy": 1
+    }
+  ],
+  "filterPref": [
+    {
+      "fTit": "version",
+      "fValue": [
+        "Matrix10.7"
+      ]
+    },
+    {
+      "fTit": "brand",
+      "fValue": [
+        "CATIA",
+        "EXALEAD"
+      ]
+    },
+    {
+      "fTit": "industry",
+      "fValue": [
+        "Energy, Process & Utilities"
+      ]
+    },
+    {
+      "fTit": "discipline",
+      "fValue": [
+        "3DSOpen Apps"
+      ]
+    },
+    {
+      "fTit": "jobrole",
+      "fValue": [
+        "Aerospace and Defense"
+      ]
+    },
+    {
+      "fTit": "lang",
+      "fValue": [
+        "en"
+      ]
+    }
+  ]
+}

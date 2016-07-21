@@ -1,0 +1,375 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+.search-area {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+
+    .col {
+        display: inline-block;
+    }
+
+    .search-col {
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .search-box {
+        max-width: 90%;
+        width: 450px;
+    }
+}
+
+.btn-direction {
+    background: none;
+    border: 0;
+    color: $primary-theme-color-2;
+    cursor: pointer;
+    font-size: 0;
+    height: 40px;
+    margin-left: -6px;
+    padding: 0;
+    text-align: right;
+    vertical-align: middle;
+    width: 40px;
+
+    &::before {
+        display: inline-block;
+        font-family: 'dassault-companion';
+        font-size: 35px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: none;
+        vertical-align: middle;
+    }
+}
+
+.btn-prev {
+    &::before {
+        content: 'g';
+    }
+}
+
+.btn-next {
+    margin-left: -39px;
+
+    &::before {
+        content: 'h';
+    }
+}
+
+.explore-catalog-xs-heading {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.explore-by-industry-xs,
+.explore-product-xs {
+    .explore-our-catalog-control-xs {
+        float: left;
+        height: 100%;
+        padding: 58px 0 0;
+        position: relative;
+        width: 20%;
+    }
+
+    .explore-our-product-control-xs {
+        float: left;
+        height: 100%;
+        padding: 105px 0 0;
+        position: relative;
+        width: 20%;
+    }
+
+    .left-xs-control {
+        padding-right: 28px;
+    }
+
+    .right-xs-control {
+        padding-left: 28px;
+    }
+
+    .explore-our-catalog-items {
+        float: left;
+        height: 200px;
+        overflow: hidden;
+        padding: 20px 0;
+        position: relative;
+        width: 60%;
+
+        .initial-slide-catalog {
+            left: 0;
+            position: relative;
+            transition: left .4s linear;
+        }
+    }
+
+    .explore-our-catalog-item {
+        float: left;
+        height: 100%;
+        left: -18px;
+        padding: 0 27px;
+        position: relative;
+        width: 216px;
+
+        h3 {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    .explore-our-catalog-wrapper-item {
+        height: 100%;
+        margin-left: 1px;
+    }
+
+    .content {
+        height: 119px;
+
+        .cell {
+            padding-top: 20px;
+
+            h3 {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.explore-by-industry-xs {
+    .explore-our-catalog-items {
+        height: 144px;
+    }
+}
+
+.explore-by-industry {
+    @include gradiant-background(45deg, 0%, $primary-theme-color-3, 100%, $primary-theme-color-1, 0, 1);
+    border-top: solid 2px $primary-theme-color-2;
+    color: $primary-theme-text-on-color-1;
+    height: 351px;
+
+    .explore-our-catalog-title {
+        border-right: 1px solid $border-color;
+        float: left;
+        height: 100%;
+        padding: 110px 4px 0;
+        position: relative;
+        width: 20%;
+    }
+
+    .explore-our-catalog-items {
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        padding: 20px 0;
+        position: relative;
+        width: 60%;
+
+        .initial-slide-catalog {
+            left: 0;
+            position: relative;
+            transition: left .4s linear;
+        }
+    }
+
+    .custom-lg-explore-catalog {
+        padding-top: 62px;
+    }
+
+    .explore-our-catalog-wrapper-item {
+        height: 100%;
+        margin-left: 1px;
+    }
+
+    .content {
+        height: 231px;
+
+        .cell {
+            padding-top: 100px;
+
+            h3 {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .custom-lg-content {
+        padding-top: 70px;
+    }
+
+    .circle {
+        background-clip: padding-box;
+        border: 1px solid $primary-theme-color-2;
+        border-radius: 50%;
+        display: inline-block;
+        height: 12px;
+        margin-top: 12px;
+        vertical-align: middle;
+        width: 12px;
+    }
+
+    .explore-our-catalog-item {
+        border-right: 1px solid $border-color;
+        float: left;
+        height: 100%;
+        padding: 0 27px;
+        position: relative;
+        width: 229.6px;
+
+        h3 {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    .footer {
+        height: 80px;
+        text-align: center;
+
+        .cell {
+            vertical-align: middle;
+        }
+    }
+
+    .explore-our-catalog-controls {
+        border-left: 1px solid $border-color;
+        float: left;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        width: 20%;
+
+        .vertical-align-middle {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 100%;
+        }
+
+    }
+
+    .explore-our-catalog-scroller {
+        width: 344.4px;
+    }
+}
+
+.explore-by-product {
+    margin-bottom: 40px;
+
+    .item-brand {
+        @include shadow(0, 0, 6px, -2px, $shadow-color);
+        @include transition(all, .3s, ease, 0s);
+        background: $control-background no-repeat center center;
+        border: 1px solid $card-border-color;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+.section-stage {
+    background: $primary-theme-color-1 url(../../static/images/stage.jpg) no-repeat center top;
+    background-size: cover;
+    color: $primary-theme-text-on-color-1;
+    height: 685px;
+    padding: 66px 0;
+
+    .container {
+        height: 100%;
+    }
+
+    header {
+        font-size: 0;
+        height: 39px;
+
+        .login-button {
+            text-align: right;
+        }
+    }
+
+    .col {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .col:last-of-type {
+        text-align: right;
+    }
+
+    .main {
+        display: table;
+        height: 92%;
+        margin: -40px auto -30px;
+        padding: 40px 0 30px;
+        table-layout: fixed;
+        text-align: center;
+        width: 100%;
+    }
+
+    .lead {
+        @include font-size-in-px($extra-small-icon-size);
+        color: $primary-theme-text-on-color-1;
+        font-weight: $normal-font-weight;
+        margin-bottom: 25px;
+
+        // TODO: Icon properties has to be added in global file.
+        &::before {
+            @include show-symbol('m', $primary-theme-text-on-color-1, $extra-small-icon-size);
+            font-size: 11px;
+            line-height: 1em;
+            margin-right: 4px;
+        }
+    }
+}
+
+.button-style {
+    color: $primary-theme-color-1;
+    font-size: 14px;
+}
+
+.product {
+    padding: 8px;
+}
+
+.brand-text {
+    bottom: 25%;
+    color: $secondary-text-color;
+    display: block;
+    font-size: 94%;
+    font-style: italic;
+    height: 24px;
+    left: 17px;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+}
+
+.horizontal-align-middle {
+    margin-left: 45px;
+}
+
+.explore-button {
+    margin: -7px 5px 15px;
+    width: 180px;
+}

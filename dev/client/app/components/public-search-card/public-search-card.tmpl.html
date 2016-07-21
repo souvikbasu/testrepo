@@ -1,0 +1,35 @@
+<div class="public-search-card-wrapper">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="card-box">
+                <div class="top">
+                    <img class="image" ng-src="{{ $ctrl.thumbnailSrc }}" />
+                </div>
+                <div class="pub-search-main">
+                    <a class="course-title" href="" ng-click="$ctrl.courseDetails()">
+                        <h3 class="tl5" title="{{$ctrl.title}}">{{ $ctrl.title | limitTo: 60 | html}}{{$ctrl.title.length >= 60 ? '...' : ''}}</h3>
+                    </a>
+                     <div class="version">
+                        <span ng-class="{open: $ctrl.openVerDropdown}" class="select-link">
+                            <button ng-click="$ctrl.versionDropdownOpen()" type="button">{{ 'VERSIONS' | translate }}</button>
+                            <ul>
+                                <li ng-repeat="version in $ctrl.versions track by $index">{{version.nm}}</li>
+                            </ul>
+                         </span>
+                    </div>
+                     <div class="language">
+                         <span ng-class="{open: $ctrl.openLangDropdown}" class="select-link">
+                             <button ng-click="$ctrl.languageDropdownOpen()" type="button">{{ 'LANGUAGES' | translate }}</button>
+                             <ul>
+                                 <li ng-repeat="lang in $ctrl.langs track by $index">{{lang.nm}}</li>
+                             </ul>
+                         </span>
+                    </div>
+                    <div class="footer">
+                        <button type="button" class="btn-shout small" ng-click="$ctrl.courseDetails()">{{'DETAILS' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

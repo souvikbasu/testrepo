@@ -1,0 +1,73 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+modal-dialog {
+    height: 90%;
+    width: 90%;
+    z-index: 50;
+
+    .background {
+        background-color: $lightbox-background;
+        height: 100%;
+        left: 0;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .panel {
+        background-color: $control-background;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        .header {
+            @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+            height: 99px;
+            width: 100%;
+
+            .title {
+                @include font-size-in-px(24px);
+                color: $primary-theme-text-on-color-2;
+                float: left;
+                margin: 43px 0 0 39px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .icon-close-dialog {
+        @include font-size-in-px(24px);
+        background-image: url('../images/modal-close.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: right;
+        height: 23px;
+        margin: 30px;
+        width: 33px;
+    }
+
+    .transclude {
+        left: 0;
+        overflow: auto;
+        padding: 22px;
+        position: absolute;
+        top: 99px;
+        width: 100%;
+    }
+
+    .close-button {
+        border-color: $primary-theme-color-2;
+        bottom: 40px;
+        color: $primary-theme-color-2;
+        margin-bottom: -20px;
+        position: absolute;
+        right: 40px;
+    }
+}

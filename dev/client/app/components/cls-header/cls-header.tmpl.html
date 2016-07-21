@@ -1,0 +1,135 @@
+<div class="row" hide-on-scroll>
+    <ds-header></ds-header>
+</div>
+
+<div class="row user-header for-mobile visible-xs">
+    <div class="product-logo vertically-middle pull-left" ng-show="!$ctrl.showSearchBox">
+        <img src="static/images/companion.png" class="cls-logo" ng-click="$ctrl.companionHome()" id="header-logo"
+            alt="Companion leader space">
+    </div>
+    <div class="icon icon-search" ng-click="$ctrl.showSearchBox = true;" ng-show="!$ctrl.showSearchBox"></div>
+    <search-box is-user-authenticated="{{ $ctrl.isUserAuthenticated }}" ng-show="$ctrl.showSearchBox"
+        class="center hidden-md hidden-lg" placeholder="Search"></search-box><div class="icon-close cancel-search" ng-show="$ctrl.showSearchBox" ng-click="$ctrl.showSearchBox = false;"></div>
+    <div class="icon icon-hamburger" ng-click="$ctrl.toggleModal();" ng-show="!$ctrl.showSearchBox" ></div>
+    <modal-dialog show="$ctrl.modalVisible">
+    <div class="modal-menu">
+        <div ng-repeat="zone in zones | orderBy:'order'" class="menu-item" ng-click="$ctrl.zoneSelected(zone, true);">{{
+            zone.title | html }}</div>
+        <hr />
+        <div class="menu-item">{{'MY' | translate}} {{'PROFILE' | translate}}</div>
+        <div class="menu-item">{{'SETTINGS' | translate}}</div>
+        <div class="menu-item" ng-click="$ctrl.logout()">{{'LOGOUT' | translate}}</div>
+    </div>
+    </modal-dialog>
+</div>
+
+
+<div class="row user-header for-tab visible-sm">
+    <div class="inline-block full-height col-sm-4" ng-show="!$ctrl.showSearchBox">
+        <div class="product-logo vertically-middle">
+            <img src="static/images/companion.png" class="cls-logo" ng-click="$ctrl.companionHome()" id="header-logo"
+                alt="Companion Learning space">
+        </div>
+    </div>
+    <div class="inline-block full-height vertically-middle col-sm-4">
+        <search-box class="center" is-user-authenticated="{{ $ctrl.isUserAuthenticated }}" placeholder="Search"></search-box>
+    </div>
+    <div ng-if="$ctrl.userAuthenticate" class="inline-block user-thumbnail full-height vertically-middle col-sm-4">
+        <div class="drop-down-layout" callback-fn="$ctrl.toggleMenuPanel(param)" drop-down>
+            <div class="{{ $ctrl.menuVisible ? 'icon-close' : 'icon-hamburger' }}" ng-click="$ctrl.toggleMenu();"></div>
+            <div class="menu" ng-show="$ctrl.menuVisible">
+                <div ng-repeat="zone in zones | orderBy:'order'" class="menu-item" ng-click="$ctrl.zoneSelected(zone);">{{
+                    zone.title | html }}</div>
+                <hr />
+                <div class="menu-item">{{'MY' | translate}} {{'PROFILE' | translate}}</div>
+                <div class="menu-item">{{'SETTINGS' | translate}}</div>
+                <div class="menu-item" ng-click="$ctrl.logout()">{{'LOGOUT' | translate}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row user-header for-large-devices visible-md visible-lg user" hide-on-scroll>
+    <div class="inline-block full-height col-md-4" ng-show="!$ctrl.showSearchBox">
+        <div class="product-logo vertically-middle">
+            <img src="static/images/companion.png" class="cls-logo" ng-click="$ctrl.companionHome()" id="header-logo"
+                alt="Companion leader space">
+        </div>
+    </div>
+    <div class="inline-block full-height vertically-middle col-md-4">
+        <search-box class="center" is-user-authenticated="{{ $ctrl.isUserAuthenticated }}" placeholder="Search"></search-box>
+    </div>
+    <div ng-if="$ctrl.userAuthenticate" class="inline-block user-thumbnail full-height vertically-middle col-md-4">
+        <div>
+            <div class="user-info">
+                <div class="title">{{$ctrl.user.firstName}} {{$ctrl.user.lastName}}</div>
+                <a class="status" ng-click="$ctrl.logout()">{{'LOGOUT' | translate}}</a>
+            </div>
+            <div class="drop-down-layout" callback-fn="$ctrl.toggleSelect(param)" drop-down>
+                <div class="user-photo" ng-click="$ctrl.isPopupVisible = !$ctrl.isPopupVisible">
+                    <img ng-src="{{ $ctrl.userImage }}" alt="">
+                </div>
+                <div class="dropdown" ng-show="$ctrl.isPopupVisible">
+                    <div class="arrow"></div>
+                    <ul>
+                        <li class="has-child">
+                            <button type="button" ng-click="$ctrl.showUserRoles = !$ctrl.showUserRoles">{{'MY'
+                                | translate}} {{'Role' | translate}}</button>
+                            <ul class="list-style" ng-show="$ctrl.showUserRoles">
+                                <li ng-repeat="role in $ctrl.roles"
+                                    ng-class="{'selected-menu': $ctrl.currentRoleId == role.roleId}"><a
+                                    ng-click="$ctrl.switchRole(role.roleId)" title = "{{role.roleName}}">{{role.roleName | limitTo: 18}}{{role.roleName.length > 18 ? '...' : ''}}</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" ng-click="$ctrl.mySettings()">{{'MY' | translate}} {{'SETTINGS' |
+                                translate}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-if="!$ctrl.userAuthenticate" class="col-md-2"></div>
+    <div ng-if="!$ctrl.userAuthenticate" class="inline-block user-thumbnail full-height vertically-middle col-md-2">
+        <div class="btn-container">
+            <button ng-click="$ctrl.toggleSelect1();" class="btn-shout small bright-on-hover">{{'LOG_IN' |
+                translate }}</button>
+        </div>
+        <modal-dialog show="$ctrl.isPopupVisible" title="{{ 'LOGIN' | translate }}" height="565px" width="400px">
+        <login-box show="$ctrl.isPopupVisible"></login-box> </modal-dialog>
+    </div>
+</div>
+
+
+<div ng-if="$ctrl.userAuthenticate" class="row movable-navigation navigation hidden-xs hidden-sm">
+    <div class="nav-item dashboard" ng-class="{selected: $ctrl.selectedZone == 'dashboard'}"
+        ng-click="$ctrl.zoneSelected('dashboard');"></div>
+    <div ng-repeat="zone in zones | orderBy:'order'" class="nav-item"
+        ng-class="{selected: $ctrl.selectedZone == zone.name}" ng-click="$ctrl.zoneSelected(zone);">{{ zone.title
+        | html }}</div>
+</div>
+
+<div ng-if="!$ctrl.userAuthenticate" class="row fixed-navigation">
+    <div class="row user-header for-large-devices visible-md visible-lg user ng-isolate-scope">
+        <div class="inline-block full-height col-md-4" ng-show="!$ctrl.showSearchBox">
+            <div class="product-logo vertically-middle">
+                <img src="static/images/companion.png" class="cls-logo" ng-click="$ctrl.companionHome()"
+                    id="header-logo" alt="Companion leader space">
+            </div>
+        </div>
+        <div class="inline-block full-height vertically-middle col-md-4">
+            <search-box placeholder="Search" is-user-authenticated="{{ $ctrl.isUserAuthenticated }}"></search-box>
+        </div>
+        <div ng-if="!$ctrl.userAuthenticate" class="col-md-2 ng-scope"></div>
+        <div ng-if="!$ctrl.userAuthenticate"
+            class="inline-block user-thumbnail full-height vertically-middle col-md-2 ng-scope">
+            <div class="btn-container">
+                <button ng-click="$ctrl.toggleSelect1();" class="btn-shout small bright-on-hover">{{'LOG_IN' |
+                    translate }}</button>
+            </div>
+            <modal-dialog show="$ctrl.isPopupVisible" title="{{ 'LOGIN' | translate }}" height="565px" width="400px">
+            <login-box show="$ctrl.isPopupVisible"></login-box> </modal-dialog>
+        </div>
+    </div>
+</div>

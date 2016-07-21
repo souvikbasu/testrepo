@@ -1,0 +1,100 @@
+@import 'theme';
+@import 'mixins';
+
+// scss-lint:disable ImportantRule, VendorPrefix
+
+// Mobile
+@media (min-width: 320px) and (max-width: 767px) {
+    login-box {
+        ::-webkit-input-placeholder {
+            color: $placeholder-text-on-light-bg;
+        }
+
+        ::-moz-placeholder {
+            color: $placeholder-text-on-light-bg;
+        }
+
+        :-ms-input-placeholder {
+            color: $placeholder-text-on-light-bg;
+        }
+    }
+
+    h1 {
+        font-size: 17px !important;
+
+        small {
+            font-size: 16px !important;
+        }
+    }
+
+    course-card {
+        height: 362px !important;
+        width: 147px !important;
+
+        .image {
+            height: 96px !important;
+            width: 145px !important;
+        }
+
+        .btn-play {
+            margin-left: 66px !important;
+        }
+
+        .top {
+            height: 96px !important;
+        }
+
+        .link-rlic {
+            display: block !important;
+            height: 31px !important;
+            margin-left: 68px !important;
+            margin-top: -5px !important;
+            width: 85px !important;
+        }
+    }
+
+    search-result {
+        .zone-content {
+            margin: 0 6px !important;
+        }
+    }
+
+    .explore-button-container {
+        text-align: center !important;
+    }
+}
+
+// Mobile
+// Tablet
+@media (min-width: 320px) and (max-width: 767px), (min-width: 768px) and (max-width: 959px) {
+    .section-0 {
+        padding: 90px 0 60px !important;
+    }
+
+    .brand-text {
+        bottom: -5% !important;
+    }
+
+    .search-back {
+        margin: 200px 0 0 40px !important;
+    }
+}
+
+// Desktop
+@media (min-width: 960px) {
+    login-box {
+        ::-webkit-input-placeholder {
+            display: none;
+        }
+
+        ::-moz-placeholder {
+            display: none;
+        }
+
+        :-ms-input-placeholder {
+            display: none;
+        }
+    }
+}
+
+// scss-lint:enable ImportantRule, VendorPrefix

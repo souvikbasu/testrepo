@@ -1,0 +1,711 @@
+@import 'theme';
+@import 'mixins';
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $control-background;
+    color: $control-text;
+    font-size: $normal-font-size;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1em;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    @include font-size-in-px($section-info-font-size);
+    margin: 0 0 8px;
+}
+
+h2 {
+    @include font-size-in-px(26px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1em;
+}
+
+button {
+    background: none;
+    border: solid 1px $primary-theme-color-2;
+    border-radius: 999px;
+    color: $primary-theme-color-2;
+    height: 30px;
+    min-width: 60px;
+    outline: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=search] {
+    appearance: none;
+    background-clip: padding-box;
+    background-color: $control-background;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    margin: 0;
+    outline: none;
+    padding: 0 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.full-height {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.vertically-middle {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.content-left {
+    text-align: left;
+}
+
+.content-right {
+    text-align: right;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+a {
+    color: $primary-theme-color-2;
+    text-decoration: none;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.icon {
+    background-clip: padding-box;
+    border: 0;
+    display: inline-block;
+    height: $unit-block-size;
+    padding: 10px;
+    text-transform: none;
+    width: $unit-block-size;
+}
+
+.for-small-devices {
+    .icon {
+        background-clip: padding-box;
+        border: 0;
+        display: inline-block;
+        height: $unit-block-size-small-devices;
+        padding: 10px;
+        text-transform: none;
+        width: $unit-block-size-small-devices;
+    }
+}
+
+.container-fluid {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.menu {
+    @include font-size-in-px($normal-font-size);
+    background-color: $control-background;
+    border: solid 1px $border-color;
+    color: $control-text;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    width: 200px;
+
+    .menu-item {
+        cursor: pointer;
+        height: 36px;
+        padding: 10px;
+
+        &:hover {
+            background-color: $control-selected;
+            color: $control-selected-text;
+        }
+    }
+}
+
+.btn-filled {
+    background-color: $primary-theme-color-2;
+    border-radius: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65px;
+}
+
+.btn-shout {
+    @include transition(all, .3s, ease, 0s);
+    background-clip: padding-box;
+    border: 1px solid $primary-theme-color-2;
+    border-radius: 24px;
+    color: $primary-theme-color-2;
+    font-size: 17px;
+    font-weight: 600;
+    height: 48px;
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &.small {
+        font-size: 12px;
+        height: 30px;
+        padding: 0 15px;
+    }
+
+    &.medium {
+        font-size: 12px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 34px;
+    }
+
+    &.inverse-color {
+        border-color: $primary-theme-text-on-color-1;
+        color: $primary-theme-text-on-color-1;
+
+        &:hover {
+            border-color: $primary-theme-color-2;
+            color: $primary-theme-color-2;
+        }
+    }
+
+    &.solid-fill {
+        background-color: $primary-theme-color-2;
+
+        &:hover {
+            border-color: $primary-theme-color-1;
+            color: $primary-theme-text-on-color-1;
+        }
+    }
+
+    &:hover {
+        border-color: $primary-theme-color-1;
+        color: $primary-theme-color-1;
+    }
+}
+
+.btn-details {
+    @include font-size-in-px($normal-font-size);
+    border: 0;
+    color: $control-text;
+    min-height: 30px;
+    text-transform: none;
+}
+
+.btn-more {
+    border: 0;
+    color: $primary-theme-color-2;
+    min-height: 20px;
+    padding-left: 30px;
+    position: relative;
+    text-align: left;
+    text-transform: initial;
+
+    &::before {
+        @include show-symbol('q', $primary-theme-color-2, $extra-small-icon-size);
+        background-clip: padding-box;
+        border: 1px solid $primary-theme-color-2;
+        border-radius: 50%;
+        height: 20px;
+        left: 0;
+        line-height: 19px;
+        margin-top: -10px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 20px;
+    }
+}
+
+.btn-remove {
+    border: 0;
+    color: $secondary-text-color;
+    min-height: 20px;
+    padding-left: 30px;
+    position: relative;
+    text-align: left;
+    text-transform: initial;
+
+    &::before {
+        @include show-symbol('p', $secondary-text-color, $extra-small-icon-size);
+        background-clip: padding-box;
+        border: 1px solid $secondary-text-color;
+        border-radius: 50%;
+        height: 20px;
+        left: 0;
+        line-height: 19px;
+        margin-top: -10px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 20px;
+    }
+}
+
+aside {
+    display: block;
+    margin: 0 auto 25px;
+    text-align: right;
+}
+
+main {
+    display: block;
+}
+
+.bright-on-hover {
+    &:hover {
+        border-color: $primary-theme-text-on-color-1;
+        color: $primary-theme-text-on-color-1;
+    }
+}
+
+.container {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.link-see {
+    background-clip: padding-box;
+    border: 2px solid $primary-theme-color-2;
+    border-radius: 50%;
+    display: inline-block;
+    height: 25px;
+    text-decoration: none;
+    width: 25px;
+
+    &::before {
+        @include show-symbol('b', $primary-theme-color-2, $extra-small-icon-size);
+        line-height: 23px;
+    }
+}
+
+.cell {
+    display: table-cell;
+}
+
+section {
+    &.section-0 {
+        padding: 90px 0 100px;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.tl1 {
+    @include font-size-in-px($title-1-font-size);
+    font-weight: $normal-font-weight;
+    line-height: 1.2em;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.tl2 {
+    @include font-size-in-px($title-2-font-size);
+    color: $control-text;
+    font-weight: $normal-font-weight;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.tl3 {
+    @include font-size-in-px($title-3-font-size);
+    color: $control-text;
+    font-weight: $normal-font-weight;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.tl4 {
+    @include font-size-in-px($title-4-font-size);
+    color: $control-text;
+    font-weight: $normal-font-weight;
+    line-height: 1em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.tl5 {
+    @include font-size-in-px($title-5-font-size);
+    line-height: 1.14em;
+    margin-bottom: 11px;
+}
+
+.tl6 {
+    @include font-size-in-px($title-6-font-size);
+    line-height: 1.14em;
+    margin-bottom: 18px;
+}
+
+.tl7 {
+    @include font-size-in-px($title-7-font-size);
+    font-weight: $extra-heavy-font-weight;
+    line-height: 1.14em;
+    margin-bottom: 2px;
+}
+
+.tl8 {
+    @include font-size-in-px($title-8-font-size);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    small {
+        @include font-size-in-px($title-8-font-size);
+        font-weight: $semi-light-font-weight;
+    }
+}
+
+.progress-bar-under {
+    background-color: $disabled-color;
+    height: 7px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.progress-bar {
+    @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+    @include transition(all, 1.2s, ease, .8s);
+    display: block;
+    height: 7px;
+    margin-top: -7px;
+    width: 0%;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+// scss-lint:disable SelectorDepth
+.dropdown {
+    @include shadow(0, 0, 6px, -2px, $shadow-color);
+    background-color: $control-background;
+    display: block;
+    margin-top: 15px;
+    padding: 10px 0;
+    position: absolute;
+    right: -20px;
+    top: 100%;
+    width: 155px;
+    z-index: 1000;
+
+    .arrow {
+        border-bottom: 12px solid $control-background;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        display: block;
+        height: 0;
+        position: absolute;
+        right: 33px;
+        top: -12px;
+        width: 0;
+    }
+
+    a,
+    button {
+        border: 0;
+        color: $control-text;
+        cursor: pointer;
+        display: block;
+        font-weight: 300;
+        height: 32px;
+        line-height: 30px;
+        padding: 0 20px;
+        text-align: left;
+        text-decoration: none;
+        text-transform: none;
+        width: 100%;
+    }
+
+    > ul > li {
+        > a,
+        > button {
+            font-weight: 400;
+        }
+
+        + li {
+            border-top: 1px solid $card-border-color;
+        }
+
+        &.has-child > a::after,
+        > button::after {
+            @include show-symbol('b', initial, initial);
+            padding-left: 8px;
+            vertical-align: middle;
+        }
+
+        &.active > a,
+        .active > button {
+            background-color: $card-border-color;
+
+            &::after {
+                @include show-symbol('n', initial, initial);
+            }
+
+            ul {
+                height: auto;
+            }
+        }
+    }
+}
+
+// scss-lint:disable SelectorDepth
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.loader {
+    animation: spin .5s infinite linear;
+    background: transparent url('../../static/images/loader.png') no-repeat 0 0;
+    background-size: 60px 60px;
+    height: 60px;
+    margin: 20px auto;
+    width: 60px;
+}
+
+.end-of-result {
+    background: $primary-theme-color-3;
+    display: block;
+    font-size: 1rem;
+    height: 45px;
+    margin: 20px;
+    padding: 14px;
+    text-align: center;
+}
+
+.div-sort {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    margin-left: 180px;
+    // text-align: left;
+
+    // TODO: Dropdown styling should be included in Global CSS
+    label {
+        color: $secondary-text-color;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 15px;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: url('../../static/images/drop-down-arrow.png') no-repeat 0 0;
+        background-position: 260px 7px;
+        border: 1px solid $disabled-color;
+        color: $secondary-text-color;
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 70px;
+        overflow: hidden;
+        position: relative;
+        vertical-align: middle;
+        width: 250px;
+
+        option {
+            display: block;
+            font-weight: normal;
+            min-height: 1.2em;
+            padding: 0 2px 1px;
+            white-space: pre;
+        }
+    }
+}
+
+.no-result-found-message {
+    color: $primary-theme-color-2;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.no-result-found-tip {
+    color: $secondary-text-color;
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 40px;
+}

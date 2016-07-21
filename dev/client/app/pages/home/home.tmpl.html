@@ -1,0 +1,160 @@
+<ds-header>
+    <select ng-options="locale as locale.display for locale in supportedLocales" ng-model="locale"
+            ng-change="changeLocale()">
+    </select>
+</ds-header>
+<main role="main" class="row">
+    <section class="section-stage" resize-height>
+        <div class="container">
+            <header class="row">
+                    <div class="col-xs-6">
+                        <img src="static/images/companion.png" alt="Companion leader space">
+                    </div>
+                    <div class="col-xs-6 login-button">
+                        <button ng-click="toggleSelect1();" class="btn-shout small bright-on-hover">{{'LOG_IN' | translate }}</button>
+                    </div>
+            </header>
+
+            <div class="main row">
+                <div class="search-area">
+                    <h1>{{ 'TAG_LINE' | translate}}</h1>
+                    <p class="lead">{{ 'SUB_TAG_LINE' | translate}}</p>
+                    <search-box class="search-box"></search-box>
+                </div>
+                <modal-dialog show="isPopupVisible" title="{{ 'LOGIN' | translate }}" height="565px" width="498px" ><login-box show="isPopupVisible"></login-box></modal-dialog>
+            </div>
+            <footer class="row">
+                <span class="col-xs-12 col-sm-6 content-right explore-button-container">
+                    <button id="goto_industry" class="btn-shout small bright-on-hover explore-button" ng-click="exploreByIndustry();">{{
+                        'EXPLORE_BY_INDUSTRY' | translate
+                        }}
+                    </button>
+                </span>
+                <span class="col-xs-12 col-sm-6  content-left explore-button-container">
+                    <button id="goto_product" class="btn-shout small bright-on-hover explore-button" ng-click="exploreByProduct();">{{
+                        'EXPLORE_BY_PRODUCT' | translate
+                        }}
+                    </button>
+                </span>
+            </footer>
+        </div>
+    </section>
+
+    <div class="explore-by-industry visible-lg visible-md" id="explore_by_industry">
+        <div class="container">
+            <div class="explore-our-catalog-title">
+                <h2 class="tl1">{{ 'EXPLORE_BY_INDUSTRY_TAG' | translate }}</h2>
+            </div>
+            <div class="explore-our-catalog-items custom-lg-explore-catalog">
+                <div class="explore-our-catalog-scroller"></div>
+                <div class="initial-slide-catalog" ng-style="slideCatalog" ng-repeat="industry in data.industries track by $index">
+                    <div class="explore-our-catalog-wrapper-item" style="width: 8377.6px;">
+                        <div class="explore-our-catalog-item">
+                            <div class="content custom-lg-content">
+                                <div>
+                                    <h3 ng-click="searchIndustry(industry)">{{ industry.indT | html }}</h3>
+                                    <p>{{ industry.indD | html }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-our-catalog-controls">
+                <div class="vertical-align-middle">
+                    <div class="horizontal-align-middle col-xs-12">
+                        <div class="col-xs-4">
+                            <button ng-if="minCountIndustry >= 3" type="button" ng-click="prevIndustry()" class="btn-direction btn-prev">{{ 'PREV' | translate }}</button>
+                        </div>
+                        <div class="col-xs-1">
+                            <span class="circle"></span>
+                        </div>
+                        <div class="col-xs-3">
+                            <button ng-if="minCountIndustry <= data.industries.length - 6" type="button" ng-click="nextIndustry()" class="btn-direction btn-next">{{ 'NEXT' | translate }}</button>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-by-industry-xs visible-sm visible-xs" id="explore_by_industry">
+        <div class="container">
+            <h1 class="explore-catalog-xs-heading">{{ 'EXPLORE_BY_INDUSTRY_TAG' | translate }}</h1>
+            <div class="explore-our-catalog-control-xs left-xs-control">
+                <button ng-if="minCountIndustry >= 1" type="button" ng-click="prevIndustryXs()" class="btn-direction btn-prev">{{ 'PREV' | translate }}</button>
+            </div>
+            <div class="explore-our-catalog-items">
+                <div class="explore-our-catalog-scroller"></div>
+                <div class="initial-slide-catalog" ng-style="slideCatalog" ng-repeat="industry in data.industries track by $index">
+                    <div class="explore-our-catalog-wrapper-item" style="width: 8377.6px;">
+                        <div class="explore-our-catalog-item">
+                            <div class="content">
+                                <div>
+                                    <h3 ng-click="searchIndustry(industry)">{{ industry.indT | html }}</h3>
+                                    <p>{{ industry.indD | html }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-our-catalog-control-xs right-xs-control">
+                <button ng-if="minCountIndustry <= data.industries.length - 2" type="button" ng-click="nextIndustryXs()" class="btn-direction btn-next">{{ 'NEXT' | translate }}</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-0 explore-by-product visible-lg visible-md" id="explore_by_product">
+        <div class="container">
+            <h1 class="tl1">{{ 'EXPLORE_BY_PRODUCT_TAG' | translate }}</h1>
+            <div class="row">
+                <div ng-repeat="product in data.brands track by $index" ng-click="searchProduct(product)"
+                     class="col-xs-6 col-sm-4 col-md-2 product">
+                    <div class="item-brand" ng-attr-style="background-image:url({{ product.bImg }})">
+                        <a href="">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
+                                 width="100%" alt="" class="transparentSquare">
+                            <span class="brand-text">{{ product.shDes }}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-by-product explore-product-xs visible-sm visible-xs" id="explore_by_product">
+        <div class="container">
+            <h1 class="explore-catalog-xs-heading">{{ 'EXPLORE_BY_PRODUCT_TAG' | translate }}</h1>
+            <div class="explore-our-product-control-xs left-xs-control">
+                <button ng-if="minCountProduct >= 1" type="button" ng-click="prevProductXs()" class="btn-direction btn-prev">{{ 'PREV' | translate }}</button>
+            </div>
+            <div class="explore-our-catalog-items">
+                <div class="explore-our-catalog-scroller"></div>
+                <div class="initial-slide-catalog" ng-style="slideCatalogProduct" ng-click="searchProduct(product)" ng-repeat="product in data.brands track by $index">
+                    <div class="explore-our-catalog-wrapper-item" style="width: 8377.6px;">
+                        <div class="explore-our-catalog-item">
+                            <div class="content">
+                                <div>
+                                    <div class="item-brand" ng-attr-style="background-image:url({{ product.bImg }})">
+                                        <a href="">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII="
+                                                 width="100%" alt="" class="transparentSquare">
+                                            <span class="brand-text">{{ product.shDes }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-our-product-control-xs right-xs-control">
+                <button ng-if="minCountProduct <= data.brands.length - 2" type="button" ng-click="nextProductXs()" class="btn-direction btn-next">{{ 'NEXT' | translate }}</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<cls-footer termsofuse="ds-tnc" class="row"></cls-footer>

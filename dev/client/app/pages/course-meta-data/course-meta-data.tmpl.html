@@ -1,0 +1,223 @@
+<cls-header></cls-header>
+
+<div class="course-container">
+    <div class="course">
+        <!-- course -->
+        <article class="course-container">
+            <div class="row gutter course-header">
+                <div class="col-xs-12">
+                    <div class="pull-left">
+                        <a class="line-back" href="" ng-click="back()">{{ 'BACK' | translate }}</a>
+                    </div>
+
+                    <div class="pull-right">
+                        <img ng-repeat="brand in course.brands" onerror="this.style.display='none'" class="brand-images" ng-src="{{ brand.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row gutter">
+                <div class="col-md-6 col-xs-12">
+                    <div class="rte">
+                        <h1 ng-if="course.cT">{{ course.cT | capitalize }}</h1>
+                        <p ng-if="course.des">{{ course.des | capitalize }}</p>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-xs-12">
+                    <div class="course-image">
+                        <img height="100%" width="100%" ng-src="{{ course.cThumb }}" alt="">
+                         <div class="fav-image">
+                            <img ng-src="{{ iconFav }}" ng-if="course.lnchbl && course.btnFav === true" ng-click="remFromFav(course.id, false)"/>
+                            <img ng-src="{{ iconAddFav }}" ng-if="course.lnchbl && course.btnFav === false" ng-click="addToFav(course.id, true)" />
+                        </div>
+                    </div>
+                    <div class="course-completion-status" ng-if="course.lnchbl">
+
+                        <!-- Docs: cmplSts = 'Not started' for Not started courses -->
+                        <div ng-if="course.cmplSts == 'Not started'">
+                            {{ 'NOT_STARTED' | translate }}
+                        </div>
+
+                        <!-- Docs: cmplSts = 'Incomplete' for In progress courses -->
+                        <div ng-if="course.cmplSts == 'Incomplete'">
+                            {{ 'IN_PROGRESS' | translate }} {{ course.perComp }}%
+                            <div class="progress-bar-under"></div>
+                            <div class="progress-bar" data-value="{{ course.crsCompInt  | number: 0 }}"
+                                ng-attr-style="width: {{ course.crsCompInt | number: 0 }}%;"></div>
+                        </div>
+
+                        <!-- Docs: cmplSts = 'Completed' for Completed courses -->
+                        <div ng-if="course.cmplSts == 'Completed'">
+                            {{ 'COMPLETED' | translate }}
+                        </div>
+
+                        <!-- Docs: cmplSts = 'Passed' for Passed courses -->
+                        <div ng-if="course.cmplSts == 'Passed'">
+                            {{ 'PASSED' | translate }} {{ 'WITH' | translate }} ({{ course.perComp }}%)
+                        </div>
+
+                        <!-- Docs: cmplSts = 'Failed' for Failed courses -->
+                        <div ng-if="course.cmplSts == 'Failed'">
+                            {{ 'FAILED' | translate }} ({{ course.perComp }}%)
+                        </div>
+                    </div>
+<!--
+                    <div class="col-md-12">
+                         <div ng-if="course.lnchbl" class="course-play col-md-2"><button type="button" ng-click="play(course.id, 0, course.lang);">{{ 'PLAY' | translate}}</button></div>
+                    </div>
+-->
+                </div>
+            </div>
+            <div class="row gutter layout-1">
+                <div class="rte">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="meta-data-objectives" ng-if="course.obj[0]">
+                            <h2 class="tl2">{{ 'OBJECTIVES' | translate }}:</h2>
+                            <p>{{ 'OBJECTIVES_TAG_LINE' | translate }}:</p>
+                            <ul class="objective-course-meta-data">
+                                <li ng-repeat="ob in course.obj">{{ ob | capitalize }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 left-top-border-courses">
+                        <h2 class="tl2">{{ 'DETAILS' | translate }}:</h2>
+                        <ul>
+                            <li class="custom-li" ng-if="course.cVer">
+                                <h3>{{ 'VERSION' | translate }} :</h3>
+                                <span ng-repeat="version in course.cVer">{{ version | uppercase }}<span ng-if="!$last">, </span></span>
+                            </li>
+    
+                            <li class="custom-li" ng-if="course.pre">
+                                <h3>{{ 'PREREQUISITES' | translate }} :</h3>
+                                <p>{{ course.pre | capitalize }}</p>
+                            </li>
+                            <li class="custom-li" ng-if="course.lvl">
+                                <h3>{{ 'LEVEL' | translate }} :</h3>
+                                {{ course.lvl | capitalize }}
+                            </li>
+                            <li class="custom-li">
+                                <h3>{{ 'LANGUAGES' | translate }} :</h3>
+                                <div ng-if="course.langs[1]" ng-class="{open: openDropdown}" class="select-link">
+                                    <button ng-click="languageDropdownOpen()" type="button">{{ selectedLanguage.nm }}</button>
+                                    <ul>
+                                        <li ng-repeat="lang in course.langs" ng-if="lang != selectedLanguage">
+                                            <a href="" ng-click="languageChange(lang)">{{ lang.nm }}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div ng-if="!course.langs[1]" class="select-link-single">
+                                    <button ng-click="languageDropdownOpen()" type="button">{{ selectedLanguage.nm }}</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Lessons -->
+<!--
+            <div>
+                <div class="col">Details - 16 XXX</div>
+                <div class="col">
+                    <button class="btn-expand"></button>
+                </div>
+            </div>
+-->
+            <div ng-if="course.lcoArr[0]" class="table-details">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>{{ 'ESTIMATED_DURATION' | translate }}</th>
+                            <th ng-hide="courseDetails.isPublicSearch == true">{{ 'COMPLETION' | translate }}</th>
+                            <th ng-hide="courseDetails.isPublicSearch == true">
+                                <div ng-if="course.cType.id == 1">
+                                    {{ 'STATUS' | translate }}
+                                </div>
+                                <div ng-if="course.cType.id == 2">
+                                    {{ 'SCORE' | translate }}
+                                </div>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="lesson in course.lcoArr">
+                            <td><span class="icon-incomplete"></span> {{ lesson.tit | capitalize }}</td>
+                            <td>{{ lesson.eDurV }} {{ lesson.eDurU }}</td>
+                            <td ng-hide="courseDetails.isPublicSearch == true">
+
+                                <!-- Docs: cType.id = 1 for Regular courses and Pack courses -->
+                                <div ng-if="course.cType.id == 1">
+
+                                    <!-- Docs: lesson.cmplMode = 1 for course screen -->
+                                    <div ng-if="lesson.cmplMode == 1">
+                                        <div ng-if="lesson.sts == 'incomplete'">
+                                            {{ lesson.perComp }}%
+                                            <div class="progress-bar-under"></div>
+                                            <div class="progress-bar" data-value="{{ lesson.compNum  | number: 0 }}"
+                                                ng-attr-style="width: {{ lesson.compNum | number: 0 }}%;"></div>
+                                        </div>
+                                        <div ng-if="lesson.sts == 'Not started'">
+                                            {{ 'NOT_APPLICABLE' | translate }}
+                                        </div>
+                                        <div ng-if="lesson.sts == 'Completed'">
+                                            {{ lesson.perComp }}%
+                                            <div class="progress-bar-under"></div>
+                                            <div class="progress-bar" data-value="{{ lesson.compNum  | number: 0 }}"
+                                                ng-attr-style="width: {{ lesson.compNum | number: 0 }}%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Docs: lesson.cmplMode = 2 for Assessment -->
+                                    <div ng-if="lesson.cmplMode == 2">
+                                        {{ 'NOT_APPLICABLE' | translate }}
+                                    </div>
+                                </div>
+
+                                <!-- Docs: cType.id = 2 for type Assessment -->
+                                <div ng-if="course.cType.id == 2">
+                                     {{ 'NOT_APPLICABLE' | translate }}
+                                </div>
+
+                            </td>
+                            <td ng-hide="courseDetails.isPublicSearch == true">
+
+                                <!-- Docs: cType.id = 1 for Regular courses or Pack Course -->
+                                <div ng-if="course.cType.id == 1">
+                                    {{ lesson.sts | capitalize }}
+                                </div>
+
+                                <!-- Docs: cType.id = 2 for Assessment -->
+                                <div ng-if="course.cType.id == 2">
+
+                                    <!-- Docs: lesson.sts = 'Failed' for Failed assessment -->
+                                    <div ng-if="lesson.sts == 'Failed' || lesson.score <= 60">
+                                        {{ 'FAILED' | translate }} ({{ lesson.score | number: 0 }}%)
+                                    </div>
+
+                                    <!-- Docs: lesson.sts = 'Passed' for Passed assessment -->
+                                    <div ng-if="lesson.sts == 'Passed' || lesson.score > 60">
+                                        {{ 'PASSED' | translate }} {{ 'WITH' | translate }} {{ lesson.score | number: 0 }}%
+                                    </div>
+                                </div>
+                            </td>
+                            <td ng-attr-title="{{ course.lnchMsg }}"><button type="button" ng-if="courseDetails.isPublicSearch != true" ng-disabled="course.lnchbl != true" class="btn-shout medium light" ng-click="play(course.id, lesson.lcoId, course.lang);">Play</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </div>
+</div>
+
+<!-- TODO: Do not remove below comment for now. 
+
+<toaster-message type="info" show-close-button="true">
+    Display this content...
+</toaster-message>
+<toaster-message type="globalWarning" show-close-button="true">
+    This site will not be functional after 1 year.. There will be something new for you.. Wait and keep following us till then..
+</toaster-message>
+<toaster-message show-timer="true" auto-close="true" auto-close-timer="6000" type="warning" show-close-button="true">
+    Display this content...
+</toaster-message>
+-->

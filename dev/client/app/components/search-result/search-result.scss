@@ -1,0 +1,139 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+search-result {
+    @include zone-title-styles();
+    display: block;
+    margin-top: 55px;
+
+    .search-filter {
+        margin-bottom: 40px;
+
+        .icon-filter {
+            &::before {
+                @include show-symbol('a', $control-text, $big-icon-size);
+            }
+        }
+    }
+
+    .advanced-search {
+        .item {
+            display: inline-block;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            width: 190px;
+        }
+    }
+
+    .navigation {
+        @include font-size-in-px($header-font-size);
+        color: $primary-bar-gradient-color-1;
+        display: flex;
+        height: 45px;
+        line-height: 45px;
+        opacity: 1;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+
+        .nav-item {
+            @include font-size-in-px($header-font-size);
+            cursor: pointer;
+            display: inline-flex;
+            font-weight: $normal-font-weight;
+            height: 45px;
+            margin-left: 48px;
+            padding-top: 0;
+
+            &.selected,
+            &:hover {
+                border-bottom: 4px solid $primary-bar-gradient-color-1;
+                font-weight: $heavy-font-weight;
+            }
+        }
+    }
+
+    .filters-label {
+        display: inline-block;
+        font-size: 17px;
+        margin-right: 10px;
+        min-width: 120px;
+    }
+
+    .filter {
+        background-color: $primary-theme-color-2;
+        color: $primary-theme-text-on-color-2;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1em;
+        margin-right: 10px;
+        padding: 5px 10px;
+
+        .remove-filter {
+            cursor: pointer;
+            display: inline-block;
+            height: 14px;
+            margin-left: 7px;
+            width: 14px;
+
+            &::before {
+                @include show-symbol('d', $primary-theme-text-on-color-2, $extra-small-icon-size);
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .blue-bg {
+        > div {
+            top: -90px;
+        }
+    }
+
+    .popup {
+        position: relative;
+        top: -80px;
+    }
+
+    .div-right {
+        float: right;
+    }
+
+
+    // scss-lint:disable SelectorFormat
+    .filter-select {
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-right: 15px;
+
+        button {
+            background: $control-background none;
+            border-radius: 0;
+            color: $primary-theme-color-2;
+            height: 50px;
+            width: 190px;
+        }
+
+        .helperButton {
+            width: initial;
+
+            &.reset {
+                display: none;
+            }
+        }
+
+        .checkboxLayer {
+            @include gradiant-background(45deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+            color: $primary-theme-text-on-color-1;
+        }
+
+        .checkBoxContainer {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .multiSelectItem {
+            color: $primary-theme-text-on-color-1;
+        }
+    }
+    // scss-lint:enable SelectorFormat
+}

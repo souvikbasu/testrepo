@@ -1,0 +1,100 @@
+<!-- <div class="dd-dropdown-container" callback-fn="$ctrl.toggleSelect(param)" drop-down> -->
+<div ng-show="!$ctrl.showForgotPassword" search-fn="$ctrl.loginToCLS()" on-enter-down>
+    <div class="dd-popup-login">
+        <!-- <span class="icon icon-close icon-style" ng-click="$ctrl.isPopupVisible = false"></span> -->
+        <div class="dd-form-layout">
+            <div class="login-user">
+                <img ng-src="{{ $ctrl.userImage }}" alt="">
+            </div>
+            <table>
+                <tr>
+                    <td class="hidden-xs">
+                        <div class="dd-input-label">{{ 'USERNAME' | translate}}</div>
+                    </td>
+                    <td><input type="text" class="dd-input-box" name="userName" ng-model="$ctrl.username" autofocus
+                        placeholder="{{ 'USERNAME' | translate}}" /></td>
+                </tr>
+                <tr>
+                    <td class="hidden-xs">
+                        <div class="dd-input-label">{{ 'PASSWORD' | translate}}</div>
+                    </td>
+                    <td><input type="password" class="dd-input-box" name="userPassword"
+                        ng-model="$ctrl.userpassword" placeholder="{{ 'PASSWORD' | translate}}" /></td>
+                </tr>
+                <tr>
+                    <td class="hidden-xs"></td>
+                    <td>
+                        <button class="btn-shout inverse-color solid-fill medium dd-btn-style"
+                            ng-click="$ctrl.loginToCLS();">{{ 'LOGIN' | translate}}</button>
+                    </td>
+                </tr>
+                <tr class="tr-style">
+                    <td class="hidden-xs"></td>
+                    <td><a ng-click="$ctrl.toggleLoginPanel()" class="dd-link-style">{{ 'FORGOTPASSWORD' |
+                            translate}}</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="dd-error-layout" ng-show="!$ctrl.showErrorLogin">
+                            <span class="dd-error-text">{{$ctrl.errorText | translate}}</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div ng-show="$ctrl.showForgotPassword" search-fn="" on-enter-down>
+    <div class="back-style"><a ng-click="$ctrl.toggleLoginPanel()" class="dd-link-style">{{ 'BACK' | translate}}</a></div>
+    <div class="forgot-password-layout">
+        <div class="label-header">{{ 'FORGOT_PASS_LOGIN' | translate }}</div>
+        
+        <div class="radio-container">
+        <input type="radio" value="forgot_password" class="radio-input"
+             ng-change="$ctrl.errorText1 = ''"
+             ng-model="$ctrl.forgotOptions"> <span
+            class="radio-label-text">{{'FORGOT_PASS' | translate}}</span> <br /> 
+            
+        <input type="radio" value="forgot_login" class="radio-input" 
+            ng-change="$ctrl.errorText1 = ''"
+            ng-model="$ctrl.forgotOptions"> 
+            <span class="radio-label-text">{{'FORGOT_LOGIN' | translate}}</span> <br />
+        </div>
+
+        <div class="radio-panel" id="loingIdPanel">
+            <div class="radio-panel-body" id="loingIdPanel_body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span ng-show="$ctrl.forgotOptions ==='forgot_password'" class="radio-label-text">{{ 'FORGOT_PASS_TEXT' | translate}}</span></td>
+                                    <span ng-show="$ctrl.forgotOptions ==='forgot_login'" class="radio-label-text">{{'FORGOT_LOGIN_TEXT' | translate}}</span></td>
+                        </tr>
+                        <tr>
+                            <td width="80px;" class="radio-label-text" valign="top">
+                                <span ng-show="$ctrl.forgotOptions ==='forgot_password'">{{ 'LOGIN_ID' | translate}}</span>
+                                <span ng-show="$ctrl.forgotOptions ==='forgot_login'">{{ 'EMAIL_ID' | translate }}</span>
+                            </td>
+                            <td><input id="loginId" type="text" ng-model="$ctrl.inputText" class="input-box" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="dd-error-layout" ng-show="!$ctrl.showError">
+                                    <span class="dd-error-text">{{$ctrl.errorText1 | translate}}</span>
+                                </div>
+                                <div class="dd-error-layout" ng-show="$ctrl.showError">
+                                    <span class="dd-error-text">{{$ctrl.successMsg | translate}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-box">
+            <span class="link-style" ng-click="actionCancel()">{{ 'REJECT' | translate}}</span>
+            <button ng-click="$ctrl.actionForgot()" class="btn-shout inverse-color solid-fill small bright-on-hover ng-binding">{{ 'SUBMIT' || translate}}</button>
+        </div>
+    </div>
+
+</div>
+<!-- </div> -->

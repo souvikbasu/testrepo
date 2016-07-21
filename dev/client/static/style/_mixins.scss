@@ -1,0 +1,119 @@
+@import 'theme';
+
+// scss-lint:disable DuplicateProperty
+@mixin font-size-in-px($size) {
+    font-size: $size; //Fallback in px
+    font-size: #{$size / 16px}rem;
+}
+
+// scss-lint:enable DuplicateProperty
+
+// scss-lint:disable DuplicateProperty, VendorPrefix
+@mixin gradiant-background($angle, $first-stop-perc, $first-stop-color, $second-stop-perc, $second-stop-color, $from-position, $to-position) {
+    background: $first-stop-color; // Old browsers
+    background: linear-gradient($angle, $first-stop-color $first-stop-perc, $second-stop-color $second-stop-perc); // W3C
+    background: -moz-linear-gradient($angle, $first-stop-color $first-stop-perc, $second-stop-color $second-stop-perc); // FF3.6+
+    background: -webkit-gradient(linear, $from-position, $to-position, color-stop($first-stop-perc, $first-stop-color), color-stop($second-stop-perc, $second-stop-color)); // Chrome,Safari4+
+    background: -webkit-linear-gradient($angle, $first-stop-color $first-stop-perc, $second-stop-color $second-stop-perc); // Chrome10+,Safari5.1+
+    background: -o-linear-gradient($angle, $first-stop-color $first-stop-perc, $second-stop-color $second-stop-perc); // Opera 11.10+
+    background: -ms-linear-gradient($angle, $first-stop-color $first-stop-perc, $second-stop-color $second-stop-perc); // IE10+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@left', endColorstr='@right', GradientType=1);
+}
+
+// scss-lint:enable DuplicateProperty, VendorPrefix
+
+@mixin zone-title-styles() {
+    .zone-content {
+        margin: 0 40px;
+    }
+
+    .blue-bg {
+        @include gradiant-background(45deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+        height: 100%;
+        left: 0;
+        margin: 115px 0 0;
+        padding: 0 40px;
+        position: relative;
+        width: 100%;
+
+        > div {
+            position: relative;
+            top: -180px;
+        }
+    }
+
+    .title {
+        margin: 30px auto;
+        width: 100%;
+
+        .section-heading {
+            @include font-size-in-px($section-title-font-size);
+            font-weight: $normal-font-weight;
+            line-height: 1em;
+            margin: 0 auto 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .info {
+            @include font-size-in-px($section-info-font-size);
+            color: $secondary-text-color;
+            font-weight: $light-font-weight;
+            height: 27px;
+            margin: 0 auto 6px;
+            padding-top: 6px;
+            text-align: center;
+        }
+
+        .item-counter {
+            @include font-size-in-px($section-counter-font-size);
+            color: $section-counter-color;
+            font-weight: $normal-font-weight;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .card-container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        text-align-last: justify;
+    }
+}
+
+// scss-lint:disable VendorPrefix
+@mixin shadow($top, $left, $blur, $spread, $color) {
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    -moz-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#555, Direction=NaN, Strength=10);
+}
+
+// scss-lint:enable VendorPrefix
+
+@mixin show-symbol($content, $color, $font-size) {
+    @include font-size-in-px($font-size);
+    color: $color;
+    content: $content;
+    font-family: $icon-fonts;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1em;
+    text-transform: none;
+}
+
+// scss-lint:disable VendorPrefix
+@mixin transition($property, $duration, $timing-function, $delay) {
+    -webkit-transition: $property $duration $timing-function $delay;
+    -moz-transition: $property $duration $timing-function $delay;
+    -ms-transition: $property $duration $timing-function $delay;
+    -o-transition: $property $duration $timing-function $delay;
+    transition: $property $duration $timing-function $delay;
+    transition-delay: $delay;
+}
+
+// scss-lint:enable VendorPrefix

@@ -1,0 +1,36 @@
+<div class="program-card-wrapper" ng-class="{detailed: $ctrl.details}" ng-style="{height: $ctrl.summaryHeight}">
+    <div class="pri-search-main program-card-summary">
+        <div ng-click="$ctrl.screenPlay($ctrl.lessons[0])" class="result-image">
+            <img height="100%" width="100%" ng-src="{{ $ctrl.lessons[0].thumbUrl}}" default-image def-img="{{$ctrl.defImage}}"/>
+        </div>
+        <div class="content">
+            <div ng-attr-title="{{ $ctrl.lessons[0].sT }}" class="course-title">{{ $ctrl.lessons[0].sT | limitTo:45 }}{{ $ctrl.lessons[0].sT.length > 45 ? '...' : '' }}</div>
+            <div ng-attr-title="{{ $ctrl.lessons[0].desc }}" class="expires">{{ $ctrl.lessons[0].desc | limitTo: 50 }}{{ $ctrl.lessons[0].desc.length > 50 ? '...' : '' }}</div>
+            <div>{{'TITLE' | translate }}: <span ng-click="$ctrl.courseDetails()" ng-attr-title="{{ $ctrl.title }}" class="expires course-redirect">{{ $ctrl.title | html }}</span></div>
+            <div class="version">{{'VERSION' | translate }}: <span ng-attr-title="{{ $ctrl.version }}" class="expires">{{ $ctrl.version | html }}</span></div>
+        </div>
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="col-xs-12">
+                    <div class="details" ng-if="$ctrl.lessons[1]" ng-class="{active: $ctrl.details}" ng-click="$ctrl.enableMoreResults()">{{'SEE_MORE_RESULTS' | translate }}</div>
+                    <div class="action"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="program-card-details" ng-if="$ctrl.details == 1" ng-class="{detailed: $ctrl.details}" ng-attr-style="width: {{ $ctrl.detailsWidth }}px; left: {{ $ctrl.leftMargin }}px; height: {{ $ctrl.programCardDetailsHeight }}px;">
+        <div ng-repeat="screen in $ctrl.lessons"
+             ng-if="$index != 0"
+             class="col-xs-4 half-cell">
+            <div ng-click="$ctrl.screenPlay(screen)">
+                <div class="col-xs-4">
+                    <div class="screen-image"><img class="screen-image-dimensions" onerror="this.style.display='none'" ng-src="{{ screen.thumbUrl}}" default-image def-img="{{$ctrl.defImage}}"/></div>
+                </div>
+                <div class="col-xs-8">
+                    <div ng-attr-title="{{ screen.sT }}" class="screen-heading">{{ screen.sT }}</div>
+                    <div ng-attr-title="{{ screen.desc }}"><span class="screen-level-desc">{{ screen.desc | limitTo: 100 }}{{ screen.desc > 100 ? '...' : '' }}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

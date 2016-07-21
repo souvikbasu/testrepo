@@ -1,0 +1,35 @@
+<!--
+<div class="row header">
+    <img src="/static/images/logo.png">
+</div>
+-->
+
+<cls-header></cls-header>
+
+<!--
+<div class="row search-area">
+    <div class="col-md-4"></div>
+    <search-box class="col-md-4" searchtext="{{ searchText }}" placeholder="Search in Boeing Catalog" theme="dark"
+    ></search-box>
+    <div class="col-md-4"></div>
+</div>
+-->
+<div ng-if="privateSearch == true" class="row search-back">
+    <a class="line-back" href="" ng-click="privateRedirectBack()">{{ 'BACK' | translate}}</a>
+</div>
+<div ng-if="privateSearch != true" class="row search-back search-back-public">
+    <a class="line-back" href="" ng-click="redirectBack()">{{ 'BACK' | translate}}</a>
+</div>
+<div class="row search-area">
+    <search-result show-title="true"
+                   search-text="{{ searchText }}"
+                   show-filter="true"
+                   show-blue-bg="false"
+                   rows="4"
+                   shall-infinite-scroll="true"
+                   filter-type="dynamic"
+                   infinite-scroll-fetch="-1"
+                   is-private-search="{{ privateSearch }}"
+                   course-fetch-service-call="courseFetchServiceCall(startIndex, numOfCoursesToFetch)"
+                   from-library="false"></search-result>
+</div>

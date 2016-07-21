@@ -1,0 +1,36 @@
+{
+  "myAcc": {
+    "fn": "Divyeshkumar",
+    "ln": "CHAUHAN",
+    "email": "Divyeshkumar_CHAUHAN@3dplmsoftware.com",
+    "phone": "+91 20 6793 7703",
+    "company": "3D PLM Software",
+    "addr": "3dplm Software Solutions Ltd. Plot No.15\/B, Pune Infotech Park M.I.D.C, Hinjewdi",
+    "city": "Pune",
+    "country": "India",
+    "login": "dcn6",
+    "userType": "ds_passport",
+    "roles": [
+      {
+        "rType": "Student",
+        "rNm": "Student - Dassault Systemes Group",
+        "domain": "Dassault Systemes Group"
+      },
+      {
+        "rType": "Admin",
+        "rNm": "Admin",
+        "domain": "Root"
+      },
+      {
+        "rType": "Student",
+        "rNm": "Student on Root",
+        "domain": "Root"
+      },
+      {
+        "rType": "Teacher",
+        "rNm": "Teacher",
+        "domain": "Dassault Systemes Group"
+      }
+    ]
+  }
+}

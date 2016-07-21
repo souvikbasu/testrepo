@@ -1,0 +1,261 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+// Developer: Fix it! Not working right now.
+@media(max-width:500px){
+    .left-top-border {
+        border: hidden;
+    }
+}
+
+// TODO: This seletor has to be added in global theme css.
+[class^="icon-"],
+[class*=" icon-"] {
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.course-container {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 225px;
+    max-width: 960px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .rem-fav {
+        width: 280px;
+    }
+
+    .meta-data-objectives {
+        li {
+            padding-left: 10px;
+            text-indent: -5px;
+        }
+    }
+
+    .course-header {
+        height: 60px;
+
+        .line-back {
+            color: $primary-theme-color-2;
+            font-size: 12px;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: .3px;
+            margin: 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: baseline;
+
+            &:hover {
+                color: $secondary-text-color;
+                text-decoration: none;
+            }
+        }
+
+        .brand-images {
+            padding: 5px;
+        }
+    }
+
+    .gutter {
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-top: 24px;
+    }
+
+    .select-link {
+        button {
+            background: none;
+            border: 0;
+            cursor: pointer;
+            padding: 0;
+            text-transform: none;
+
+            &::after {
+                @include show-symbol('b', $control-text, $extra-small-icon-size);
+                color: $primary-theme-color-2;
+                padding-left: 5px;
+                vertical-align: middle;
+            }
+        }
+
+        ul {
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    .select-link-single {
+        button {
+            background: none;
+            border: 0;
+            cursor: pointer;
+            margin-left: -6px;
+            padding: 0;
+            text-transform: none;
+        }
+    }
+
+    .open {
+        ul {
+            height: auto;
+            overflow: hidden;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+        a {
+            color: $secondary-text-color;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-theme-color-2;
+            }
+        }
+    }
+
+    // TODO: Table styling has to be added in global theme
+    .table-details {
+        @include gradiant-background(90deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+        margin-bottom: 70px;
+        padding: 20px 40px;
+
+        table {
+            color: $control-background;
+            height: 62px;
+            width: 100%;
+        }
+
+        tr {
+            height: 62px;
+
+            td {
+                text-align: center;
+            }
+
+            td:nth-child(1) {
+                text-align: left;
+                width: 200px;
+            }
+        }
+
+        td {
+            vertical-align: middle;
+        }
+
+        th {
+            border-bottom: 0;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: top;
+        }
+    }
+
+    .layout-1 {
+        margin-bottom: 60px;
+    }
+
+    .course {
+        @include font-size-in-px($normal-font-size);
+        margin-top: 180px;
+
+        .rte {
+            p {
+                color: $secondary-text-color;
+                line-height: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 1.2em;
+                margin-bottom: 50px;
+                text-transform: uppercase;
+            }
+
+            .tl2 {
+                color: $control-text;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 1em;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: $control-text;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1em;
+                margin-bottom: 20px;
+            }
+
+            li {
+                color: $secondary-text-color;
+            }
+
+            .custom-li {
+                margin-bottom: 15px;
+            }
+        }
+
+        .course-image {
+            background-image: url('../../static/images/default-image-metadata-blank.png');
+            height: 280px;
+            margin-bottom: 20px;
+            margin-left: 35px;
+            position: relative;
+            width: 420px;
+        }
+
+        .fav-image {
+            margin-left: 385px;
+            position: absolute;
+            top: 5px;
+        }
+
+        .course-completion-status {
+            margin-bottom: 20px;
+            margin-left: 35px;
+            width: 420px;
+        }
+
+        .course-play {
+            margin-left: 35px;
+        }
+
+        .left-top-border-courses {
+            border-left: 1px solid $disabled-color;
+            padding-left: 55px;
+        }
+
+        // TODO: This has to be added in Global CSS.
+        .objective-course-meta-data {
+            li {
+                line-height: 1.2em;
+                margin-top: 5px;
+            }
+
+            li::before {
+                content: '-';
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+    }
+}

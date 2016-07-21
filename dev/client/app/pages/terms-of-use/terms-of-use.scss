@@ -1,0 +1,97 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+.custom-page-main {
+    @include zone-title-styles();
+    text-align: center;
+
+    .info-line-height {
+        line-height: 22px;
+    }
+
+    .link-style {
+        color: $secondary-text-color;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .custom-page-cell {
+        vertical-align: middle;
+    }
+
+    .header-0 {
+        background-color: $control-background;
+        height: 125px;
+        left: 0;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        position: fixed;
+        top: 155px;
+        z-index: 100;
+    }
+
+    .div-btn-style {
+        float: right;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .btn-style {
+        margin-left: 15px;
+    }
+
+    hr {
+        border-top: 2px solid $card-border-color;
+        margin: 0;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+    p {
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+
+    .list-style {
+        line-height: 18px;
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: justify;
+    }
+
+    ol {
+        counter-reset: list;
+        line-height: 18px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        li {
+            list-style: none;
+            position: relative;
+
+            &::before {
+                content: '('counter(list, lower-alpha) ')  ';
+                counter-increment: list;
+                left: -1.4em;
+                position: absolute;
+            }
+        }
+    }
+
+    table {
+        line-height: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        text-align: justify;
+        top: 300px;
+    }
+}
+
+.footer-position {
+    position: relative;
+    text-align: justify;
+    top: 340px;
+}

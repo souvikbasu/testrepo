@@ -1,0 +1,15 @@
+<input class="search-text" ng-class="{dark: $ctrl.isDarkTheme()}" type="search" ng-model="$ctrl.searchtext"
+       ng-change="$ctrl.onSearchTextChange();"
+       autofocus
+       placeholder="{{ $ctrl.placeholder | html }}" search-fn="$ctrl.search()" on-enter-down >
+<button class="search-button" ng-click="$ctrl.search()"></button>
+<ul ng-if="$ctrl.isUserAuthenticated == 'true'" class="search-result search-box-layout" ng-show="$ctrl.isVisible" callback-fn="$ctrl.toggleDropDown(param)" drop-down>
+    <li ng-repeat="result in $ctrl.searchResult track by $index">
+        <a ng-click="$ctrl.courseDetails(result)" href="">{{ result.lObjTit | html }}</a>
+    </li>
+</ul>
+<ul ng-if="$ctrl.isUserAuthenticated != 'true'" class="search-result search-box-layout" ng-show="$ctrl.isVisible" callback-fn="$ctrl.toggleDropDown(param)" drop-down>
+    <li ng-repeat="result in $ctrl.searchResult track by result.lObjId">
+        <a ng-click="$ctrl.courseDetails(result)" href="">{{ result.lObjTit | html }}</a>
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+<div class="background" ng-show="$ctrl.show">
+    <div class="panel" style="height: {{ $ctrl.panelHeight }}; width: {{ $ctrl.panelWidth }};">
+        <div class="header" >
+            <div class="icon icon-close-dialog" ng-click="$ctrl.hide();"></div>
+            <div class="title">{{ $ctrl.title }}</div>
+        </div>
+        <div class="transclude" ng-transclude style="height: {{ $ctrl.transcludeHeight }}px;"></div>
+        <button ng-if="$ctrl.showCloseButtonAtBottom" class="close-button" ng-click="$ctrl.hide();">{{ $ctrl.closeButtonCaption }}</button>
+    </div>
+</div>

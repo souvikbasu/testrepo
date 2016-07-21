@@ -1,0 +1,62 @@
+{
+  "id": 3457,
+  "brands": [
+    {
+      "nm": "CATIA",
+      "url": "static\/images\/brand\/3ds-catia.jpg"
+    }
+  ],
+  "cThumb": "",
+  "perComp": 0.0,
+  "lnchbl": false,
+  "lnchMsg": "",
+  "cVer": [
+    "V5-6R2014"
+  ],
+  "lang": "en",
+  "cT": "CATIA Generative Sheetmetal Design",
+  "des": "This course will teach you how to design a sheetmetal part using associative feature-based modeling. You will learn how to integrate both standard and user-defined stamped features into your designs and calculate the resulting flat patterns in accordance with either the standard bend allowances or your company's bend allowance tables.",
+  "aud": "Sheetmetal Designers",
+  "pre": "Students attending this course should be familiar with CATIA V5 Fundamentals",
+  "obj": "Understand the terminology and the design process for creating a sheetmetal part\nDefine and manage the sheetmetal part parameters\nDesign walls, bends, and flanges\nAdd features such as cutouts, holes, corners, and chamfers\nCreate standard and user-defined stamped features\nManage folded and unfolded views and export a finished flat pattern",
+  "cc": "CAT-de-SMD-F-V5R24",
+  "kw": "Bend, Body, Constant, Cut, Cutout, Design, Duplicate, Duplication, DXF, File, Flange, Mapping, Multi, Output, Part, Sheet, Sheetmetal, Stamp, Standard, Thickness, Wall",
+  "cType": {
+    "id": 1,
+    "nm": "Course"
+  },
+  "langs": [
+    {
+      "id": "fr",
+      "nm": "French"
+    },
+    {
+      "id": "en",
+      "nm": "English"
+    },
+    {
+      "id": "ja",
+      "nm": "Japanese"
+    },
+    {
+      "id": "de",
+      "nm": "German"
+    }
+  ],
+  "durV": 8.0,
+  "durU": "Hour",
+  "btnFav": true,
+  "lvl": "Fundamental",
+  "lcoArr": [
+    {
+      "lcoId": 2797,
+      "tit": "CATIA Generative Sheetmetal Design",
+      "eDurV": 8.0,
+      "eDurU": "Hours",
+      "perComp": 0.0,
+      "score": -1,
+      "cmplMode": 1,
+      "sts": "Not started"
+    }
+  ]
+}

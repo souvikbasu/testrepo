@@ -1,0 +1,184 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+login-box {
+    z-index: 9999;
+
+    .icon-style {
+        color: $label-header-text;
+        font-size: 16px;
+    }
+
+    .dd-popup-login {
+        background: $control-background;
+        border: 1px solid $control-background;
+        height: 400px;
+        padding: 7px;
+        text-align: center;
+    }
+
+    .panel-transition {
+        width: 250px;
+        z-index: 100;
+    }
+
+    .dd-arrow-up {
+        border-bottom: 9px solid $control-background;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        height: 0;
+        margin: auto 20px auto auto;
+        width: 0;
+    }
+
+    .dd-form-layout {
+        margin: 5px;
+        padding: 10px;
+
+        table {
+            margin-top: 35px;
+        }
+
+        .tr-style {
+            height: 30px;
+        }
+
+        tr {
+            height: 60px;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+
+        .login-user {
+            margin-bottom: 20px;
+        }
+
+        .dd-input-label {
+            @include font-size-in-px($header-font-size);
+            color: $label-header-text;
+            margin-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        .dd-input-box {
+            @include font-size-in-px($header-font-size);
+            border: 1px solid $card-border-color;
+            color: $primary-theme-color-1;
+            height: 40px;
+        }
+
+        .dd-error-text {
+            @include font-size-in-px($extra-small-icon-size);
+            color: $error-bg-color;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .dd-error-layout {
+            background: $error-background;
+            text-align: center;
+        }
+
+        .dd-btn-style {
+            @include font-size-in-px($header-font-size);
+            text-align: center;
+        }
+
+        .dd-text-align {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .dd-link-style {
+            @include font-size-in-px($title-9-font-size);
+            color: $primary-theme-color-2;
+        }
+    }
+
+    .dev-btn {
+        @include font-size-in-px($title-9-font-size);
+        color: transparent;
+    }
+
+    .back-style {
+        float: left;
+    }
+
+    .forgot-password-layout {
+        padding-top: 40px;
+        text-align: left;
+
+        .label-text {
+            @include font-size-in-px($section-info-font-size);
+            color: $label-header-text;
+            margin-right: 20px;
+            width: 100%;
+        }
+
+        .label-header {
+            @include font-size-in-px($section-info-font-size);
+            color: $label-header-text;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .radio-input {
+            margin: 5px;
+        }
+
+        .radio-label-text {
+            @include font-size-in-px($normal-font-size);
+            color: $label-header-text;
+            margin-right: 20px;
+        }
+
+        .radio-panel {
+            border-color: $card-border-color;
+            border-style: solid;
+            border-width: 1px;
+            padding: 15px;
+        }
+
+        .input-box {
+            @include font-size-in-px($header-font-size);
+            border: 1px solid $card-border-color;
+            color: $primary-theme-color-1;
+            height: 40px;
+            width: 300px;
+        }
+
+        .link-style {
+            color: $secondary-text-color;
+            font-size: 12px;
+            padding-right: 10px;
+            text-transform: uppercase;
+        }
+
+        .dd-error-layout {
+            background: $error-background;
+            text-align: center;
+        }
+
+        .radio-container {
+            margin: 20px 0;
+        }
+
+        table {
+            td {
+                vertical-align: middle;
+            }
+        }
+
+        .button-box {
+            float: right;
+            margin: 20px 0;
+            padding: 10px;
+        }
+    }
+}

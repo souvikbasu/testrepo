@@ -1,0 +1,179 @@
+// 3dsweb
+@font-face {
+    font-family: '3dsweb';
+    src: url('../../static/fonts/3ds/3ds_regular-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_regular-webfont.woff2') format('woff2'), url('../../static/fonts/3ds/3ds_regular-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_regular-webfont.ttf') format('truetype'), url('../../static/fonts/3ds/3ds_regular-webfont.svg#3dsregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// 3dssemi
+@font-face {
+    font-family: '3dssemi';
+    src: url('../../static/fonts/3ds/3ds_semibold-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_semibold-webfont.woff2') format('woff2'), url('../../static/fonts/3ds/3ds_semibold-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_semibold-webfont.ttf') format('truetype'), url('../../static/fonts/3ds/3ds_semibold-webfont.svg#3dssemibold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// 3dsweblight
+@font-face {
+    font-family: '3dsweblight';
+    src: url('../../static/fonts/3ds/3ds_light-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_light-webfont.woff2') format('woff2'), url('../../static/fonts/3ds/3ds_light-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_light-webfont.ttf') format('truetype'), url('../../static/fonts/3ds/3ds_light-webfont.svg#3dslight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// extralight
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_extralight-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_extralight-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_extralight-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_extralight-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+// extralight italic
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_extralight_italic-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_extralight_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_extralight_italic-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_extralight_italic-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+// light
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_light-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/3ds/3ds_light-webfont.woff') format('woff'),
+    url('../../static/fonts/3ds/3ds_light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// regular
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_regular-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_regular-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// italic
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_italic-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_italic-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_italic-webfontttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+// semibold italic
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_semibold_italic-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_semibold_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_semibold_italic-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_semibold_italic-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+// semibold
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_semibold-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_semibold-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// bold
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_bold-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_bold-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// bold italic
+@font-face {
+    font-family: '3ds';
+    src: url('../../static/fonts/3ds/3ds_bold_italic-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_bold_italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_bold_italic-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_bold_italic-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+// condensed light*/
+@font-face {
+    font-family: '3ds Condensed';
+    src: url('../../static/fonts/3ds/3ds_condensed_light-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_condensed_light-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_condensed_light-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_condensed_light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// condensed regular
+@font-face {
+    font-family: '3ds Condensed';
+    src: url('../../static/fonts/3ds/3ds_condensed_regular-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_condensed_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_condensed_regular-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_condensed_regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// condensed bold
+@font-face {
+    font-family: '3ds Condensed';
+    src: url('../../static/fonts/3ds/3ds_condensed_bold-webfont.eot');
+    src: url('../../static/fonts/3ds/3ds_condensed_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/3ds/3ds_condensed_bold-webfont.woff') format('woff'), url('../../static/fonts/3ds/3ds_condensed_bold-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// DS_FY light
+@font-face {
+    font-family: '3ds Condensed';
+    src: url('../../static/fonts/DS_FY_Light.eot');
+    src: url('../../static/fonts/DS_FY_Light.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/DS_FY_Light.woff') format('woff'), url('../../static/fonts/DS_FY_Light.ttf') format('truetype'),
+    url('../../static/fonts/DS_FY_Light.svg#ds_fy') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// DS_FY regular
+@font-face {
+    font-family: '3ds Condensed';
+    src: url('../../static/fonts/DS_FY_Regular.eot');
+    src: url('../../static/fonts/DS_FY_Regular.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/DS_FY_Regular.woff') format('woff'), url('../../static/fonts/DS_FY_Regular.ttf') format('truetype'), url('../../static/fonts/DS_FY_Regular.svg#ds_fy') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+//fontastic
+
+@font-face {
+    font-family: 'dassault-companion';
+    src: url('../../static/fonts/fontastic/fonts/dassault-companion.eot');
+    src: url('../../static/fonts/fontastic/fonts/dassault-companion.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/fontastic/fonts/dassault-companion.woff') format('woff'),
+    url('../../static/fonts/fontastic/fonts/dassault-companion.ttf') format('truetype'),
+    url('../../static/fonts/fontastic/fonts/dassault-companion.svg#dassault-companion') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

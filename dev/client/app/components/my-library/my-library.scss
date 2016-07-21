@@ -1,0 +1,26 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+my-library {
+    @include zone-title-styles();
+    display: block;
+    margin-top: 100px;
+
+    .pop-out {
+        position: relative;
+        top: -90px;
+    }
+
+    .scroll {
+        height: 500px;
+    }
+
+    .title {
+        background: transparent url(../images/picto-library.svg) no-repeat center center;
+    }
+
+    .popout {
+        @include gradiant-background(45deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+        margin-top: 110px;
+    }
+}

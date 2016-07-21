@@ -1,0 +1,147 @@
+{
+  "industries": [
+    {
+      "indId": 1,
+      "indT": "Aerospace & Defense",
+      "indD": "Reaching New Heights in Program Success"
+    },
+    {
+      "indId": 2,
+      "indT": "Automotive & Transportation",
+      "indD": "Driving Vehicle Innovation toward the Mobility of the Future"
+    },
+    {
+      "indId": 3,
+      "indT": "High-Tech",
+      "indD": "Deliver Innovative Market-leading Electronic Experiences"
+    },
+    {
+      "indId": 4,
+      "indT": "Industrial Equipment",
+      "indD": "Lead the 4th Industrial Revolution"
+    },
+    {
+      "indId": 5,
+      "indT": "Ship Building",
+      "indD": "Thriving in Competitive Seas"
+    },
+    {
+      "indId": 6,
+      "indT": "Life Sciences",
+      "indD": "Improving Patient Experience and Organizational Business Excellence"
+    },
+    {
+      "indId": 7,
+      "indT": "Services",
+      "indD": "Services details"
+    },
+    {
+      "indId": 8,
+      "indT": "Consumer Goods-Retail",
+      "indD": "Create Winning Consumer Experiences"
+    },
+    {
+      "indId": 9,
+      "indT": "Consumer Packaged Goods-Retail",
+      "indD": "Better, Faster, Smarter Innovation"
+    },
+    {
+      "indId": 10,
+      "indT": "Energy, Process & Utilities",
+      "indD": "3DEXPERIENCE for Affordable and Sustainable Development"
+    },
+    {
+      "indId": 11,
+      "indT": "Architecture, Engineering & Construction",
+      "indD": "Collaborative and Industrialized Construction"
+    },
+    {
+      "indId": 12,
+      "indT": "Marine & Offshore",
+      "indD": "Thriving in Competitive Seas"
+    },
+    {
+      "indId": 13,
+      "indT": "Academia",
+      "indD": "Academia details"
+    },
+    {
+      "indId": 14,
+      "indT": "Transportation & Mobility",
+      "indD": "Driving Vehicle Innovation toward the Mobility of the Future"
+    },
+    {
+      "indId": 15,
+      "indT": "Financial & Business Services",
+      "indD": "Financial Services Geared to our Future"
+    }
+  ],
+  "brands": [    
+    {
+      "bId": 2,
+      "bNm": "CATIA",
+      "shDes": "Shape the world we live in",
+      "bImg": "static/images/brand/3ds-catia.jpg"
+    },
+    {
+      "bId": 10,
+      "bNm": "SOLIDWORKS",
+      "shDes": "Inspiring Innovation",
+      "bImg": "static/images/brand/3ds-solidworks.jpg"
+    },
+     {
+      "bId": 16,
+      "bNm": "ENOVIA",
+      "shDes": "Collaborative Innovation",
+      "bImg": "static/images/brand/3ds-enovia.jpg"
+    },
+    {
+      "bId": 3,
+      "bNm": "DELMIA",
+      "shDes": "Global Industrial Operations",
+      "bImg": "static/images/brand/3ds-delmia.jpg"
+    },
+     {
+      "bId": 9,
+      "bNm": "SIMULIA",
+      "shDes": "Simulia For Prouct, Nature & Life",
+      "bImg": "static/images/brand/3ds-simulia.jpg"
+    },
+     {
+      "bId": 11,
+      "bNm": "GEOVIA",
+      "shDes": "Virtual Planet",
+      "bImg": "static/images/brand/3ds-geovia.jpg"
+    },
+      {
+      "bId": 20,
+      "bNm": "EXALEAD",
+      "shDes": "Data in Business",
+      "bImg": "static/images/brand/3ds-exalead.jpg"
+    },
+    {
+      "bId": 4,
+      "bNm": "3DVIA",
+      "shDes": "Consumer Experience",
+      "bImg": "static/images/brand/3ds-3dvia.jpg"
+    },
+    {
+      "bId": 22,
+      "bNm": "BIOVIA",
+      "shDes": "Virtual Biosphere and Materials",
+      "bImg": "static/images/brand/3ds-biovia.jpg"
+    },
+     {
+      "bId": 23,
+      "bNm": "NETVIBES",
+      "shDes": "Dashboard Intelligence",
+      "bImg": "static/images/brand/3ds-netvibes.jpg"
+    },
+    {
+      "bId": 24,
+      "bNm": "3DEXCITE",
+      "shDes": "Marketing in the Age of Experience",
+      "bImg": "static/images/brand/3ds-3dexcite.jpg"
+    } 
+  ]
+}

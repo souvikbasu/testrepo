@@ -1,0 +1,209 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+course-card {
+    @include shadow(0, 0, 6px, -2px, $shadow-color);
+    background-color: $control-background;
+    border: solid 1px $border-color;
+    display: inline-flex;
+    height: 408px;
+    margin: 7px;
+    text-align: left;
+    text-align-last: left;
+    width: 216px;
+
+    .course-card-wrapper {
+        width: 100%;
+    }
+
+    // entire container, keeps perspective
+    .flip-container {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    // flip speed goes here
+    .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .4s;
+    }
+
+    // hide back of pane during swap
+    .front,
+    .back {
+        backface-visibility: hidden;
+        left: 0;
+        transform-style: preserve-3d;
+        transition: .4s;
+        width: 100%;
+    }
+
+    //  UPDATED! front pane, placed above back
+    .front {
+        transform: rotateY(0deg);
+        z-index: 2;
+    }
+
+    // back, initially hidden pane
+    .back {
+        @include gradiant-background(0, 10%, $secondary-bar-gradient-color-1, 150%, $secondary-bar-gradient-color-2, 0, 1);
+        color: $control-background;
+        height: 406px;
+        position: absolute;
+        text-align: center;
+        text-align-last: center;
+        top: 0;
+        transform: rotateY(-180deg);
+
+        .back-content {
+            height: 350px;
+        }
+
+        .footer-cancel {
+            margin-top: 5px;
+        }
+    }
+
+    .card-box {
+        width: 100%;
+    }
+
+    .top {
+        height: 140px;
+    }
+
+    .course-card-main {
+        color: $light-text-color;
+        display: table-cell;
+        height: 260px;
+        padding: 25px 12px 0;
+        width: 100%;
+    }
+
+    .image {
+        background-image: url(../images/course-card-background.png);
+        border: 0;
+        border-bottom: solid 1px $border-color;
+        height: 147px;
+        position: relative;
+        width: 214px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .fav-image {
+        left: 180px;
+        position: relative;
+        top: -145px;
+    }
+
+    .course-title {
+        @include font-size-in-px($normal-font-size);
+        @include transition(color, .25s, ease, 0s);
+        color: $control-text;
+        font-weight: $heavy-font-weight;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .infos {
+        color: $light-text-color;
+        font-weight: $semi-light-font-weight;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .version,
+    .duration {
+        @include font-size-in-px($small-font-size);
+        color: $light-text-color;
+        font-weight: $semi-light-font-weight;
+        line-height: 1.2em;
+        margin-bottom: 7px;
+    }
+
+    .time-left {
+        color: $light-text-color;
+        position: relative;
+        text-align: left;
+        width: 100%;
+
+        span {
+            @include font-size-in-px($small-font-size);
+            color: $light-text-color;
+            display: block;
+            font-weight: $semi-light-font-weight;
+        }
+
+        .replace-bar-space {
+            padding-bottom: 12px;
+        }
+
+        .completed-item {
+            margin-left: 60px;
+            margin-top: -36px;
+        }
+    }
+
+    .footer,
+    .fav-footer {
+        bottom: 36px;
+        color: $control-text;
+        display: inherit;
+        height: 30px;
+        position: absolute;
+        width: 90%;
+
+        .footer-left {
+            @include font-size-in-px($normal-font-size);
+            @include transition(color, .25s, ease, 0s);
+            float: left;
+            height: 30px;
+            margin-top: 15px;
+
+            &:hover {
+                color: $hover-color;
+                cursor: pointer;
+            }
+        }
+
+        .footer-right {
+            @include font-size-in-px($normal-font-size);
+            @include transition(color, .25s, ease, 0s);
+            height: 30px;
+            margin-top: 15px;
+
+            .btn-play {
+                height: 30px;
+                margin-left: 130px;
+             }
+
+            .link-rlic {
+                height: 30px;
+                margin-left: 40px;
+            }
+
+            .pending {
+                height: 30px;
+                margin-left: 125px;
+            }
+
+            .footer-right-play {
+                margin-top: -7px;
+            }
+
+            .fav-footer-right-play {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

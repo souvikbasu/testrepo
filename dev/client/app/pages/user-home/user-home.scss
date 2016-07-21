@@ -1,0 +1,41 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+.product-logo {
+    @include font-size-in-px($normal-font-size);
+    margin-left: 20px;
+
+    .companion {
+        display: inline-block;
+        font-weight: $heavy-font-weight;
+        text-transform: uppercase;
+    }
+
+    .ls {
+        display: inline-block;
+    }
+}
+
+.user-zone {
+    margin-top: 140px;
+}
+
+.link-style {
+    cursor: pointer;
+}
+
+.label-style {
+    color: $primary-theme-color-2;
+    cursor: pointer;
+    font-weight: $heavy-font-weight;
+}
+
+.item {
+    list-style-type: none;
+    text-align: left;
+}
+
+.header-0 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}

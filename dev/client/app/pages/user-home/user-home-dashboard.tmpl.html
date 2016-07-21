@@ -1,0 +1,12 @@
+<div ng-repeat="zone in zones | orderBy:'order'">
+    <my-assignments ng-if="zone.name == 'assignments'" summary="1" rows="{{ zone.rows }}"
+                    title="{{ zone.title | html }}"
+                    desc="{{ zone.desc | html }}"></my-assignments>
+    <my-library ng-if="zone.name == 'library'" summary="1" rows="{{ zone.rows }}"
+                title="{{ zone.title | html }}" desc="{{ zone.desc | html }}"></my-library>
+    <my-training-catalog ng-if="zone.name == 'training-catalogs'" summary="1" rows="{{ zone.rows }}"
+                         title="{{ zone.title | html }}"
+                         desc="{{ zone.desc | html }}"></my-training-catalog>
+    <my-favorites ng-if="zone.name == 'favorites'" summary="1" rows="{{ zone.rows }}"
+                  title="{{ zone.title }}" desc="{{ zone.desc }}"></my-favorites>
+</div>

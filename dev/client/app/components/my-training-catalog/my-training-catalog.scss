@@ -1,0 +1,16 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+my-training-catalog {
+    @include zone-title-styles();
+    display: block;
+    margin-top: 100px;
+
+    program-card {
+        margin: 7px;
+    }
+
+    .title {
+        background: transparent url(../images/picto-catalog.svg) no-repeat center center;
+    }
+}

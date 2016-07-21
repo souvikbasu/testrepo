@@ -1,0 +1,279 @@
+<div class="zone-content">
+    <div class="search-filter" ng-if="$ctrl.showFilter">
+        <h1 class="tl8" ng-if="$ctrl.showTitle">Search results for 
+            <small>{{ $ctrl.searchText }}</small>
+            <small ng-if="!$ctrl.searchText"><span>{{ $ctrl.searchParameterFromHome
+                }}</span></small>
+            <small>({{$ctrl.totalCount}}
+                <small ng-if="$ctrl.selectedFilters[0]">/
+                    <span ng-if="$ctrl.totalCountBeforeFilter >= $ctrl.totalCount">
+                        {{ $ctrl.totalCountBeforeFilter }}
+                    </span>
+                    <span ng-if="$ctrl.totalCountBeforeFilter < $ctrl.totalCount">
+                        {{ $ctrl.totalCount }}
+                    </span>
+                </small>)
+            </small>
+        </h1>
+        <div class="visible-xs visible-sm">
+            <div class="icon icon-filter right" ng-click="$ctrl.toggleFilterModal();"></div>
+            <modal-dialog show="$ctrl.filterModalVisible" title="{{ 'FILTERS' | translate }}" show-close-button-at-bottom="true" close-button-caption="{{ 'APPLY' | translate }}">
+                <div class="advanced-search container">
+                    <fieldset class="row">
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.brands"
+                                    output-model="$ctrl.selectedBrands"
+                                    caption="{{'BRAND' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllBrands()"
+                                    on-select-none="$ctrl.selectNoneBrands()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.versions"
+                                    output-model="$ctrl.selectedVersions"
+                                    caption="{{'VERSION' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllVersions()"
+                                    on-select-none="$ctrl.selectNoneVersions()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.industries"
+                                    output-model="$ctrl.selectedIndustries"
+                                    caption="{{'INDUSTRY' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllIndustries()"
+                                    on-select-none="$ctrl.selectNoneIndustries()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.levels"
+                                    output-model="$ctrl.selectedLevels"
+                                    caption="{{'LEVEL' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllLevels()"
+                                    on-select-none="$ctrl.selectNoneLevels()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.languages"
+                                    output-model="$ctrl.selectedLanguages"
+                                    caption="{{'LANGUAGE' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllLanguages()"
+                                    on-select-none="$ctrl.selectNoneLanguages()"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row">
+                        <div class="col-xs-12">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                            <div class="div-sort" ng-if="!$ctrl.showTitle">
+                                <label>{{'SORT_BY' | translate }}:</label> <select ng-model="sortVal"
+                                                                                   ng-change="$ctrl.sortOrderChange(sortVal)"
+                                                                                   ng-options="sort.val as sort.key for sort in $ctrl.sortValues "></select>
+                            </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row">
+                        <div class="filters row">
+                            <div class="col-xs-12">
+                                <div class="filters-label">{{'YOUR_SELECTION' | translate }}</div>
+                        <span class="filter" ng-repeat="filter in $ctrl.selectedFilters">{{ filter.details.nm
+                            }}<span class="remove-filter" ng-click="$ctrl.removeFilter(filter);"></span></span>
+                            </div>
+                            <div class="col-xs-12">
+                                <button type="button" class="btn-remove" ng-click="$ctrl.removeAllFilters();">{{'REMOVE_ALL_FILTERS' | translate }}</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </modal-dialog>
+        </div>
+        <div class="advanced-search visible-md visible-lg">
+            <fieldset class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.brands"
+                                    output-model="$ctrl.selectedBrands"
+                                    caption="{{'BRAND' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllBrands()"
+                                    on-select-none="$ctrl.selectNoneBrands()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.versions"
+                                    output-model="$ctrl.selectedVersions"
+                                    caption="{{'VERSION' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllVersions()"
+                                    on-select-none="$ctrl.selectNoneVersions()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.industries"
+                                    output-model="$ctrl.selectedIndustries"
+                                    caption="{{'INDUSTRY' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllIndustries()"
+                                    on-select-none="$ctrl.selectNoneIndustries()"></div>
+
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.levels"
+                                    output-model="$ctrl.selectedLevels"
+                                    caption="{{'LEVEL' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllLevels()"
+                                    on-select-none="$ctrl.selectNoneLevels()"></div>
+                        </div>
+                        <div class="filter-select">
+                            <div
+                                    isteven-multi-select
+                                    input-model="$ctrl.filters.basic.languages"
+                                    output-model="$ctrl.selectedLanguages"
+                                    caption="{{'LANGUAGE' | translate }}"
+                                    button-label="nm"
+                                    item-label="nm"
+                                    tick-property="isSelected"
+                                    on-item-click="$ctrl.filterChanged()"
+                                    on-select-all="$ctrl.selectAllLanguages()"
+                                    on-select-none="$ctrl.selectNoneLanguages()"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+<!--                    <button type="button" class="btn-more toggle-btn">{{'ADVANCED_FILTERS' | translate }}</button>-->
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="filters row">
+                    <div class="col-xs-10">
+                        <div class="filters-label">{{'YOUR_SELECTION' | translate }}</div>
+                        <span class="filter" ng-repeat="filter in $ctrl.selectedFilters">{{ filter.details.nm
+                            }}<span class="remove-filter" ng-click="$ctrl.removeFilter(filter);"></span></span>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn-remove" ng-click="$ctrl.removeAllFilters();">{{'REMOVE_ALL_FILTERS' | translate }}</button>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="row">
+                        <div class="col-xs-12">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                            <div class="div-sort" ng-if="!$ctrl.showTitle">
+                                <label>{{'SORT_BY' | translate }}:</label> <select ng-model="sortVal"
+                                                                                   ng-change="$ctrl.sortOrderChange(sortVal)"
+                                                                                   ng-options="sort.val as sort.key for sort in $ctrl.sortValues "></select>
+                            </div>
+                            </div>
+                        </div>
+                    </fieldset>
+        </div>
+        <div ng-if="$ctrl.isPrivateSearch == 'true'">
+            <div class="row navigation">
+                <div class="nav-item" ng-click="$ctrl.privateSearchTabSelection('all')">
+                    {{'ALL' | translate }}
+                </div>
+                <div class="nav-item selected">{{'COURSES' | translate }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="card-container"
+           ng-class="{popup: $ctrl.showBlueBg}"
+           infinite-scroll="{{ $ctrl.shallinfinitescroll }}"
+           on-scroll-end="$ctrl.getMoreCourses()"
+           infinite-scroll-skip="$ctrl.isFetchingCourses"
+           infinite-scroll-offset="100">
+        <tr ng-repeat="row in $ctrl.courseRows">
+            <td ng-repeat="course in row">
+                <span ng-if="($ctrl.isFromLibrary && $ctrl.isSummary() && (($index) / $ctrl.cols) / $ctrl.rows < 1) ||
+                      (($index) < $ctrl.totalRendered)">
+                    <course-card ng-if="$ctrl.fromLibrary == 'true' || $ctrl.isPrivateSearch == 'true'"
+                                 courseid="{{ course.lObjId }}"
+                                 viewid="{{ course.vId }}"
+                                 title="{{ course.cT | html }}"
+                                 thumbnail="{{ course.thumb | html }}"
+                                 percentage="{{ course.perComp }}"
+                                 lan="{{ course.lan }}"
+                                 version="{{ course.vers[0].nm }}"
+                                 duration="{{ course.eTmLft }}"
+                                 status="{{ course.sts }}"
+                                 fav="{{ course.isFav }}"
+                                 is-launchable="{{ course.lnchble }}"
+                                 add-fav="$ctrl.addToFavorites(course.lObjId, !course.isFav)"
+                                 remove-fav="$ctrl.removeFavorites(course.lObjId, !course.isFav)"
+                                 lmsg="{{course.lnchmsg}}"
+                                 filters="{{ $ctrl.selectedFilters }}"
+                                 cmplsts="{{ course.cmplSts }}">
+                    </course-card>
+                    <public-search-card filters="{{ $ctrl.selectedFilters }}" 
+                                        ng-if="$ctrl.fromLibrary == 'false' && $ctrl.isPrivateSearch != 'true'"
+                                        courseid="{{ course.lObjId }}"
+                                        title="{{ course.cT | html }}"
+                                        thumbnail="{{ course.thumb | html }}"
+                                        langs="course.langs"
+                                        versions="course.vers"
+                                        duration="{{ course.eTmLft }}"
+                                        index="{{ $index }}">
+                    </public-search-card>
+                </span>
+            </td>
+        </tr>
+    </table>
+    <div class="center" ng-if="$ctrl.isNoResultFound">
+        <div class="no-result-found-message">{{'NO_RESULTS_LIBRARY' | translate }}</div>
+        <div class="no-result-found-tip">{{ 'TIP' | translate }} - {{'NO_RESULTS_LIBRARY_TIP' | translate }}</div>
+    </div>
+    <div class="loader" ng-show="$ctrl.isFetchingCourses">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="end-of-result" ng-show="$ctrl.shallInfiniteScroll && $ctrl.isEndOfResult && !$ctrl.isNoResultFound">
+        <span>{{ 'END_OF_RESULT' | translate }}</span>
+    </div>
+</div>

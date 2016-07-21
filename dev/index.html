@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cls">
+<head>
+    <meta charset="UTF-8">
+    <title>Dassault Companion</title>
+
+    <meta http-equiv="Content-Language" content="FR-fr">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+
+    <base href="/">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#005686">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+    <!--build:css static/css/all.min.css-->
+    <link rel="stylesheet" href="static/css/all.css">
+    <!--/build-->
+    <link rel="stylesheet" href="bower_components/isteven-angular-multiselect/isteven-multi-select.css">
+    <script src="data/env-settings.js" charset="utf-8"></script>
+    <!--[if IE]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/Base64/0.3.0/base64.min.js"></script>
+    <![endif]-->
+    <!--build:js //ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js-->
+    <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+    <!--/build-->
+</head>
+<body ng-cloak>
+    <div ui-view class="container-fluid" autoscroll="false"></div>
+
+    <script src="bower_components/angular-translate/angular-translate.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js" charset="utf-8"></script>
+    <!--build:js https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js-->
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+    <!--/build-->
+    <script src="bower_components/angulartics/dist/angulartics.min.js" charset="utf-8"></script>
+    <script src="bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js" charset="utf-8"></script>
+    <script src="bower_components/isteven-angular-multiselect/isteven-multi-select.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-76753039-1', 'auto');
+    </script>
+
+    <!--build:js static/js/all.min.js-->
+    <script src="static/js/all.js" charset="utf-8"></script>
+    <!--/build-->
+</body>
+</html>

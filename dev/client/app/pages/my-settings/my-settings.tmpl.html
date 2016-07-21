@@ -1,0 +1,157 @@
+<cls-header></cls-header>
+
+<div class="my-settings-container">
+    <div class="my-acc-settings-title">
+        <div class="my-acc-settings-heading">My Settings</div>
+        <div class="info">Create Your Personalize Settings for Better User Experience </div>
+    </div>
+    <div class="sub-container">
+            <div class="left">
+                <nav id="nav">
+                    <ul>
+                        <li ng-class="{selected: selectedMenu == 'myAccount'}"><h3><a href="" ng-click="myAccount()">My Account</a></h3></li>
+                        <li ng-class="{selected: selectedMenu == 'myProfile'}"><h3><a href="" ng-click="myProfile()">My Profile</a></h3></li>
+                        <li ng-class="{selected: selectedMenu == 'zoneSettings'}"><h3><a href="" ng-click="myZone()">Zone Settings</a></h3></li>
+                        <li ng-class="{selected: selectedMenu == 'changePwd'}"><h3><a href="" ng-click="changePwd()">Change Password</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <div class="profile" ng-show="showProfile">
+                    <span>My Profile</span>
+                </div>
+                <div class="zone" ng-show="showZone">
+                    <span class="ttl">Set the zones of Dashboard to view:</span><br><br>
+                    <div class="row chk-box">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <input type="checkbox" name="zoneCheckboxes" value="1"><span>My Assignment</span><br><br>
+                            <input type="checkbox" name="zoneCheckboxes" value="2"><span>My Library</span><br><br>
+                            <input type="checkbox" name="zoneCheckboxes" value="3"><span>My Training Catalog</span><br><br>
+                            <input type="checkbox" name="zoneCheckboxes" value="4"><span>My Favorites</span><br>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="info-msg" ng-show="showZoneMsg">{{infoMsg}}</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="zone-btn-save"><button type="button" class="btn-shout small" title="Save zone settings" ng-click="saveZoneSettings()">Save</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account" ng-show="showAccount">
+                    <span>Personal Information:</span><br><br>
+                    <div class="acc-left">
+                        <table>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">First Name:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="firstName" value="{{fn}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">Email ID:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="email" value="{{email}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">Phone:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="phone" value="{{phone}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">Company:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="comp" value="{{comp}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">City:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="city" value="{{city}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">Zip Code:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="zip" value="{{zip}}" /></td>
+                            </tr>
+                             <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-left">Country:</div></td>
+                               <td><input type="text" class="dd-input-box-left" name="cntry" value="{{country}}" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="acc-right">
+                        <table>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-right">Last Name:</div></td>
+                               <td><input type="text" class="dd-input-box-right" name="lastName" value="{{ln}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-right">Confirm Email ID:</div></td>
+                               <td><input type="text" class="dd-input-box-right" name="confEmail" value="{{confEmail}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-right">3DS Certified ID:</div></td>
+                               <td><input type="text" class="dd-input-box-right" name="certId" value="{{certId}}" /></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-right">Address:</div></td>
+                               <td><textarea rows="3" cols="42" name="add" class="dd-textarea">{{add}}</textarea></td>
+                            </tr>
+                            <tr>
+                               <td class="hidden-xs"><div class="dd-input-label-right">State:</div></td>
+                               <td><input type="text" class="dd-input-box-right" name="st" value="{{state}}" /></td>
+                            </tr>
+                        </table>
+                    </div><br><br>
+                    <div class="acc-roles">
+                        <span>Roles and Privileges:</span><br><br>
+                        <table cellspacing="10" class="roles-tbl">
+                            <tr ng-repeat="role in roles">
+                                <td>{{login}}</td>
+                                <td>{{role.rType}}</td>
+                                <td>{{role.rNm}}</td>
+                                <td>{{role.domain}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                <div class="acc-save">
+                        <div class="acc-btn-save">
+                            <button type="button" class="btn-shout small" title="Save">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pwd" ng-show="showPwd">
+                    <span>Change Password</span><br><br><br>
+                    <div class="pwd-main">
+                        <div class="ds-passport" ng-show="showDSUsers">
+                            <img ng-src="{{warningImg}}" /><br><br>
+                            <h4>You have a DS Passport Login ID.<br>You cannot reset your password from here.</h4><br>
+                            <h5>To reset your password, please visit <br><a href="https://iam.3ds.com/reset-password/">https://iam.3ds.com/reset-password/</a></h5>
+                        </div>
+                        <div class="other" ng-show="showOthers">
+                            <div class="pwd-left">
+                                <span>Password Rules</span><br><br>
+                                <ol>
+                                    <li>Cannot contain part of the user name</li>
+                                    <li>Be at least 8 character long</li>
+                                    <li>Should not contain @ & + :</li>
+                                    <li>Must contain one or more numbers</li>
+                                    <li>Must contain one or more uppercase letter</li>
+                                    <li>Must contain 3 or more letters</li>
+                                </ol>
+                            </div>
+                            <div class="pwd-right">
+                                <div class="dd-input-label">{{ 'OLD_PASS' | translate}}</div><br/><input class="dd-input-box" type="password" id="oldPwd" name="oldPwd" ng-model="oldPassword" autofocus/><br><br>
+                                <div class="dd-input-label">{{ 'NEW_PASS' | translate}}</div><br/><input class="dd-input-box" type="password" id="newPwd" name="newPwd" ng-model="newPassword"/><br><br>
+                                <div class="dd-input-label">{{ 'CONFIRM_PASS' | translate}}</div><br/><input class="dd-input-box" type="password" id="confNewPwd" name="confNewPwd" ng-model="confirmPassword"/>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="info-msg" ng-show="showPwdMsg">{{infoMsg}}</div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pwd-btn-save"><button type="button" class="btn-shout small" title="Save zone settings" ng-click="savePassword()">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>

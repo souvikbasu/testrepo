@@ -1,0 +1,21 @@
+<div class="title header-0">
+    <div class="section-heading">{{ $ctrl.title | html }}</div>
+    <div class="info">{{ $ctrl.desc | html }}</div>
+    <div class="item-counter" ng-show="$ctrl.isSummary()">({{ $ctrl.displayLibraryCount }}/{{ $ctrl.totalCountBeforeFilter }})</div>
+    <div class="item-counter" ng-show="!$ctrl.isSummary() && $ctrl.isFilterApplied == true">({{ $ctrl.totalCount }}<span ng-if="$ctrl.isFilterApplied == true">/ {{ $ctrl.totalCountBeforeFilter }}</span>)</div>
+    <div class="item-counter" ng-show="!$ctrl.isSummary() && !$ctrl.isFilterApplied">({{ $ctrl.totalCountBeforeFilter }})</div>
+</div>
+<aside ng-if="$ctrl.isSummary()" ng-attr-style="width: {{ $ctrl.cardContainerWidth }}px;">
+    <button type="button" class="btn-shout see-all" ng-click="$ctrl.seeAll();">{{'SEE_ALL' | translate }}
+    </button>
+</aside>
+<search-result ng-class="{popout: $ctrl.isSummary()}"
+               show-title="false"
+               show-filter="!$ctrl.isSummary()"
+               show-blue-bg="$ctrl.isSummary()"
+               rows="{{ $ctrl.rows }}"
+               shall-infinite-scroll="!$ctrl.isSummary()"
+               filter-type="dynamic"
+               infinite-scroll-fetch="-1"
+               course-fetch-service-call="$ctrl.courseFetchServiceCall(startIndex, numOfCoursesToFetch)"
+               from-library="true"></search-result>

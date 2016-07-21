@@ -1,0 +1,41 @@
+{
+  "vars": {
+    "@gray-base": "#e9e9e9",
+    "@gray-darker": "rgba(255, 255, 255, .3)",
+    "@gray-dark": "rgba(232, 232, 232, .5)",
+    "@gray": "#e9e9e9",
+    "@brand-primary": "#005686",
+    "@brand-success": "#005686",
+    "@brand-danger": "#f00",
+    "@body-bg": "#fff",
+    "@text-color": "#000",
+    "@link-color": "#4bafeb",
+    "@link-hover-color": "#1a77ac",
+    "@screen-xs": "320px",
+    "@screen-xs-min": "@screen-xs",
+    "@screen-phone": "@screen-xs-min",
+    "@screen-sm": "768px",
+    "@screen-sm-min": "@screen-sm",
+    "@screen-tablet": "@screen-sm-min",
+    "@screen-md": "960px",
+    "@screen-md-min": "@screen-md",
+    "@screen-desktop": "@screen-md-min",
+    "@screen-lg": "1200px",
+    "@screen-lg-min": "@screen-lg",
+    "@screen-lg-desktop": "@screen-lg-min",
+    "@screen-xs-max": "(@screen-sm-min - 1)",
+    "@screen-sm-max": "(@screen-md-min - 1)",
+    "@screen-md-max": "(@screen-lg-min - 1)",
+    "@grid-columns": "12",
+    "@grid-gutter-width": "30px",
+    "@grid-float-breakpoint": "@screen-sm-min",
+    "@grid-float-breakpoint-max": "(@grid-float-breakpoint - 1)"
+  },
+  "css": [
+    "grid.less",
+    "responsive-utilities.less",
+    "responsive-embed.less"
+  ],
+  "js": [],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=ae41bb55cfe4f709eb849559971d77c4"
+}

@@ -1,0 +1,236 @@
+<cls-header></cls-header>
+
+<div class="row search-back">
+    <a class="line-back" href="" ng-click="privateRedirectBack()">{{ 'BACK' | translate}}</a>
+</div>
+
+<div class="private-library-all">
+    <div class="zone-content">
+        <div class="private-search-filter">
+            <h1 class="tl8 private-search-result-title">Search results for 
+                <small>{{ searchText }}</small>
+                <small>({{totalCount}})</small>
+            </h1>
+            <div class="visible-xs visible-sm">
+                <div class="icon icon-filter right" ng-click="toggleFilterModal()"></div>
+                <modal-dialog show="filterModalVisible" title="{{ 'FILTERS' | translate }}" show-close-button-at-bottom="true" close-button-caption="{{ 'APPLY' | translate }}">
+                    <div class="advanced-search container">
+                        <fieldset class="row">
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[0].filters"
+                                        output-model="selectedExaleadBrands"
+                                        caption="{{'BRAND' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllBrands()"
+                                        on-select-none="selectNoneBrands()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[1].filters"
+                                        output-model="selectedExaleadVersions"
+                                        caption="{{'VERSION' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllVersions()"
+                                        on-select-none="selectNoneVersions()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[2].filters"
+                                        output-model="selectedExaleadScreenType"
+                                        caption="{{'SCREEN_TYPE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllScreenType()"
+                                        on-select-none="selectNoneScreenType()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[3].filters"
+                                        output-model="selectedExaleadLanguages"
+                                        caption="{{'LANGUAGE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllLanguages()"
+                                        on-select-none="selectNoneLanguages()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[4].filters"
+                                        output-model="selectedExaleadDiscipline"
+                                        caption="{{'DISCIPLINE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllDiscipline()"
+                                        on-select-none="selectNoneDiscipline()"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="row">
+                            <div class="filters row">
+                                <div class="col-xs-12">
+                                    <div class="filters-label">{{'YOUR_SELECTION' | translate }}</div>
+                            <span class="filter" ng-repeat="filter in selectedExaleadFilters">{{ filter.details.fNm
+                                }}<span class="remove-filter" ng-click="removeExaleadFilter(filter);"></span></span>
+                                </div>
+                                <div class="col-xs-12">
+                                    <button type="button" class="btn-remove" ng-click="removeAllExaleadFilters();">{{'REMOVE_ALL_FILTERS' | translate }}</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </modal-dialog>
+            </div>
+            <div class="private-advanced-search visible-md visible-lg">
+                <fieldset>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[0].filters"
+                                        output-model="selectedExaleadBrands"
+                                        caption="{{'BRAND' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllBrands()"
+                                        on-select-none="selectNoneBrands()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[1].filters"
+                                        output-model="selectedExaleadVersions"
+                                        caption="{{'VERSION' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllVersions()"
+                                        on-select-none="selectNoneVersions()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[2].filters"
+                                        output-model="selectedExaleadScreenType"
+                                        caption="{{'SCREEN_TYPE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllScreenType()"
+                                        on-select-none="selectNoneScreenType()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[3].filters"
+                                        output-model="selectedExaleadLanguages"
+                                        caption="{{'LANGUAGE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllLanguages()"
+                                        on-select-none="selectNoneLanguages()"></div>
+                            </div>
+                            <div class="private-filter-select">
+                                <div
+                                        isteven-multi-select
+                                        input-model="exaleadFilters[4].filters"
+                                        output-model="selectedExaleadDiscipline"
+                                        caption="{{'DISCIPLINE' | translate }}"
+                                        button-label="fNm"
+                                        item-label="fNm"
+                                        tick-property="isSelected"
+                                        on-item-click="filterChanged()"
+                                        on-select-all="selectAllDiscipline()"
+                                        on-select-none="selectNoneDiscipline()"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+    <!--                    <button type="button" class="btn-more toggle-btn">{{'ADVANCED_FILTERS' | translate }}</button>-->
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="filters row">
+                        <div class="col-xs-10">
+                            <div class="filters-label">{{'YOUR_SELECTION' | translate }}</div>
+                            <span class="filter" ng-repeat="filter in selectedExaleadFilters">{{ filter.details.fNm
+                                }}<span class="remove-filter" ng-click="removeExaleadFilter(filter);"></span></span>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn-remove" ng-click="removeAllExaleadFilters();">{{'REMOVE_ALL_FILTERS' | translate }}</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row navigation private-search-navigation">
+                <div class="nav-item selected">
+                    {{'ALL' | translate }}
+                </div>
+                <div class="nav-item" ng-click="privateSearchTabSelection('courses')">
+                    {{'COURSES' | translate }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-offset-6 col-xs-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="card-container-private-search-all"
+               infinite-scroll="{{ shallInfiniteScroll }}"
+               on-scroll-end="getMoreCourses()"
+               infinite-scroll-skip="isFetchingCourses"
+               infinite-scroll-offset="100">
+            <tr ng-repeat="row in courseRows">
+                <td ng-repeat="course in row">
+                    <span ng-if="((($index) / cols) / rows < 1) ||
+                          (($index) < totalRendered)">
+                        <private-search-card lessons="course.screenArr"
+                                             id="{{ course.lId }}"
+                                             title="{{ course.cT }}"
+                                             launchable="{{ course.launchable }}"
+                                             launch-message="{{ course.launchMsg }}"
+                                             bookmarked="{{ course.bookmarked }}"
+                                             lcoid="{{ course.lcoId }}"
+                                             defImage="{{ defImage }}"
+                                             version="{{ course.ver }}">
+                        </private-search-card>
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <div class="loader" ng-show="isFetchingCourses">
+            <div class="loader-spinner"></div>
+        </div>
+        <div class="end-of-result" ng-show="isEndOfResultAllTab && !isNoResultFound">
+            <span>{{ 'END_OF_RESULT' | translate }}</span>
+        </div>
+    </div>
+</div>

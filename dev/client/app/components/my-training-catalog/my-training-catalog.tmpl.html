@@ -1,0 +1,43 @@
+<div class="zone-content">
+    <div class="title header-0">
+        <div class="section-heading">{{ $ctrl.title | html }}</div>
+        <div class="info">{{ $ctrl.desc | html }} </div>
+        <div class="item-counter" ng-if="$ctrl.totalRenderedCatalog >= $ctrl.totalCount" ng-show="$ctrl.isSummary()">({{ $ctrl.totalCount }}/{{ $ctrl.totalCount }})</div>
+        <div class="item-counter" ng-if="$ctrl.totalRenderedCatalog < $ctrl.totalCount" ng-show="$ctrl.isSummary()">({{ $ctrl.totalRenderedCatalog }}/{{ $ctrl.totalCount }})</div>
+        <div class="item-counter" ng-show="!$ctrl.isSummary()">({{ $ctrl.totalCount }})</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+           <div class="col-md-6"></div>
+               <div class="col-md-6">
+                  <div class="div-sort" ng-show="!$ctrl.isSummary()">
+                     <label>{{'SORT_BY' | translate }}:</label> <select ng-model="sortVal" ng-change="$ctrl.sortOrderChange(sortVal)"
+                                 ng-options="sort.val as sort.key for sort in $ctrl.sortValues"></select>
+                  </div>
+               </div>
+         </div>
+    </div>
+    <aside ng-attr-style="width: {{ $ctrl.cardContainerWidth }}px;">
+        <button type="button" class="btn-shout" ng-show="$ctrl.isSummary()" ng-click="$ctrl.seeAll();">{{'SEE_ALL' | translate }}</button>
+    </aside>
+    <table class="card-container" infinite-scroll="{{ !$ctrl.isSummary() }}" on-scroll-end="$ctrl.getMoreTrainingCatalog()" infinite-scroll-skip="$ctrl.isFetchingCatalog" infinite-scroll-offset="100">
+        <tr ng-repeat="row in $ctrl.latestTrainingCatalogRows">
+            <td ng-repeat="catalog in row">
+                <span ng-if="(($index) / $ctrl.cols) / $ctrl.rows < 1">
+                    <program-card startd="{{ catalog.sDt }}" endd="{{ catalog.eDt }}" status="{{ catalog.enSts }}" title="{{ catalog.pNm | html }}" id="{{ catalog.pId }}" total="{{ catalog.tCnt }}" moderate="{{ catalog.mod }}" parent="catalogs">
+                    </program-card>
+                </span>
+            </td>
+        </tr>
+    </table>
+    <div class="center" ng-if="$ctrl.isNoResultFound">
+        <div class="no-result-found-message">{{'NO_RESULTS_CATALOG' | translate }}</div>
+        <div class="no-result-found-tip">{{ 'TIP' | translate }} - {{'NO_RESULTS_CATALOG_TIP' | translate }}</div>
+    </div>
+    <div class="loader" ng-show="$ctrl.isFetchingCatalog">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="end-of-result" ng-show="!$ctrl.summary && $ctrl.isEndOfResult && !$ctrl.isNoResultFound">
+        <span>{{ 'END_OF_RESULT' | translate }}</span>
+    </div>
+</div>

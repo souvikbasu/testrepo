@@ -1,0 +1,607 @@
+{
+  "libArr": [
+    {
+      "lObjId": 1886,
+      "vId": 55,
+      "isFav": true,
+      "cT": "CATIA V6 Mechanical Design Fundamentals",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "18-Jul-2016 14:28:21",
+      "cDt": "02-Jun-2009 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 13,
+          "nm": "V6R2011x"
+        }
+      ],
+      "cTy": {
+        "id": 1,
+        "nm": "Course"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "40.0 Hours",
+      "brands": [
+        {
+          "id": 2,
+          "nm": "CATIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 104,
+          "nm": "CATIA Mechanical V6"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "F",
+        "nm": "Fundamental"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        },
+        {
+          "id": "de",
+          "nm": "German"
+        },
+        {
+          "id": "fr",
+          "nm": "French"
+        },
+        {
+          "id": "ja",
+          "nm": "Japanese"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 2185,
+      "vId": 60,
+      "isFav": false,
+      "cT": "CATIA V5 Fundamentals",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "18-Jul-2016 14:28:09",
+      "cDt": "23-Jun-2011 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 25,
+          "nm": "V5R21"
+        }
+      ],
+      "cTy": {
+        "id": 1,
+        "nm": "Course"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "40.0 Hours",
+      "brands": [
+        {
+          "id": 2,
+          "nm": "CATIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 80,
+          "nm": "CATIA Mechanical Design V5"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "F",
+        "nm": "Fundamental"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        },
+        {
+          "id": "es",
+          "nm": "Spanish"
+        },
+        {
+          "id": "ru",
+          "nm": "Russian"
+        },
+        {
+          "id": "zh",
+          "nm": "Chinese"
+        },
+        {
+          "id": "fr",
+          "nm": "French"
+        },
+        {
+          "id": "de",
+          "nm": "German"
+        },
+        {
+          "id": "ja",
+          "nm": "Japanese"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 4307,
+      "vId": 8,
+      "isFav": false,
+      "cT": "Course_TesT_AST1",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Incomplete",
+      "eDt": "18-Jul-2016 14:27:59",
+      "cDt": "17-Nov-2015 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 53,
+          "nm": "3DEXPERIENCE R2014x"
+        }
+      ],
+      "cTy": {
+        "id": 1,
+        "nm": "Course"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "5.0 Hours",
+      "brands": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "F",
+        "nm": "Fundamental"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 2603,
+      "vId": 304,
+      "isFav": false,
+      "cT": "ENOVIA Offer PMT for VS Roadmap",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Completed",
+      "eDt": "13-Jul-2016 12:58:10",
+      "cDt": "22-Mar-2012 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 26,
+          "nm": "V6R2012"
+        }
+      ],
+      "cTy": {
+        "id": 3,
+        "nm": "Resource"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 16,
+          "nm": "ENOVIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 2399,
+      "vId": 334,
+      "isFav": false,
+      "cT": "ABAQUS Pricing and Packaging",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "05-Jul-2016 17:49:33",
+      "cDt": "29-Nov-2011 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 12,
+          "nm": "V6R2011"
+        }
+      ],
+      "cTy": {
+        "id": 2,
+        "nm": "Assessment"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "60.0 Hours",
+      "brands": [
+        {
+          "id": 9,
+          "nm": "SIMULIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 121,
+          "nm": "SIMULIA V6 Abaqus"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "F",
+        "nm": "Fundamental"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 3,
+        "nm": "Enablement"
+      }
+    },
+    {
+      "lObjId": 1659,
+      "vId": 240,
+      "isFav": false,
+      "cT": "3DVIA Virtools Environment Essentials",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "05-Jul-2016 17:48:33",
+      "cDt": "19-Oct-2015 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 23,
+          "nm": "V5R0"
+        }
+      ],
+      "cTy": {
+        "id": 1,
+        "nm": "Course"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 4,
+          "nm": "3DVIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 119,
+          "nm": "3DVIA Virtools"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "F",
+        "nm": "Fundamental"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 4359,
+      "vId": 6,
+      "isFav": false,
+      "cT": "79825_06_03_SC11_2ddrawing.mov",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Completed",
+      "eDt": "05-Jul-2016 14:21:56",
+      "cDt": "05-Jul-2016 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 1,
+          "nm": "V5R16"
+        }
+      ],
+      "cTy": {
+        "id": 3,
+        "nm": "Resource"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 4358,
+      "vId": 29,
+      "isFav": false,
+      "cT": "jan.pdf",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Completed",
+      "eDt": "05-Jul-2016 14:15:10",
+      "cDt": "05-Jul-2016 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 1,
+          "nm": "V5R16"
+        }
+      ],
+      "cTy": {
+        "id": 3,
+        "nm": "Resource"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    },
+    {
+      "lObjId": 3206,
+      "vId": 304,
+      "isFav": false,
+      "cT": "101 - ENOVIA Overview Shell",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "05-Jul-2016 14:11:21",
+      "cDt": "02-Aug-2013 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 38,
+          "nm": "V6R2013x"
+        }
+      ],
+      "cTy": {
+        "id": 1,
+        "nm": "Course"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 16,
+          "nm": "ENOVIA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        "id": "A",
+        "nm": "Advanced"
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 3,
+        "nm": "Enablement"
+      }
+    },
+    {
+      "lObjId": 4338,
+      "vId": 6,
+      "isFav": false,
+      "cT": "01a - V6 R2013x - Architecture Overview v4.6",
+      "lan": "en",
+      "perComp": 0.0,
+      "cmplSts": "Not started",
+      "eDt": "05-Jul-2016 11:24:25",
+      "cDt": "29-Feb-2016 00:00:00",
+      "lnchmsg": "",
+      "vers": [
+        {
+          "id": 1,
+          "nm": "V5R16"
+        }
+      ],
+      "cTy": {
+        "id": 3,
+        "nm": "Resource"
+      },
+      "thumb": "",
+      "sts": 4,
+      "eTmLft": "0.0 Hours",
+      "brands": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "dics": [
+        {
+          "id": 1,
+          "nm": "NA"
+        }
+      ],
+      "inds": [
+        
+      ],
+      "lvl": {
+        
+      },
+      "langs": [
+        {
+          "id": "en",
+          "nm": "English"
+        }
+      ],
+      "jRole": [
+        
+      ],
+      "author": {
+        "id": 1,
+        "nm": "DS Portfolio"
+      }
+    }
+  ],
+  "tCnt": 2227
+}

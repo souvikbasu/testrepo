@@ -1,0 +1,40 @@
+{
+  "name": "cls",
+  "version": "0.0.1",
+  "description": "Companion Learning Space",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "MeanHub",
+    "Mean-sapling",
+    "AngularJS"
+  ],
+  "author": {
+    "name": "MeanHub",
+    "email": "info@meanhub.com",
+    "url": "http://meanhub.com/"
+  },
+  "homepage": "http://www.meanhub.com/",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-ui-router": "~0.2.18",
+    "angulartics-google-analytics": "^0.1.4",
+    "angular-mocks": "^1.5.5",
+    "angular-cookies": "1.5.6",
+    "isteven-angular-multiselect": "meanhub-angular-multi-select#^4.4.0"
+  },
+  "resolutions": {
+    "angular": "~1.5.x"
+  }
+}

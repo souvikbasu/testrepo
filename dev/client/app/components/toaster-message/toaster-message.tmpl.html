@@ -1,0 +1,11 @@
+<div class="toaster" ng-class="{info : $ctrl.type == 'info', globalwarning : $ctrl.type == 'globalWarning', warning : $ctrl.type == 'warning', toasterdefault : $ctrl.type == 'warning' || $ctrl.type == 'info', toasterglobalwarning : $ctrl.type == 'globalWarning'}" ng-if="$ctrl.isClosed == false">
+    <div class="content">
+        <span ng-if="$ctrl.type == 'warning'">{{ $ctrl.type | capitalize }}: </span>
+        <span ng-transclude></span>
+        <span class="read-more" ng-if="$ctrl.type == 'globalWarning'">
+            <a href="" ng-click="$ctrl.readMoreGlobalWarning()">{{ 'READ_MORE' | translate }}</a>
+        </span>
+        <span ng-if="$ctrl.showTimer == true || $ctrl.showTimer == 'true'">{{ $ctrl.timer }}</span>
+    </div>
+    <div ng-if="$ctrl.showCloseButton == true || $ctrl.showCloseButton == 'true'" class="close-toaster" ng-click="$ctrl.closeToaster()"></div>
+</div>

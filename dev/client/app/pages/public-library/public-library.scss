@@ -1,0 +1,45 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+.search-text {
+    @include font-size-in-px($normal-font-size);
+    color: $primary-theme-text-on-color-2;
+}
+
+.search-area {
+    margin-top: 20px;
+}
+
+.search-back {
+    margin: 250px 0 0 40px;
+}
+
+.search-back-public {
+    margin-top: 210px;
+}
+
+.line-back {
+    color: $primary-theme-color-2;
+    cursor: pointer;
+    font-size: 12px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: baseline;
+
+    &:hover {
+        color: $secondary-text-color;
+        text-decoration: none;
+    }
+
+    &::before {
+        content: 'l';
+        font-family: 'dassault-companion';
+        font-size: 10px;
+        font-smoothing: grayscale;
+        margin-right: 5px;
+        text-transform: none;
+    }
+}

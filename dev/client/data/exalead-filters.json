@@ -1,0 +1,327 @@
+[
+  {
+    "category": "Brand",
+    "filters": [
+      {
+        "fNm": "CATIA",
+        "showCB": true,
+        "fCriteria": "f\/header_brand\/catia"
+      },
+      {
+        "fNm": "Cross-Brand",
+        "showCB": true,
+        "fCriteria": "f\/header_brand\/cross-brand"
+      },
+      {
+        "fNm": "DELMIA",
+        "showCB": true,
+        "fCriteria": "f\/header_brand\/delmia"
+      },
+      {
+        "fNm": "ENOVIA",
+        "showCB": true,
+        "fCriteria": "f\/header_brand\/enovia"
+      },
+      {
+        "fNm": "SIMULIA",
+        "showCB": true,
+        "fCriteria": "f\/header_brand\/simulia"
+      }
+    ]
+  },
+  {
+    "category": "Version",
+    "filters": [
+      {
+        "fNm": "3DEXPERIENCE R2014x",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/3dexperience r2014x"
+      },
+      {
+        "fNm": "3DEXPERIENCE R2015x",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/3dexperience r2015x"
+      },
+      {
+        "fNm": "V5-6R2012",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5-6r2012"
+      },
+      {
+        "fNm": "V5-6R2013",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5-6r2013"
+      },
+      {
+        "fNm": "V5-6R2014",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5-6r2014"
+      },
+      {
+        "fNm": "V5-6R2015",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5-6r2015"
+      },
+      {
+        "fNm": "V5R19",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5r19"
+      },
+      {
+        "fNm": "V5R20",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5r20"
+      },
+      {
+        "fNm": "V5R21",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v5r21"
+      },
+      {
+        "fNm": "V6R2011",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2011"
+      },
+      {
+        "fNm": "V6R2011x",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2011x"
+      },
+      {
+        "fNm": "V6R2012",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2012"
+      },
+      {
+        "fNm": "V6R2012x",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2012x"
+      },
+      {
+        "fNm": "V6R2013",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2013"
+      },
+      {
+        "fNm": "V6R2013x",
+        "showCB": true,
+        "fCriteria": "f\/header_version_display_name\/v6r2013x"
+      }
+    ]
+  },
+  {
+    "category": "Screen Type",
+    "filters": [
+      {
+        "fNm": "Screen",
+        "showCB": true,
+        "fCriteria": "f\/screen_type\/1"
+      },
+      {
+        "fNm": "Additional Information",
+        "showCB": true,
+        "fCriteria": "f\/screen_type\/10"
+      },
+      {
+        "fNm": "Do it",
+        "showCB": true,
+        "fCriteria": "f\/screen_type\/3"
+      },
+      {
+        "fNm": "Summary",
+        "showCB": true,
+        "fCriteria": "f\/screen_type\/5"
+      },
+      {
+        "fNm": "Methods and Practices",
+        "showCB": true,
+        "fCriteria": "f\/screen_type\/8"
+      }
+    ]
+  },
+  {
+    "category": "Language",
+    "filters": [
+      {
+        "fNm": "English",
+        "showCB": true,
+        "fCriteria": "f\/header_language_display_name\/english"
+      },
+      {
+        "fNm": "German",
+        "showCB": true,
+        "fCriteria": "f\/header_language_display_name\/german"
+      },
+      {
+        "fNm": "Japanese",
+        "showCB": true,
+        "fCriteria": "f\/header_language_display_name\/japanese"
+      }
+    ]
+  },
+  {
+    "category": "Discipline",
+    "filters": [
+      {
+        "fNm": "3D Modeling",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/3d modeling"
+      },
+      {
+        "fNm": "3DSOpen Apps",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/3dsopen apps"
+      },
+      {
+        "fNm": "Academia V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/academia v6"
+      },
+      {
+        "fNm": "CATIA Equipment and Systems Engineering",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia equipment and systems engineering"
+      },
+      {
+        "fNm": "CATIA Equipment and Systems Engineering V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia equipment and systems engineering v5"
+      },
+      {
+        "fNm": "CATIA Infrastructure",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia infrastructure"
+      },
+      {
+        "fNm": "CATIA Knowledge and Reuse V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia knowledge and reuse v6"
+      },
+      {
+        "fNm": "CATIA Mechanical",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia mechanical"
+      },
+      {
+        "fNm": "CATIA Mechanical Design",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia mechanical design"
+      },
+      {
+        "fNm": "CATIA Mechanical Design V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia mechanical design v5"
+      },
+      {
+        "fNm": "CATIA Mechanical V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia mechanical v6"
+      },
+      {
+        "fNm": "CATIA PLM Express V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia plm express v5"
+      },
+      {
+        "fNm": "CATIA PLM Express V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia plm express v6"
+      },
+      {
+        "fNm": "CATIA Product Synthesis",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia product synthesis"
+      },
+      {
+        "fNm": "CATIA Product Synthesis V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia product synthesis v5"
+      },
+      {
+        "fNm": "CATIA Shape",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia shape"
+      },
+      {
+        "fNm": "CATIA Shape Design and Styling",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia shape design and styling"
+      },
+      {
+        "fNm": "CATIA Shape Design and Styling V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia shape design and styling v5"
+      },
+      {
+        "fNm": "CATIA Shape V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia shape v6"
+      },
+      {
+        "fNm": "CATIA Systems",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia systems"
+      },
+      {
+        "fNm": "CATIA Systems ",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/catia systems "
+      },
+      {
+        "fNm": "DELMIA Program and Control Engineering V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/delmia program and control engineering v6"
+      },
+      {
+        "fNm": "Industrial Engineering",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/industrial engineering"
+      },
+      {
+        "fNm": "Mechanical Systems",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/mechanical systems"
+      },
+      {
+        "fNm": "Multi-Discipline Engineering",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/multi-discipline engineering"
+      },
+      {
+        "fNm": "Multiphysics Simulation",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/multiphysics simulation"
+      },
+      {
+        "fNm": "NA",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/na"
+      },
+      {
+        "fNm": "PLM Express V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/plm express v5"
+      },
+      {
+        "fNm": "PLM Express V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/plm express v6"
+      },
+      {
+        "fNm": "SIMULIA ExSight V6",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/simulia exsight v6"
+      },
+      {
+        "fNm": "Solutions V5",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/solutions v5"
+      },
+      {
+        "fNm": "Styling",
+        "showCB": true,
+        "fCriteria": "f\/header_domain\/styling"
+      }
+    ]
+  }
+]

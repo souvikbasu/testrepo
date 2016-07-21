@@ -1,0 +1,53 @@
+[
+  {
+    "lObjId": 4307,
+    "cT": "Course_TesT_AST1",
+    "lan": "en",
+    "ver": "3DEXPERIENCE R2014x",
+    "perComp": 0.0,
+    "sts": "Incomplete",
+    "durV": 5.0,
+    "durU": "Hour",
+    "launchable": false,
+    "lnchmsg": "User is not active for this program.",
+    "pdf": false,
+    "cTy": {
+      "id": 1,
+      "nm": "Course"
+    }
+  },
+  {
+    "lObjId": 4301,
+    "cT": "TIGER Project - What's New in R2014x",
+    "lan": "en",
+    "ver": "3DEXPERIENCE R2014x",
+    "perComp": 0.0,
+    "sts": "Not started",
+    "durV": 2.0,
+    "durU": "Hour",
+    "launchable": false,
+    "lnchmsg": "User is not active for this program.",
+    "pdf": false,
+    "cTy": {
+      "id": 1,
+      "nm": "Course"
+    }
+  },
+  {
+    "lObjId": 4299,
+    "cT": "CATIA Mechanical Surface Refinement Essentials",
+    "lan": "en",
+    "ver": "3DEXPERIENCE R2015x",
+    "perComp": 0.0,
+    "sts": "Not started",
+    "durV": 2.0,
+    "durU": "Hour",
+    "launchable": false,
+    "lnchmsg": "User is not active for this program.",
+    "pdf": false,
+    "cTy": {
+      "id": 1,
+      "nm": "Course"
+    }
+  }
+]

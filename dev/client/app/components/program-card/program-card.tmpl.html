@@ -1,0 +1,169 @@
+<div class="program-card-wrapper" ng-class="{detailed: $ctrl.details}" ng-style="{height: $ctrl.summaryHeight}">
+    <div class="flip-container" ontouchstart="$ctrl.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front" ng-style="$ctrl.flipFront">
+                <div class="prog-card-main program-card-summary">
+                    <div class="content">
+                        <div class="course-title" title="{{$ctrl.title}}">{{ $ctrl.title | limitTo: 63 | html
+                            }}{{$ctrl.title.length >= 63 ? '...' : ''}}</div>
+
+                        <!-- Docs: Not Started Assignemnts -->
+                        <div class="expires" ng-if="!$ctrl.clsStatus && $ctrl.isStarted == false">{{'STARTS_IN' |
+                            translate }} {{ $ctrl.startd | timeago }}</div>
+
+                        <!-- Docs: Started Assignemnts -->
+                        <div class="expires"
+                            ng-if="!$ctrl.clsStatus && $ctrl.isStarted == true && $ctrl.isEnded == false">{{'EXPIRES_IN'
+                            | translate }} {{ $ctrl.endd | timeago }}</div>
+
+                        <!-- Docs: Ended Assignemnts -->
+                        <div class="expires"
+                            ng-if="!$ctrl.clsStatus && $ctrl.isStarted == true && $ctrl.isEnded == true">{{'ENDED'
+                            | translate }}</div>
+
+                        <!-- Docs: Ended Training Catalog -->
+                        <div class="expires" ng-if="$ctrl.clsStatus && $ctrl.isStarted == true && $ctrl.isEnded == true">{{'ENDED'
+                            | translate }}</div>
+
+                        <!-- Docs: Enrolled and Not Started -->
+                        <div ng-if="$ctrl.clsStatus == '_IN_LEARNING_PLAN' && $ctrl.isStarted == false" class="expires">{{'STARTS_IN'
+                            | translate }} {{ $ctrl.startd | timeago }}</div>
+
+                        <!-- Docs: Enrolled and In Progress -->
+                        <div
+                            ng-if="$ctrl.clsStatus == '_IN_LEARNING_PLAN' && ($ctrl.isStarted == true && $ctrl.isEnded == false)"
+                            class="expires">{{'EXPIRES_IN' | translate }} {{ $ctrl.endd | timeago }}</div>
+
+                        <!-- Docs: Not Enrolled and Not Started -->
+                        <div
+                            ng-if="($ctrl.clsStatus == '_REQUEST_SELF_ENROLL' || $ctrl.clsStatus == '_REQUEST_PENDING') && $ctrl.isStarted == false"
+                            class="expires">{{'STARTS_IN' | translate }} {{ $ctrl.startd | timeago }}</div>
+
+                        <!-- Docs: Not Enrolled and In Progress -->
+                        <div
+                            ng-if="($ctrl.clsStatus == '_REQUEST_SELF_ENROLL' || $ctrl.clsStatus == '_REQUEST_PENDING') && ($ctrl.isStarted == true && $ctrl.isEnded == false)"
+                            class="expires">{{'EXPIRES_IN' | translate }} {{ $ctrl.endd | timeago }}</div>
+                    </div>
+                    <div class="footer">
+                        <div ng-if="$ctrl.completed" class="completed">{{'COMPLETED' | translate }} {{
+                            $ctrl.completed | html }}/{{ $ctrl.total }}</div>
+                        <div ng-if="$ctrl.completed" class="progress-bar-under"></div>
+                        <div ng-if="$ctrl.completed" class="progress-bar"
+                            data-value="{{ $ctrl.percentageComplete | number: 0 }}"
+                            ng-attr-style="width: {{ $ctrl.percentageComplete | number: 0 }}%;"></div>
+                        <div class="sub-footer">
+                            <div class="col-xs-6">
+                                <div ng-class="{active: $ctrl.details}" class="details" ng-click="$ctrl.enableDetails()">{{'DETAILS'
+                                    | translate }}</div>
+                                <div class="action"></div>
+                            </div>
+                            <div ng-if="!$ctrl.completed" class="col-xs-2"></div>
+                            <div ng-if="!$ctrl.completed" class="col-xs-4">
+                                <a ng-if="$ctrl.clsStatus=='_REQUEST_SELF_ENROLL'" class="enroll"
+                                    ng-click="$ctrl.enroll()">{{'ENROLL' | translate }}</a>
+                                <div ng-if="$ctrl.clsStatus=='_REQUEST_PENDING'" class="pending">{{'PENDING' |
+                                    translate }}</div>
+                                <div ng-if="$ctrl.clsStatus=='_IN_LEARNING_PLAN'" class="pending">{{'ENROLLED' |
+                                    translate }}</div>
+                                <div class="action"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back" ng-style="$ctrl.flipBack">
+                <div class="back-content">
+                    <h1>{{ 'ALMOST_ENROLL' | translate }}!</h1>
+                    <p ng-if="$ctrl.moderate == 'false'">{{ 'CONFIRM_ENROLL_1' | translate }}</p>
+                    <p ng-if="$ctrl.moderate == 'true'">{{ 'CONFIRM_ENROLL_2' | translate }}</p>
+                </div>
+                <div class="footer">
+                    <button class="btn-shout small bright-on-hover" ng-if="$ctrl.moderate == 'false'" type="button">Confirm</button>
+                    <button class="btn-shout small bright-on-hover" ng-if="$ctrl.moderate == 'true'" type="button">{{ 'CONFIRM'
+                        | translate }}</button>
+                    <div class="footer-cancel">
+                        <a href="" ng-click="$ctrl.cancelEnroll()">{{ 'CANCEL' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="program-card-details" ng-style="$ctrl.programCardDetailsHeight" ng-if="$ctrl.details == 1"
+        ng-class="{detailed: $ctrl.details}"
+        ng-attr-style="width: {{ $ctrl.detailsWidth }}px; left: {{ $ctrl.leftMargin }}px">
+        <div class="row item">
+
+            <!-- Docs: For Assignments Expand -->
+            <div ng-if="$ctrl.completed" ng-repeat="lesson in $ctrl.trainingCatalogDetails" class="col-xs-12 cell">
+                <div class="col-xs-5">
+                    <img ng-show="lesson.cTy.id === 1" src="static/images/icon-course.png" title="Course" alt="Course">
+                    <img ng-show="lesson.cTy.id === 2" src="static/images/icon-assessment.png" title="Assessment" alt="Assessment">
+                    <img ng-show="lesson.cTy.id === 3" src="static/images/icon-external.png" title="External Resource" alt="External Resource">
+                    <ul class="lesson-details">
+                        <li><a href="" ng-click="$ctrl.courseDetails(lesson)">{{ lesson.cT }}</a></li>
+                        <li>{{ 'VERSION' | translate }}: {{ lesson.ver }}</li>
+                        <li>{{ 'DURATION' | translate }}: {{ lesson.durV }} {{ lesson.durU }}</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 catalog-expand">
+                    <div ng-if="lesson.sts == 'Incomplete'">
+                        {{ 'IN_PROGRESS' | translate }} {{ lesson.perComp }}%
+                        <div class="progress-bar-under"></div>
+                        <div class="progress-bar" data-value="{{ lesson.perComp  | number: 0 }}"
+                            ng-attr-style="width: {{ lesson.perComp | number: 0 }}%;"></div>
+                    </div>
+                    <div ng-if="lesson.sts == 'Not started'">{{ 'NOT_STARTED' | translate }}</div>
+                    <div ng-if="lesson.sts == 'Completed'">
+                        {{ 'COMPLETED' | translate }}
+                    </div>
+                    <div ng-if="lesson.sts == 'Passed'">
+                        {{ 'PASSED' | translate }} {{ 'WITH' | translate }} ({{ lesson.perComp }}%)
+                    </div>
+                    <div ng-if="lesson.sts == 'Failed'">
+                        {{ 'FAILED' | translate }} ({{ lesson.perComp }}%)
+                    </div>
+                </div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1">
+                    <div ng-if="lesson.pdf == true" ng-click="$ctrl.fetchPDF(lesson.lObjId)" class="download-pdf"></div>
+                </div>
+                <div class="col-xs-1 catalog-expand">
+                    <div>
+                        <button ng-attr-title="{{ lesson.lnchmsg }}" ng-disabled="lesson.launchable != true"
+                            type="button" class="btn-shout small inverse-color"
+                            ng-click="$ctrl.play(lesson.lObjId, lesson.lan);">{{ 'PLAY' | translate }}</button>
+                    </div>
+                </div>
+                <div ng-if="!$last" class="col-xs-12 separator">
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Docs: For Training Catalog Expand -->
+            <div ng-if="!$ctrl.completed" ng-repeat="lesson in $ctrl.trainingCatalogDetails" class="col-xs-12 cell">
+                <div class="col-xs-5">
+                    <img ng-show="lesson.cTy.id === 1" src="static/images/icon-course.png" title="Course" alt="Course">
+                    <img ng-show="lesson.cTy.id === 2" src="static/images/icon-assessment.png" title="Assessment" alt="Assessment">
+                    <img ng-show="lesson.cTy.id === 3" src="static/images/icon-external.png" title="External Resource" alt="External Resource">
+                    <ul class="lesson-details">
+                        <li><a href="" ng-click="$ctrl.courseDetails(lesson)">{{ lesson.cT }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="catalog-expand">
+                        <li>{{'VERSION' | translate }}: {{ lesson.ver }}</li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <ul class="catalog-expand">
+                        <li>{{'DURATION' | translate }}: {{ lesson.durV }} {{ lesson.durU }}</li>
+                    </ul>
+                </div>
+                <div class="col-xs-1"></div>
+                <div ng-if="!$last" class="col-xs-12 separator">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

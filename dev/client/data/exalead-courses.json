@@ -1,0 +1,1116 @@
+{
+  "tCnt": 357,
+  "defImg": "http:\/\/dcn6win764plp:7071\/cls_newui_d8\/catcma\/newimages\/icons\/icon_not_found.png",
+  "courseArr": [
+    {
+      "lId": 2188,
+      "lcoId": 1577,
+      "cT": "CATIA V5 Foundations for Chassis Designers",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5R21",
+      "screenArr": [
+        {
+          "sT": "Do it Yourself (6\/7)",
+          "desc": "Create an edge fillet ... Create an edge fillet of ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0035_en.doc\/src\/images\/Exercise7B007.png",
+          "index": 1,
+          "skUid": "0115d50e-f095-46f8-ac9d-7d333c49a804",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (4\/13)",
+          "desc": "Create an edge fillet feature ... Select the two edges of pad and apply a fillet of [5mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0029_en.doc\/src\/images\/V5F_S_Exe4H005.png",
+          "index": 2,
+          "skUid": "0dc0d5ad-bd42-419d-bb69-a6f6730f58f9",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Basic Features Creation",
+          "desc": "Create a concentric pad Create simple and tapered holes Create a pocket Create an edge fillet Create a chamfer",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0009_en.doc\/src\/images\/V5F_S_Exe3B005.png",
+          "index": 3,
+          "skUid": "bdddc49c-fc4e-49a8-baf2-d8c5997b4924",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (6\/13)",
+          "desc": "Create an edge fillet feature ... Select the four edges of the pad and apply a fillet of [9mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0029_en.doc\/src\/images\/V5F_S_Exe4H007.png",
+          "index": 4,
+          "skUid": "0dc0d5ad-bd42-419d-bb69-a6f6730f58f9",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (7\/9)",
+          "desc": "Create an edge fillet of ... Create an edge fillet of ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0047_en.doc\/src\/images\/V5F_S_Exe4I009.png",
+          "index": 5,
+          "skUid": "57361aac-6e5f-455b-ad57-39cb7203395a",
+          "scrUid": "13",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (4\/6)",
+          "desc": "Use the top fillet as the neutral element for the side one ... Use the bottom fillet as the neutral element for the side two",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5XCoExSkillets_en.edu\/CAT_V5XCoExEdc0024_en.doc\/src\/images\/8F005.png",
+          "index": 6,
+          "skUid": "ab723151-acab-40e3-8909-0670d2277879",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Case Study Recap: Timing Chain Cover",
+          "desc": "Create reference geometry Create sketch profiles Create draft features Create stiffener features Create an edge fillet Create a tap feature",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VCoLeSkillets_en.edu\/CAT_V5VCoLeEdc0007_en.doc\/src\/images\/V5F_S_CSL5003.png",
+          "index": 7,
+          "skUid": "11cfdeac-2d5f-4ed4-83e2-67685ba94dc1",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Shell and Holes",
+          "desc": "Create a pad Create a pocket Create a chamfer Create a fillet Create a shell Create a hole",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0047_en.doc\/src\/images\/V5F_S_Exe4I012.png",
+          "index": 8,
+          "skUid": "57361aac-6e5f-455b-ad57-39cb7203395a",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Variable Radius Fillets (1\/2)",
+          "desc": "2 1 3 A variable radius fillet creates a curved surface defined according to a variable radius ... fillet: Select the edge(s) to be filleted ... Click the ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0017_en.doc\/src\/images\/V5F_S_Step4_Create_Fillets_Chamfers010.png",
+          "index": 9,
+          "skUid": "99fef4e2-22f4-4c0a-9e91-4ade492de810",
+          "scrUid": "16",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Maintain a Flat Specification Tree Structure (2\/2)",
+          "desc": "Create dress-up features (Draft, Fillet, Shell, etc ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5EThSkillets_en.edu\/CAT_V5EThEdc0008_en.doc\/src\/images\/Step_3_Recommendation003.png",
+          "index": 10,
+          "skUid": "8e86452e-e62c-4896-9d3d-eaac1bb4be60",
+          "scrUid": "3",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 1886,
+      "lcoId": 1278,
+      "cT": "CATIA V6 Mechanical Design Fundamentals",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V6R2011x",
+      "screenArr": [
+        {
+          "sT": "Do It Yourself: Review and Modification (2\/4)",
+          "desc": "Create an edge fillet for the top pockets as a separate feature ... 5 Create an edge fillet for the guide as a separate feature ... 6 Create an edge fillet for ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0013_en.doc\/src\/images\/StudioFilePPTX0001003.png",
+          "index": 1,
+          "skUid": "ea0309bf-9ba1-4d2a-a330-262eaa102db9",
+          "scrUid": "3",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Create Fillets and Chamfers",
+          "desc": "In this section you will learn how to create fillets and chamfers",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0053_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 2,
+          "skUid": "cc5bb2d1-055b-4363-b353-a99629085ee6",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Face-Face Fillets (1\/2)",
+          "desc": "following steps to create a face-face fillet: Click Face-Face Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0053_en.doc\/src\/images\/StudioFilePPTX0001007.png",
+          "index": 3,
+          "skUid": "cc5bb2d1-055b-4363-b353-a99629085ee6",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Master Project: Part Creation (6\/7)",
+          "desc": "Create a functional fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/\/CATV6F_MaSkillets_en.edu\/CATV6F_MaEdc0005_en.doc\/src\/images\/StudioFilePPTX0001007.png",
+          "index": 4,
+          "skUid": "757bd626-fad0-4238-94c4-3bbc2e737f39",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Main Tools (2\/2)",
+          "desc": "Dress-up Features Edge Fillet: creates smooth transitional surfaces between two adjacent faces",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FThJobAids_en.edu\/CATV6FThEdcJobAids_en.doc\/src\/images\/CATV6FTh0012_en002.png",
+          "index": 5,
+          "skUid": "b3047ed2-f524-4dfc-b240-6595a3eb6621",
+          "scrUid": "11",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Exercise: Adding Dress-up Features",
+          "desc": "You will use the dress-up tools learned in this lesson to create a pad, a fillet, shell and draft feature ... Create an edge fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0014_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 6,
+          "skUid": "7ec37e0c-4289-48e5-b8b4-9609aa9d2e4c",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Exercise: Modifying Features",
+          "desc": "Modify a feature with a local fillet modifier ... Create an edge fillet between ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0036_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 7,
+          "skUid": "3630aaec-7919-4a20-867e-17f52e2738de",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Key Terms (4\/4)",
+          "desc": "For example, if a model requires a fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0003_en.doc\/src\/images\/StudioFilePPTX0001006.png",
+          "index": 8,
+          "skUid": "d52d81ef-932d-413f-8424-e562107eb4e2",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Do It Yourself: Review and Modification (1\/4)",
+          "desc": "3 Create an edge fillet for the",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0013_en.doc\/src\/images\/StudioFilePPTX0001002.png",
+          "index": 9,
+          "skUid": "ea0309bf-9ba1-4d2a-a330-262eaa102db9",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        },
+        {
+          "sT": "Define In Work Object (2\/2)",
+          "desc": "the shell the inside corners will not be rounded if the value of the fillet radius exceeds that of the wall thickness",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Cross_Domains\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0046_en.doc\/src\/images\/StudioFilePPTX0001007.png",
+          "index": 10,
+          "skUid": "74b9e1cf-e945-48b6-99d9-e6f251c3a37f",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2011x\/CATIA_Virtual_Design\/CATIA_Mechanical\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 1089,
+      "lcoId": 502,
+      "cT": "Functional Molded Parts",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5R19",
+      "screenArr": [
+        {
+          "sT": "Do It Yourself (2\/3)",
+          "desc": "Enter 3mm as value to fillet the floor edges of the pocket",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0002_en.doc\/src\/images\/Color_Pallet_Ex003.png",
+          "index": 1,
+          "skUid": "81b325e9-48c7-488b-a81e-d6ac74847cfd",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (1\/3)",
+          "desc": "Shellabe Pad in the downward direction. (negative Z direction) To fillet the floor edge, go to the Fillet tab and enter First Radius = 5",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0002_en.doc\/src\/images\/Color_Pallet_Ex002.png",
+          "index": 2,
+          "skUid": "81b325e9-48c7-488b-a81e-d6ac74847cfd",
+          "scrUid": "4",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "User Interface and Toolbars (3\/5)",
+          "desc": "Cut feature Remove feature Pattern Edge Fillet Divide Lip Flange Snap Lock Hole Modifies one or more features by removing ... Computes a fillet on one or ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0001_en.doc\/src\/images\/FMP_IntroductionToFunctionalMoldedParts012.png",
+          "index": 3,
+          "skUid": "c0a645c8-dfd0-46d1-94b2-dccd0933bcdf",
+          "scrUid": "20",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Locking Cover",
+          "desc": "features Creating dress up features ( fillet, draft) Creating a Boolean operation ( trim) 45 min",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0018_en.doc\/src\/images\/LockingCoverPresentation001.png",
+          "index": 4,
+          "skUid": "fb7b33fd-538f-4d3d-a3df-8712d552952e",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (5\/5)",
+          "desc": "Fillet the following edges with the radii as shown in the picture below",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0032_en.doc\/src\/images\/FMP_MasterEx_ElectricalHousing_Step1006.png",
+          "index": 5,
+          "skUid": "8dc1c45f-1e8d-4e70-ad6f-c313362d532d",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (7\/11)",
+          "desc": "2) Create the edge fillet as shown",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0035_en.doc\/src\/images\/FMP_MasterEx_Notpad_Design_Intend+Steps008.png",
+          "index": 6,
+          "skUid": "55c965a6-8f6d-4e3a-8380-8f59eac80e4b",
+          "scrUid": "11",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (10\/11)",
+          "desc": "1) Create a Face-to-face fillet ... Fillet Radius = 1mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0035_en.doc\/src\/images\/FMP_MasterEx_Notpad_Design_Intend+Steps011.png",
+          "index": 7,
+          "skUid": "55c965a6-8f6d-4e3a-8380-8f59eac80e4b",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (1\/3)",
+          "desc": "Alternatively, you can copy-paste the fillet one by one. (Generally, no reroute is necessary ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0040_en.doc\/src\/images\/FMP_MasterEx_MoldExtraction_Housing_Step3002.png",
+          "index": 8,
+          "skUid": "7d14d5d4-6522-4dd9-9140-d36d0b759067",
+          "scrUid": "4",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (2\/11)",
+          "desc": "axis Draft = Properties.1 Lateral and second limit Fillet = 5mm 1 Shell Properties Thickness = 2mm Faces to remove = bottom face (face coincident to ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0035_en.doc\/src\/images\/FMP_MasterEx_Notpad_Design_Intend+Steps003.png",
+          "index": 9,
+          "skUid": "55c965a6-8f6d-4e3a-8380-8f59eac80e4b",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (2\/3)",
+          "desc": "Enter 3mm as value to fillet the floor edges of the pocket",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/\/CATFMPSkillets_en.edu\/CATFMPEdc0002_en.doc\/src\/images\/Color_Pallet_Ex003.png",
+          "index": 10,
+          "skUid": "81b325e9-48c7-488b-a81e-d6ac74847cfd",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R19\/cat\/cat_mec\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 2183,
+      "lcoId": 1572,
+      "cT": "CATIA Part Design Added Exercises",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5R21",
+      "screenArr": [
+        {
+          "sT": "Do It Yourself (4\/4)",
+          "desc": "Create a 0.3mm fillet on the edge shown below",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdcMobile_Phone_Bottom_Case_Step_2_en.doc\/src\/images\/PDG_A_MASTER_Step_2006.png",
+          "index": 1,
+          "skUid": "93e26042-72b9-4255-8aeb-fc7b73638ef0",
+          "scrUid": "27",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Step 2: Design the Inner Rough Body (2\/2)",
+          "desc": "Apply the fillet to the groove ... Constrain this with Plane.3 Fillet value driven by 'Radius_1' parameter",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdcExTee_Fitting_en.doc\/src\/images\/PDG_EX_Tee_Fitting013.png",
+          "index": 2,
+          "skUid": "55077ce0-63e5-476b-84c2-ec2453193677",
+          "scrUid": "27",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Change the Dress-up feature Parameters (3\/4)",
+          "desc": "Apply fillet of 2 mm to the edge shown ... Re-create the previously deleted fillet ... Create a new fillet of 1 mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdc0008_en.doc\/src\/images\/4_PDG_Connector_Housing_Step_4006.png",
+          "index": 3,
+          "skUid": "bf43ab91-bce3-4d37-99e3-8633429d03d1",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Step 4 & 5: Applying Fillets and Design the Bracket Pad (3\/3)",
+          "desc": "Apply Edge Fillet of 6 mm and 2 mm on the edges shown ... Plane7 Plane 6 Fillet of 6 mm ... Fillet of 2 mm to four edges ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdcExAngle_Bracket_en.doc\/src\/images\/PDG_EX_Angle_Bracket013.png",
+          "index": 4,
+          "skUid": "5ce5ffa7-aee7-456f-9d07-ac6e02a2afc4",
+          "scrUid": "26",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Design the Inner Main Shape",
+          "desc": "Apply a draft of 2 deg and apply a edge fillet of 10 mm to ... Pocket Sketch Draft Left_Face_plane Pulling direction = XY plane Neutral plane = base plane  ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdc0006_en.doc\/src\/images\/PDG_Ex_Piston_Step_3_2009.png",
+          "index": 5,
+          "skUid": "e7372bf6-725f-45a5-92e0-69d8050820d7",
+          "scrUid": "54",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Step 2: Design the Inner Rough Body (1\/2)",
+          "desc": "Apply a edge fillet ... Plane.1 Fillet of 5 mm driven by 'Radius_2' parameter",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdcExTee_Fitting_en.doc\/src\/images\/PDG_EX_Tee_Fitting012.png",
+          "index": 6,
+          "skUid": "55077ce0-63e5-476b-84c2-ec2453193677",
+          "scrUid": "26",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Design the Axis Holder",
+          "desc": "Piston_Inner_face_Plane 1 mm fillet Driven by this relation: (Pin_External_Diameter \/ 2)+6 mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdc0006_en.doc\/src\/images\/PDG_Ex_Piston_Step_3_2010.png",
+          "index": 7,
+          "skUid": "e7372bf6-725f-45a5-92e0-69d8050820d7",
+          "scrUid": "55",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Step 2: Design the Main Shape (5\/7)",
+          "desc": "Pad it by 12 mm (Mirrored Extent) Edge fillet of 3 mm Edge fillet of 2 mm on this face Pad",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdcExCar_Jack_Support_en.doc\/src\/images\/PDG_EX_Car_Jack_Support010.png",
+          "index": 8,
+          "skUid": "4410c885-58c6-4b1d-aab3-941f0463d8ef",
+          "scrUid": "18",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Re-design the Catch by Combine",
+          "desc": "You will create it just after the Variable Radius Fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdc0008_en.doc\/src\/images\/4_PDG_Connector_Housing_Step_4008.png",
+          "index": 9,
+          "skUid": "bf43ab91-bce3-4d37-99e3-8633429d03d1",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        },
+        {
+          "sT": "Design the Main Shape (3\/3)",
+          "desc": "Create two parameters to drive the fillet values External_Radius_1 ...  = 20mm External_Radius_2 = 5mm Edge fillet.2 = 5 mm Edge fillet.1 = 20 mm Edge  ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/\/CATPDGSkillets_en.edu\/CATPDGEdc0010_en.doc\/src\/images\/1_PDG_Side_Toolhead_Step_1_007.png",
+          "index": 10,
+          "skUid": "dfb514a7-c61c-4f54-abf2-1faaae773e27",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/base\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 2635,
+      "lcoId": 1991,
+      "cT": "CATIA Imagine and Shape Essentials",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V6R2013",
+      "screenArr": [
+        {
+          "sT": "Do It Yourself (1\/9)",
+          "desc": "Create a shape fillet ... Click the Shape Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001002.png",
+          "index": 1,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (4\/9)",
+          "desc": "Create an edge fillet ... Click the Edge Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001005.png",
+          "index": 2,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Main Tools (5\/6)",
+          "desc": "Edge Fillet: Enables to create a fillet on a surfaces edge",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSJobAids_en.edu\/CATIMSEdcJobAids_en.doc\/src\/images\/CATIMS0005_en005.png",
+          "index": 3,
+          "skUid": "1cafb47f-1d2d-49c0-83ab-bf8cf0688bc0",
+          "scrUid": "18",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Recommendations (2\/4)",
+          "desc": "Combine: Combine these subdivision surfaces using the GSD workbench or other required operations such as fillet, symmetry, join, etc",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSCourses_en.edu\/CATIMSEdc0002_en.doc\/src\/images\/StudioFilePPTX0001002.png",
+          "index": 4,
+          "skUid": "1cafb47f-1d2d-49c0-83ab-bf8cf0688bc0",
+          "scrUid": "26",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Exercise: Performing Operations to Complete the Shape",
+          "desc": "the end of this exercise, you will be able to: Create revolution surfaces Create an edge fillet and a shape fillet on the surfaces Split a surface ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 5,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (6\/9)",
+          "desc": "Create another shape fillet ... In the Fillet Definition dialog box, specify ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001007.png",
+          "index": 6,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (3\/6)",
+          "desc": "Create a fillet ... Create a fillet of 10mm ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMS_MaSkillets_en.edu\/CATIMS_MaEdc0005_en.doc\/src\/images\/StudioFilePPTX0001004.png",
+          "index": 7,
+          "skUid": "748cfe8d-7519-4aad-9817-43ed22b242d7",
+          "scrUid": "4",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (5\/9)",
+          "desc": "Create a shape fillet ... Click the Shape Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001006.png",
+          "index": 8,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (1\/9)",
+          "desc": "Create a shape fillet ... Click the Shape Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001002.png",
+          "index": 9,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (4\/9)",
+          "desc": "Create an edge fillet ... Click the Edge Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/\/CATIMSSkillets_en.edu\/CATIMSEdc0014_en.doc\/src\/images\/StudioFilePPTX0001005.png",
+          "index": 10,
+          "skUid": "8edc9331-7156-4dfc-9bc2-12c6c839d1d7",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2013\/CATIA_Virtual_Design\/Shape\/ims\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 2439,
+      "lcoId": 1805,
+      "cT": "CATIA V6 Mechanical Design Fundamentals",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V6R2012x",
+      "screenArr": [
+        {
+          "sT": "Main Tools (2\/2)",
+          "desc": "Dress-up Features Edge Fillet: creates smooth transitional surfaces between two adjacent faces",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThJobAids_en.edu\/CATV6FThEdcJobAids_en.doc\/src\/images\/CATV6FTh0012_en002.png",
+          "index": 1,
+          "skUid": "b3047ed2-f524-4dfc-b240-6595a3eb6621",
+          "scrUid": "11",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "No Deactivated Feature in Loaded Document",
+          "desc": "Create a new fillet on these two edges to improve the design ... fillet, EdgeFillet.1, is identified later and reactivated, an error message will be ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0046_en.doc\/src\/images\/StudioFilePPTX0001015.png",
+          "index": 2,
+          "skUid": "74b9e1cf-e945-48b6-99d9-e6f251c3a37f",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Do It Yourself (4\/5)",
+          "desc": "Observe that the shell propagates the fillet radius to the inside surface ... 6a 6b If you modify the external edge fillet radius you will observe that the ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0014_en.doc\/src\/images\/StudioFilePPTX0001005.png",
+          "index": 3,
+          "skUid": "7ec37e0c-4289-48e5-b8b4-9609aa9d2e4c",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Create Fillets After Drafts",
+          "desc": "The design intent requires that the value of each edge fillet remains constant throughout the design and development of the part ... shown: If a draft is ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0047_en.doc\/src\/images\/StudioFilePPTX0001012.png",
+          "index": 4,
+          "skUid": "1eb07a7b-df2d-48b3-8ad2-0bfa68c433cc",
+          "scrUid": "10",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Key Terms (4\/4)",
+          "desc": "For example, if a model requires a fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0003_en.doc\/src\/images\/StudioFilePPTX0001006.png",
+          "index": 5,
+          "skUid": "d52d81ef-932d-413f-8424-e562107eb4e2",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Exercise: Adding Dress-up Features",
+          "desc": "You will use the dress-up tools learned in this lesson to create a pad, a fillet, shell and draft feature ... Create an edge fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FExSkillets_en.edu\/CATV6FExEdc0014_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 6,
+          "skUid": "7ec37e0c-4289-48e5-b8b4-9609aa9d2e4c",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Lesson Summary (3\/4)",
+          "desc": "Adding Dress-up Features Following dress-up features are important from manufacturability aspect of a part: Fillet: A fillet is a curved face of a ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThJobAids_en.edu\/CATV6FThEdcJobAids_en.doc\/src\/images\/CATV6FTh0011_en003.png",
+          "index": 7,
+          "skUid": "b3047ed2-f524-4dfc-b240-6595a3eb6621",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "\"Create Fillets and Chamfers\" (Verrundungen und Fasen erzeugen)",
+          "desc": "In diesem Abschnitt erfahren Sie, wie Verrundungen und Fasen erstellt werden. Verrundungen Fase",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/de\/\/CATV6FThSkillets_de.edu\/CATV6FThEdc0053_de.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 8,
+          "skUid": "cc5bb2d1-055b-4363-b353-a99629085ee6",
+          "scrUid": "1",
+          "lang": "de",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/de\/"
+        },
+        {
+          "sT": "Shelling a Part (2\/2)",
+          "desc": "You can observe that, now only the fillet face is selected on the part body",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0057_en.doc\/src\/images\/StudioFilePPTX0001009.png",
+          "index": 9,
+          "skUid": "021c536b-36a5-4afc-8e16-e28cdcf6de9a",
+          "scrUid": "9",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        },
+        {
+          "sT": "Create Fillets and Chamfers",
+          "desc": "In this section you will learn how to create fillets and chamfers",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Cross_Domains\/v6x\/en\/\/CATV6FThSkillets_en.edu\/CATV6FThEdc0053_en.doc\/src\/images\/StudioFilePPTX0001001.png",
+          "index": 10,
+          "skUid": "cc5bb2d1-055b-4363-b353-a99629085ee6",
+          "scrUid": "1",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2012x\/CATIA_Virtual_Design\/Mechanical\/v6f\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 3124,
+      "lcoId": 2468,
+      "cT": "CATIA V5 Foundations for Aerospace Part Designers",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5-6R2013",
+      "screenArr": [
+        {
+          "sT": "Do It Yourself (4\/4)",
+          "desc": "Create 60mm Edge fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDExSkillets_en.edu\/CAT_V5AeDExEdc0005_en.doc\/src\/thumbnails\/WLS_Exercise_LimitedInstructions__Surfacefeaturescreation_NEW005.png",
+          "index": 1,
+          "skUid": "26ce7f37-af5b-41c1-bfa1-8c05c01fdc35",
+          "scrUid": "6",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Create Holes",
+          "desc": "Create Fillets and Chamfers A fillet is a curved face of a constant or variable radius that is tangent to, and that joins, two surfaces",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDLeJobAids_en.edu\/CAT_V5AeDLeEdcJobAids_en.doc\/src\/thumbnails\/CAT_V5AeDLe0012_en003.png",
+          "index": 2,
+          "skUid": "14722d51-0fe6-4620-b589-83bf4a6e9d5a",
+          "scrUid": "21",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Master Project: Feature-Based Solid Modeling (6\/6)",
+          "desc": "Create the following dress-up features: An edge fillet of ... An edge fillet of ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDMaSkillets_en.edu\/CAT_V5AeDMaEdc0007_en.doc\/src\/thumbnails\/Master_Project_Part_Creation_FeatureBased007.png",
+          "index": 3,
+          "skUid": "1dabb0b4-4d9b-410e-ac9f-e0b0998770c5",
+          "scrUid": "21",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Variable Radius Fillets (2\/2)",
+          "desc": "4 5 Use the following steps to create a variable radius fillet (continued): Modify the radius at the points by double-clicking on the dimensions ... The ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0017_en.doc\/src\/thumbnails\/V5F_S_Step4_Create_Fillets_Chamfers011.png",
+          "index": 4,
+          "skUid": "99fef4e2-22f4-4c0a-9e91-4ade492de810",
+          "scrUid": "17",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Master Project: Feature-Based Solid Modeling (2\/6)",
+          "desc": "Create an edge fillet of ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDMaSkillets_en.edu\/CAT_V5AeDMaEdc0007_en.doc\/src\/thumbnails\/Master_Project_Part_Creation_FeatureBased003.png",
+          "index": 5,
+          "skUid": "1dabb0b4-4d9b-410e-ac9f-e0b0998770c5",
+          "scrUid": "17",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Basic Features in Part Design",
+          "desc": "Pocket Hole Fillet Chamfer",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDLeSkillets_en.edu\/CAT_V5AeDLeEdc0008_en.doc\/src\/thumbnails\/Lesson_3002.png",
+          "index": 6,
+          "skUid": "14722d51-0fe6-4620-b589-83bf4a6e9d5a",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (2\/3)",
+          "desc": "Fillet Radius = ½ Thickness",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0024_en.doc\/src\/thumbnails\/V5F_S_Exe7E003.png",
+          "index": 7,
+          "skUid": "a591f6dc-1b7e-479d-9190-84856690c21a",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Why One Fillet for Few Edges (1\/2)",
+          "desc": "All the edges are grouped into a single fillet ... will have to be de-selected in the original fillet and a new fillet will have to be created ... function and  ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0016_en.doc\/src\/thumbnails\/V5F_S_Lesson3_RecForFillets002.png",
+          "index": 8,
+          "skUid": "57f3def2-0806-4d85-9add-c0b091e160de",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Patterns Modifications",
+          "desc": "Remove pattern instances Explode pattern Copy and paste a pad instance Modify the copied pad Create a fillet and chamfers Conf. Dep",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_aero\/en\/\/CAT_V5AeDExSkillets_en.edu\/CAT_V5AeDExEdc0004_en.doc\/src\/thumbnails\/Reusing_Data_Recap005.png",
+          "index": 9,
+          "skUid": "6b6db300-bf15-496f-ac77-c95fb2432369",
+          "scrUid": "11",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        },
+        {
+          "sT": "Key Terms (3\/4)",
+          "desc": "For example, if a model requires a fillet, you simply select an edge and specify a radius to create it",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0001_en.doc\/src\/thumbnails\/V5F_S_Understanding_CATIA_Software011.png",
+          "index": 10,
+          "skUid": "9ddcc822-954b-4a08-bfe8-bc4d1c92e955",
+          "scrUid": "9",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5-6R2013\/cat\/v5ae\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 2491,
+      "lcoId": 1848,
+      "cT": "ENOVIA SmarTeam - CATIA PLM Express Fundamentals",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5R21",
+      "screenArr": [
+        {
+          "sT": "Variable Radius Fillets (2\/2)",
+          "desc": "4 5 Use the following steps to create a variable radius fillet (continued): Modify the radius at the points by double-clicking on the dimensions ... The ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0017_en.doc\/src\/images\/V5F_S_Step4_Create_Fillets_Chamfers011.png",
+          "index": 1,
+          "skUid": "99fef4e2-22f4-4c0a-9e91-4ade492de810",
+          "scrUid": "17",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Basic Features",
+          "desc": "Case Study: Basic Features Design Intent Stages in the Process Determine a Suitable Base Feature Create Pad and Pocket Features Create Holes Create ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FLeSkillets_en.edu\/CAT_V5FLeEdc0012_en.doc\/src\/images\/V5F_S_Lesson3001.png",
+          "index": 2,
+          "skUid": "f9799f61-a165-4b03-90f6-81a0ac923f30",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Exercise: Basic Feature Creation",
+          "desc": "feature you will create a pocket, a face-face fillet and chamfer ... will be able to: Create a hole Create a pocket Create a face-face fillet Create a ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0006_en.doc\/src\/images\/V5F_S_Exe3B001.png",
+          "index": 3,
+          "skUid": "aacff9b7-c176-4477-a00a-5ea3eee78700",
+          "scrUid": "3",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Why One Fillet for Few Edges? (1\/2)",
+          "desc": "All the edges are grouped into a single fillet ... will have to be de-selected in the original fillet and a new fillet will have to be created ... function and  ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0016_en.doc\/src\/images\/V5F_S_Lesson3_RecForFillets002.png",
+          "index": 4,
+          "skUid": "57f3def2-0806-4d85-9add-c0b091e160de",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (4\/7)",
+          "desc": "of the edge fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/\/CATCTPESkillets_en.edu\/CATCTPEEdc0014_en.doc\/src\/images\/V5F_S_Exe7D005.png",
+          "index": 5,
+          "skUid": "140f643c-4e2b-48df-9d22-5fba89925b66",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Pad, Fillet, Hole and Shell",
+          "desc": "Create a pad Create a fillet Create holes Create a shell feature",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0031_en.doc\/src\/images\/V5F_S_Exe4H006.png",
+          "index": 6,
+          "skUid": "fe255140-06f6-4d6f-a145-958a108550cf",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Exercise: Edge and Face-Face Fillets",
+          "desc": "able to: Create a face-face fillet Create the necessary additional fillet in order to enable face-face fillet creation",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0007_en.doc\/src\/images\/V5F_S_Exe3D001.png",
+          "index": 7,
+          "skUid": "eedea05f-65bf-4ada-b8b1-797092b0cb45",
+          "scrUid": "3",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (2\/3)",
+          "desc": "Fillet Radius = ½ Thickness",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/\/CATCTPESkillets_en.edu\/CATCTPEEdc0015_en.doc\/src\/images\/V5F_S_Exe7E003.png",
+          "index": 8,
+          "skUid": "115c10f6-8ca5-4ab6-aaa5-26a9be2aad6b",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Edge and Face-Face Fillets",
+          "desc": "Create edge fillets in order to enable face-face fillet creation Create face-face fillets",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0007_en.doc\/src\/images\/V5F_S_Exe3D003.png",
+          "index": 9,
+          "skUid": "eedea05f-65bf-4ada-b8b1-797092b0cb45",
+          "scrUid": "5",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        },
+        {
+          "sT": "Exercise Recap: Basic Feature Creation",
+          "desc": "Create a hole Create a pocket Create a face to face fillet Create a chamfer",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FExSkillets_en.edu\/CAT_V5FExEdc0006_en.doc\/src\/images\/V5F_S_Exe3B006.png",
+          "index": 10,
+          "skUid": "aacff9b7-c176-4477-a00a-5ea3eee78700",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/ctp\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 3979,
+      "lcoId": 3219,
+      "cT": "SIMULIA Simulation Model Design Essentials",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "3DEXPERIENCE R2015x",
+      "screenArr": [
+        {
+          "sT": "Exercise Process",
+          "desc": "Create a pipe Add an intersecting pipe Create a pocket Create an edge fillet Create a half symmetry model Create a quarter symmetry model",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0005_en.doc\/src\/thumbnails\/StudioFilePPTX0001002.png",
+          "index": 1,
+          "skUid": "41e3e32e-0b65-413c-9c8a-164e54ef5e6d",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2b: Screwdriver Geometry (16\/32)",
+          "desc": "Fillet the edges of the cutout From the action bar: Select the Refine section ... Select the Edge Fillet tool ... Specify a fillet radius of 0.4mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0006_en.doc\/src\/thumbnails\/StudioFilePPTX0001018.png",
+          "index": 2,
+          "skUid": "e950e740-f42d-458a-831d-b8d05d420603",
+          "scrUid": "18",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2a: Intersecting Pipes Geometry (10\/12)",
+          "desc": "Create a fillet at the intersection of the pipes ... Definition dialog box, enter 40 mm as the fillet radius",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0005_en.doc\/src\/thumbnails\/StudioFilePPTX0001012.png",
+          "index": 3,
+          "skUid": "41e3e32e-0b65-413c-9c8a-164e54ef5e6d",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2d: Connecting Rod and Piston Geometry (12\/20)",
+          "desc": "In the Refine section of the action bar, select the Edge Fillet tool ... Select the Edge Fillet tool ... Select the Edge Fillet tool",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0008_en.doc\/src\/thumbnails\/StudioFilePPTX0001014.png",
+          "index": 4,
+          "skUid": "906ccec7-f1f7-4765-ac62-4033e7bef802",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2b: Screwdriver Geometry (18\/32)",
+          "desc": "You will notice that the Boolean operation is now visible under the PartBody as a feature after the fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0006_en.doc\/src\/thumbnails\/StudioFilePPTX0001020.png",
+          "index": 5,
+          "skUid": "e950e740-f42d-458a-831d-b8d05d420603",
+          "scrUid": "20",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2b: Screwdriver Geometry (12\/32)",
+          "desc": "Fillet the edges of the handle From the action bar: Select the Refine section ... Select the Edge Fillet tool ... Specify a fillet radius of 5mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0006_en.doc\/src\/thumbnails\/StudioFilePPTX0001014.png",
+          "index": 6,
+          "skUid": "e950e740-f42d-458a-831d-b8d05d420603",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Exercise Process",
+          "desc": "Create a pipe Add an intersecting pipe Create a pocket Create an edge fillet Create a half symmetry model Create a quarter symmetry model",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0005_en.doc\/src\/thumbnails\/StudioFilePPTX0001002.png",
+          "index": 7,
+          "skUid": "41e3e32e-0b65-413c-9c8a-164e54ef5e6d",
+          "scrUid": "2",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2d: Connecting Rod and Piston Geometry (12\/20)",
+          "desc": "In the Refine section of the action bar, select the Edge Fillet tool ... Select the Edge Fillet tool ... Select the Edge Fillet tool",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0008_en.doc\/src\/thumbnails\/StudioFilePPTX0001014.png",
+          "index": 8,
+          "skUid": "906ccec7-f1f7-4765-ac62-4033e7bef802",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2a: Intersecting Pipes Geometry (10\/12)",
+          "desc": "Create a fillet at the intersection of the pipes ... Definition dialog box, enter 40 mm as the fillet radius",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0005_en.doc\/src\/thumbnails\/StudioFilePPTX0001012.png",
+          "index": 9,
+          "skUid": "41e3e32e-0b65-413c-9c8a-164e54ef5e6d",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        },
+        {
+          "sT": "Workshop 2b: Screwdriver Geometry (12\/32)",
+          "desc": "Fillet the edges of the handle From the action bar: Select the Refine section ... Select the Edge Fillet tool ... Specify a fillet radius of 5mm",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/\/SIMSML15xSkillets_en.edu\/SIMSML15xEdc0006_en.doc\/src\/thumbnails\/StudioFilePPTX0001014.png",
+          "index": 10,
+          "skUid": "e950e740-f42d-458a-831d-b8d05d420603",
+          "scrUid": "14",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V6R2015x\/SIMULIA\/SML\/en\/"
+        }
+      ]
+    },
+    {
+      "lId": 2189,
+      "lcoId": 1578,
+      "cT": "CATIA V5 Foundations for Powertrain Designers",
+      "launchable": true,
+      "launchMsg": "Play",
+      "bookmarked": false,
+      "ver": "V5R21",
+      "screenArr": [
+        {
+          "sT": "Exercise Recap: Basic Features Creation",
+          "desc": "Create a concentric pad Create simple and tapered holes Create a pocket Create an edge fillet Create a chamfer",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0009_en.doc\/src\/images\/V5F_S_Exe3B005.png",
+          "index": 1,
+          "skUid": "bdddc49c-fc4e-49a8-baf2-d8c5997b4924",
+          "scrUid": "8",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Create Holes",
+          "desc": "Create Fillets and Chamfers A fillet is a curved face of a constant or variable radius that is tangent to, and that joins, two surfaces",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VCoLeJobAids_en.edu\/CAT_V5VCoLeEdcJobAids_en.doc\/src\/images\/CAT_V5VCoLe0002_en003.png",
+          "index": 2,
+          "skUid": "2c141fb1-764c-43a7-bb84-ee591be0581c",
+          "scrUid": "32",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (5\/7)",
+          "desc": "Create an edge fillet ... Create an edge fillet of ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0035_en.doc\/src\/images\/Exercise7B006.png",
+          "index": 3,
+          "skUid": "0115d50e-f095-46f8-ac9d-7d333c49a804",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Rôle d'un congé",
+          "desc": "Description Surfaces lisses de transition entre deux faces adjacentes. Utilisé quand il n'y a pas d'intersection entre les faces ou qu'il y a plus de",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/fr\/\/CAT_V5FThSkillets_fr.edu\/CAT_V5FThEdc0017_fr.doc\/src\/images\/V5F_S_Step4_Create_Fillets_Chamfers002.png",
+          "index": 4,
+          "skUid": "99fef4e2-22f4-4c0a-9e91-4ade492de810",
+          "scrUid": "11",
+          "lang": "fr",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/fr\/"
+        },
+        {
+          "sT": "Create Fillets After Drafts",
+          "desc": "If a draft is applied on a filleted surface, fillet values do not remain constant ... In order to control the fillet radius value and maintain a constant ...   ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0033_en.doc\/src\/images\/V5F_S_Recommendation_for_Drafts004.png",
+          "index": 5,
+          "skUid": "60cc8d2f-09d8-44df-91ec-a43f3f425206",
+          "scrUid": "7",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Case Study Recap: Sprocket",
+          "desc": "Create a shaft Create a pocket Create a circular pattern Create a groove Create an edge fillet Create a hole Publish the geometry",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VCoLeSkillets_en.edu\/CAT_V5VCoLeEdc0008_en.doc\/src\/images\/V5F_S_CaseStudy_Lesson6003.png",
+          "index": 6,
+          "skUid": "9f9d9a3f-6330-4825-9ad6-5e65ee723f51",
+          "scrUid": "12",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Stages in the Process",
+          "desc": "Create fillet",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VCoLeSkillets_en.edu\/CAT_V5VCoLeEdc0010_en.doc\/src\/images\/V5F_S_Lesson6006.png",
+          "index": 7,
+          "skUid": "77a6c60d-57d8-4c5d-96e5-f57f04b984c4",
+          "scrUid": "9",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Basic Features",
+          "desc": "Case Study: Basic Features Design Intent Stages in the Process Determine a Suitable Base Feature Create Pad and Pocket Features Creating Holes ... ",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VCoLeSkillets_en.edu\/CAT_V5VCoLeEdc0009_en.doc\/src\/images\/V5F_S_Lesson3001.png",
+          "index": 8,
+          "skUid": "2c141fb1-764c-43a7-bb84-ee591be0581c",
+          "scrUid": "4",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Filleting an Edge",
+          "desc": "create an edge fillet: Click the Edge Fillet icon",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_ci\/en\/\/CAT_V5FThSkillets_en.edu\/CAT_V5FThEdc0017_en.doc\/src\/images\/V5F_S_Step4_Create_Fillets_Chamfers007.png",
+          "index": 9,
+          "skUid": "99fef4e2-22f4-4c0a-9e91-4ade492de810",
+          "scrUid": "13",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        },
+        {
+          "sT": "Do it Yourself (1\/3)",
+          "desc": "Create a fillet of 35mm on 2 edges",
+          "thumbUrl": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/db_auto\/en\/\/CAT_V5VExSkillets_en.edu\/CAT_V5VExEdc0009_en.doc\/src\/images\/V5F_S_Exe3B002.png",
+          "index": 10,
+          "skUid": "bdddc49c-fc4e-49a8-baf2-d8c5997b4924",
+          "scrUid": "4",
+          "lang": "en",
+          "cw": "http:\/\/cdn.companion.3ds.com\/WLS\/V5R21\/cat\/v5v\/en\/"
+        }
+      ]
+    }
+  ]
+}

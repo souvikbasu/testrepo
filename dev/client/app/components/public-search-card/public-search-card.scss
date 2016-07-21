@@ -1,0 +1,132 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+public-search-card {
+    @include shadow(0, 0, 6px, -2px, $shadow-color);
+    background-color: $control-background;
+    border: solid 1px $border-color;
+    display: inline-flex;
+    height: 408px;
+    margin: 7px;
+    text-align: left;
+    text-align-last: left;
+    width: 216px;
+
+    .public-search-card-wrapper {
+        width: 100%;
+    }
+
+    .card-box {
+        width: 100%;
+    }
+
+    .top {
+        height: 140px;
+    }
+
+    .pub-search-main {
+        color: $light-text-color;
+        height: 264px;
+        padding: 25px 12px 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .image {
+        background-image: url('../../static/images/course-card-background.png');
+        border: 0;
+        border-bottom: solid 1px $border-color;
+        height: 147px;
+        position: relative;
+        width: 214px;
+    }
+
+    .course-title {
+        @include font-size-in-px($normal-font-size);
+        @include transition(color, .25s, ease, 0s);
+        color: $control-text;
+        font-weight: $heavy-font-weight;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .infos {
+        color: $light-text-color;
+        font-weight: $semi-light-font-weight;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .version,
+    .language {
+        @include font-size-in-px($small-font-size);
+        color: $light-text-color;
+        font-weight: $semi-light-font-weight;
+        line-height: 1.2em;
+        margin-bottom: 7px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    select {
+        border: 1px solid $card-border-color;
+        padding: 1px 3px 1px 1px;
+        width: 120px;
+    }
+
+    li {
+        color: $secondary-text-color;
+    }
+
+    .custom-li {
+        margin-bottom: 15px;
+    }
+
+    .select-link {
+        button {
+            background: none;
+            border: 0;
+            cursor: pointer;
+            padding: 0;
+            text-transform: none;
+
+            &::after {
+                @include show-symbol('b', $control-text, $extra-small-icon-size);
+                color: $primary-theme-color-2;
+                padding-left: 5px;
+                vertical-align: middle;
+            }
+        }
+
+        ul {
+            background: $control-background;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            width: 120px;
+        }
+    }
+
+    .open {
+        ul {
+            height: auto;
+            overflow: hidden;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .footer {
+        bottom: 10px;
+        display: inherit;
+        height: 30px;
+        margin-left: 55px;
+        position: absolute;
+    }
+}

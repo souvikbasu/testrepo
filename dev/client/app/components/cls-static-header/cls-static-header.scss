@@ -1,0 +1,46 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+cls-static-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    .cls-logo {
+        cursor: pointer;
+    }
+
+    .user-header {
+        @include gradiant-background(45deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+        display: flex;
+        height: 100px;
+        justify-content: space-around;
+        padding-top: 6px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        &::before {
+            @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+            content: '';
+            display: block;
+            height: 6px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        &::after {
+            @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+            content: '';
+            display: block;
+            height: 30px;
+            left: 0;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+        }
+    }
+}

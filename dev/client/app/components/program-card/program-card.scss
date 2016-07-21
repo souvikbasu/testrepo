@@ -1,0 +1,233 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+program-card {
+    @include shadow(0, 0, 6px, -2px, $shadow-color);
+    border: solid 1px $border-color;
+    display: inline-flex;
+    margin: 7px 0;
+    text-align: left;
+    text-align-last: left;
+    width: 216px;
+
+    // entire container, keeps perspective
+    .flip-container {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    // flip speed goes here
+    .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+    }
+
+    // hide back of pane during swap
+    .front,
+    .back {
+        backface-visibility: hidden;
+        left: 0;
+        padding: 25px 12px 0;
+        transform-style: preserve-3d;
+        transition: .4s;
+        width: 100%;
+    }
+
+    //  UPDATED! front pane, placed above back
+    .front {
+        transform: rotateY(0deg);
+        z-index: 2;
+    }
+
+    // back, initially hidden pane
+    .back {
+        @include gradiant-background(0, 10%, $secondary-bar-gradient-color-1, 150%, $secondary-bar-gradient-color-2, 0, 1);
+        color: $control-background;
+        height: 260px;
+        position: absolute;
+        text-align: center;
+        text-align-last: center;
+        top: 0;
+        transform: rotateY(-180deg);
+
+        .back-content {
+            height: 160px;
+        }
+
+        .footer-cancel {
+            margin-top: 5px;
+        }
+    }
+
+    .program-card-wrapper {
+        @include transition(height, .4s, ease, 0s);
+        height: 260px;
+        width: 100%;
+
+        &.detailed {
+            @include gradiant-background(0deg, 10%, $secondary-bar-gradient-color-1, 150%, $secondary-bar-gradient-color-2, 0, 1);
+            background-clip: border-box;
+            color: $control-background;
+        }
+    }
+
+    .program-card-summary {
+        .prog-card-main {
+            display: table;
+            width: 100%;
+        }
+
+        .content {
+            display: table-row;
+            height: 170px;
+
+            .course-title {
+                @include font-size-in-px($course-title-font-size);
+                font-weight: $heavy-font-weight;
+                line-height: 1.14em;
+                margin-bottom: 11px;
+                text-align: left;
+            }
+
+            .expires {
+                font-weight: $light-font-weight;
+                line-height: 1.2em;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            .completed {
+                @include font-size-in-px($course-completion-font-size);
+                font-weight: $light-font-weight;
+                margin-bottom: 4px;
+                text-align: left;
+            }
+        }
+
+        .footer {
+            height: 65px;
+            vertical-align: middle;
+        }
+    }
+
+    .footer {
+        .sub-footer {
+            bottom: 5px;
+            position: absolute;
+
+            .details {
+                @include font-size-in-px($normal-font-size);
+                cursor: pointer;
+                margin-left: -15px;
+                margin-top: 5px;
+                min-height: 30px;
+                text-align: left;
+
+                &::after {
+                    @include show-symbol('b', $control-text, $extra-small-icon-size);
+                    line-height: 1.4em;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+
+                &.active::after {
+                    content: 'n';
+                }
+            }
+
+            .enroll {
+                @include font-size-in-px($normal-font-size);
+                cursor: pointer;
+                display: inline-block;
+                margin-top: 5px;
+                min-height: 30px;
+                text-align: right;
+
+                &::before {
+                    @include show-symbol('q', $control-text, $extra-small-icon-size);
+                    font-size: 11px;
+                    line-height: 1.4em;
+                    margin-right: 5px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .pending {
+                @include font-size-in-px($normal-font-size);
+                display: inline-block;
+                margin-top: 5px;
+                text-align: right;
+            }
+        }
+    }
+
+    .row {
+        .cell {
+            height: 110px;
+            padding: 30px;
+            vertical-align: middle;
+
+            img {
+                background-clip: padding-box;
+                border-radius: 50%;
+                display: inline-block;
+                height: 50px;
+                margin-right: 10px;
+                overflow: hidden;
+                vertical-align: middle;
+                width: 50px;
+            }
+
+            ul {
+                display: inline-block;
+                vertical-align: middle;
+                width: 300px;
+            }
+
+            .catalog-expand {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .download-pdf {
+        cursor: pointer;
+        font-family: 'dassault-companion';
+        font-size: 35px;
+        height: 40px;
+        line-height: 60px;
+
+        &::before {
+            content: 'o';
+        }
+    }
+
+    .program-card-details {
+        @include gradiant-background(0deg, 10%, $secondary-bar-gradient-color-2, 120%, $secondary-bar-gradient-color-1, 0, 1);
+        @include transition(height, .4s, ease, 0s);
+        color: $control-background;
+        height: 0;
+        left: 2px;
+        position: absolute;
+        text-align: left;
+        width: 90%;
+
+        .separator {
+            hr {
+                border-top: 1px solid $border-color-separator;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .lesson-details {
+        li {
+            a {
+                color: $primary-theme-text-on-color-1;
+            }
+        }
+    }
+}

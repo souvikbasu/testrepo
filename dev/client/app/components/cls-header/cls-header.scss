@@ -1,0 +1,268 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+cls-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    .navigation {
+        @include font-size-in-px($header-font-size);
+        @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+        bottom: auto;
+        color: $primary-theme-text-on-color-1;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        line-height: 45px;
+        opacity: 1;
+        position: fixed;
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        vertical-align: top;
+        width: 100%;
+
+        .nav-item {
+            @include font-size-in-px($header-font-size);
+            cursor: pointer;
+            display: inline-flex;
+            font-weight: $normal-font-weight;
+            height: 45px;
+            margin-left: 48px;
+            padding-top: 0;
+
+            &.selected,
+            &:hover {
+                border-bottom: 4px solid $control-selected-text;
+                font-weight: $heavy-font-weight;
+            }
+
+            &.dashboard {
+                border-right: 1px solid $border-color;
+                justify-content: center;
+                padding: 9px 5px 1px;
+                width: 100px;
+
+                &::before {
+                    @include show-symbol('f', $primary-theme-text-on-color-1, $med-icon-size);
+                }
+            }
+        }
+    }
+
+    .cls-logo {
+        cursor: pointer;
+    }
+
+    .user-header {
+        @include gradiant-background(45deg, 0%, $secondary-bar-gradient-color-1, 100%, $secondary-bar-gradient-color-2, 0, 1);
+        display: flex;
+        height: 112px;
+        justify-content: space-around;
+        padding-top: 6px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        &::before {
+            @include gradiant-background(45deg, 0%, $primary-bar-gradient-color-1, 100%, $primary-bar-gradient-color-2, 0, 1);
+            content: '';
+            display: block;
+            height: 6px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        search-box {
+            margin: 0;
+            width: 360px;
+        }
+
+        &.for-mobile {
+            .product-logo {
+                margin-top: 31px;
+            }
+
+            search-box {
+                margin: 30px 10px 0 -6px;
+                width: 260px;
+            }
+
+            .cancel-search {
+                display: inline-block;
+            }
+
+            .icon {
+                margin-top: 20px;
+            }
+
+            .drop-down-layout {
+                margin-top: 20px;
+            }
+        }
+
+        .user-thumbnail {
+            padding-right: 45px;
+            text-align: right;
+        }
+    }
+
+    .movable-navigation {
+        bottom: 0;
+        position: relative;
+        top: auto;
+        width: initial;
+    }
+
+    .fixed-navigation {
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .dropdown-container {
+        float: right;
+        left: auto;
+        width: 240px;
+
+        .icon-style {
+            color: $label-header-text;
+            font-size: 16px;
+        }
+
+        .dropdown-list {
+            background: $control-background;
+            border: 1px solid $control-background;
+            height: 400px;
+            padding: 7px;
+        }
+
+        .dropdown-panel {
+            position: absolute;
+            right: auto;
+            z-index: 100;
+        }
+    }
+
+    .drop-down-layout {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .user {
+        display: inline-block;
+        margin-right: 8px;
+        position: relative;
+
+        .user-info {
+            display: inline-block;
+            padding-right: 4px;
+            position: absolute;
+            right: 98px;
+            text-align: right;
+            top: 34px;
+            vertical-align: middle;
+
+            .title {
+                @include font-size-in-px($header-font-size);
+                color: $primary-theme-text-on-color-1;
+                margin-bottom: 3px;
+            }
+
+            .status {
+                @include font-size-in-px($extra-small-font-size);
+                color: $primary-theme-color-2;
+                cursor: pointer;
+                text-align: right;
+                text-transform: uppercase;
+            }
+        }
+
+        .user-photo {
+            @include shadow(0, 0, 10px, -3px, $darker-shadow-color);
+            background-clip: padding-box;
+            background-color: $control-background;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .icon-hamburger {
+        background-image: url('../../static/images/icon-hamburger.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        float: right;
+        height: 50px;
+        width: 62px;
+    }
+
+    .icon-close {
+        &::before {
+            @include show-symbol('p', $primary-theme-text-on-color-1, $big-icon-size);
+        }
+    }
+
+    .icon-search {
+        &::before {
+            @include show-symbol('i', $primary-theme-text-on-color-1, $big-icon-size);
+        }
+    }
+
+    .btn-login-custom {
+        width: 72px;
+    }
+
+    .modal-menu {
+        @include font-size-in-px(16px);
+        background-color: transparent;
+        color: $primary-theme-color-3;
+        text-align: left;
+
+        .menu-item {
+            cursor: pointer;
+            height: $unit-block-size;
+            padding: 10px;
+
+            &:hover {
+                background-color: $control-selected;
+                color: $control-selected-text;
+            }
+        }
+    }
+
+    .selected-menu {
+        background-image: url('../images/icon-tick.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+
+        a {
+            color: $primary-theme-color-1;
+            font-weight: 500;
+            padding-left: 18px;
+        }
+    }
+
+    .list-style {
+        padding-left: 4px;
+        white-space: nowrap;
+    }
+
+    .btn-container {
+        display: inline;
+        margin-top: 35px;
+    }
+}

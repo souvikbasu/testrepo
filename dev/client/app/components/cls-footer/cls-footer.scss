@@ -1,0 +1,80 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+cls-footer {
+    background-color: $primary-theme-color-1;
+    color: $primary-theme-text-on-color-1;
+    display: block;
+    height: 52px;
+    line-height: 1.3em;
+
+    footer {
+        height: 100%;
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    .layout-0 {
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        .col {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    li {
+        display: inline-block;
+
+        + li {
+            margin-left: 40px;
+        }
+    }
+
+    .cta-need-help {
+        float: right;
+
+        &::before {
+            @include show-symbol('v', $primary-theme-text-on-color-1, $med-icon-size);
+        }
+    }
+
+    .btn-picto {
+        background-color: $primary-theme-color-2;
+        display: table;
+        font-size: 14px;
+        height: 100%;
+        margin: 0;
+        padding: 0 30px;
+        text-transform: uppercase;
+
+        &::before {
+            display: table-cell;
+            font-size: 31px;
+            height: 100%;
+            vertical-align: middle;
+            width: 31px;
+        }
+
+        span {
+            display: table-cell;
+            padding-left: 8px;
+            vertical-align: middle;
+        }
+    }
+
+    a {
+        color: $primary-theme-text-on-color-1;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-theme-text-on-color-1;
+            text-decoration: none;
+        }
+    }
+}
