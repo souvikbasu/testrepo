@@ -21,12 +21,14 @@ var gulp = require('gulp'),
     fs = require('fs'),
     env = require('gulp-env'),
     istanbul = require('gulp-istanbul'),
-    ngDocs = require('gulp-ngdocs');
-
+    ngDocs = require('gulp-ngdocs'),
+    zip = require('gulp-zip');
 
 var exec = require('child_process').exec;
 
 var isProd = argv.prod;
+var isRelease = argv.release;
+var isHotfix = argv.hotfix;
 var noValidation = argv.noVal != null;
 
 // to ignore files/folder use this syntax '!static/js/**/*.js',
@@ -212,6 +214,41 @@ gulp.task('deploy-data-files', function() {
 
 
 gulp.task('deploy-version-file', function() {
+    var build = require('./build.json'),
+        majorVersion = parseInt(build.version.major),
+        minorVersion = parseInt(build.version.minor),
+        buildNumber = parseInt(build.version.build);
+
+    if (isRelease) {
+        majorVersion++;
+        minorVersion = 0;
+        buildNumber = 0;
+    } else if (isHotfix) {
+        minorVersion++;
+        buildNumber = 0;
+    } else {
+        buildNumber++;
+    }
+
+    build.version.major = majorVersion;
+    build.version.minor = minorVersion;
+    build.version.build = buildNumber;
+    build.timestamp = new Date();
+
+    fs.writeFile("build.json", JSON.stringify(build), function(err) {
+        if(err) {
+            return console.log(err);
+        }
+    });
+
+    fs.writeFile("version.txt", build.version.major + "." + build.version.minor + "." + build.version.build, function(err) {
+        if(err) {
+            return console.log(err);
+        }
+    });
+
+    gulp.src('./build.json')
+        .pipe(gulp.dest(deployFolder));
     gulp.src('./version.txt')
         .pipe(gulp.dest(deployFolder));
 });
@@ -231,6 +268,13 @@ gulp.task('docs', [], function() {
     return gulp.src(jsFiles)
         .pipe(ngDocs.process(options))
         .pipe(gulp.dest('../docs'));
+});
+
+
+gulp.task('create-build-zip', function() {
+    return gulp.src(deployFolder + "/*")
+        .pipe(zip('build.zip'))
+        .pipe(gulp.dest('../'));
 });
 
 
@@ -266,7 +310,8 @@ gulp.task('build', function() {
         'deploy-fonts',
         'deploy-data-files',
         'docs',
-        'deploy-version-file'
+        'deploy-version-file',
+        'create-build-zip'
     );
 });
 
